@@ -36,6 +36,9 @@ export default function Navbar() {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Navigate to landing page with the section hash
+      window.location.href = `/${locale}${href}`;
     }
     setIsMobileMenuOpen(false);
   };

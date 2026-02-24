@@ -9,10 +9,10 @@
   },
   "hero": {
     "location": "Tucumán, Argentina • Desde 2010",
-    "title": "Transformación Digital con",
-    "titleHighlight": "Inteligencia Artificial",
-    "description": "Consultora especializada en el desarrollo de proyectos de sistemas de información que impulsan la innovación y eficiencia empresarial mediante tecnologías de última generación.",
-    "ctaPrimary": "Iniciar Proyecto",
+    "title": "Consultora de Empresas:",
+    "titleHighlight": "Transformación Digital y Crecimiento B2B",
+    "description": "Integramos la precisión de la ingeniería de software con estrategias de comunicación de alto impacto. Desde el desarrollo de sistemas a medida y modernización de infraestructura IT, hasta el posicionamiento de tu marca para escalar tus ventas de forma medible.",
+    "ctaPrimary": "Contactar Consultores",
     "ctaSecondary": "Ver Servicios",
     "stats": {
       "years": "Años de experiencia",
@@ -22,21 +22,21 @@
   },
   "about": {
     "label": "Quiénes Somos",
-    "title": "Innovación y",
-    "titleHighlight": "Excelencia",
-    "description": "En Bejuca Consulting combinamos experiencia técnica con visión estratégica para ofrecer soluciones que marcan la diferencia en el éxito de nuestros clientes.",
+    "title": "Ingeniería y Comunicación",
+    "titleHighlight": "B2B",
+    "description": "Combinamos el rigor técnico y la experiencia en ingeniería de sistemas con estrategias de comunicación de alto impacto. Nuestro objetivo es resolver los cuellos de botella de tu negocio a través de la transformación digital.",
     "values": {
       "mision": {
         "title": "Misión",
-        "description": "Transformar organizaciones mediante soluciones tecnológicas innovadoras que impulsen su crecimiento y competitividad en el mercado digital."
+        "description": "Transformar la operación de las empresas mediante desarrollo de software a medida y automatización de procesos, impulsando su crecimiento y competitividad en el mercado digital."
       },
       "vision": {
         "title": "Visión",
-        "description": "Ser líderes regionales en consultoría de transformación digital, reconocidos por nuestra excelencia técnica y compromiso con el éxito de nuestros clientes."
+        "description": "Ser el socio estratégico de referencia en consultoría tecnológica y de negocios, reconocidos por nuestra excelencia técnica y compromiso con los resultados medibles de nuestros clientes."
       },
       "valores": {
         "title": "Valores",
-        "description": "Innovación, integridad, excelencia y colaboración son los pilares que guían cada proyecto que emprendemos junto a nuestros clientes."
+        "description": "Innovación constante y excelencia técnica en cada solución que desarrollamos. Nos distingue el compromiso absoluto con tu proyecto, respaldado por la integridad, el profesionalismo y un acompañamiento cercano y real en cada paso."
       },
       "experiencia": {
         "title": "Experiencia",
@@ -45,10 +45,12 @@
     },
     "history": {
       "title": "Nuestra Historia",
-      "p1": "Fundada en 2010 en Tucumán, Argentina, Bejuca Consulting nació con la visión de acercar las tecnologías emergentes a las empresas de la región. Lo que comenzó como un pequeño equipo de entusiastas de la tecnología, se ha convertido en una consultora reconocida por su excelencia técnica.",
-      "p2": "A lo largo de más de 15 años, hemos acompañado a empresas de diversos sectores en su journey de transformación digital, desde la modernización de sistemas legados hasta la implementación de soluciones de inteligencia artificial de vanguardia.",
-      "p3": "Nuestro compromiso con la innovación continua y la satisfacción del cliente nos ha permitido construir relaciones duraderas y convertirnos en socios estratégicos de referencia en el mercado.",
-      "badge": "De trayectoria"
+      "p1": "BEJUCA Consulting nació en 2010 en Tucumán, Argentina, con la visión de acercar la innovación a las organizaciones de manera estratégica y humana. Lo que comenzó como un proyecto familiar, hoy es una consultora de empresas reconocida por integrar la rigurosidad de la ingeniería con la frescura de la comunicación profesional.",
+      "p2": "A lo largo de más de 15 años, hemos acompañado a empresas de diversos sectores en su proceso de transformación digital. Nuestra trayectoria nos ha permitido evolucionar desde la optimización de sistemas básicos hasta el desarrollo de software a medida y soluciones de infraestructura tecnológica de alta complejidad.",
+      "p3": "Nuestro compromiso con la excelencia técnica y el posicionamiento de marca estratégico nos permite construir relaciones duraderas. Más que proveedores de servicios, nos convertimos en aliados de cada organización, entendiendo su realidad para diseñar ecosistemas digitales que impulsen sus ventas y autoridad.",
+      "p4": "Desde nuestros inicios, hemos mantenido un enfoque interdisciplinario centrado en el capital humano. Nos especializamos en capacitar y acompañar equipos en su evolución, facilitando la transición desde modelos tradicionales hacia una gestión eficiente potenciada por herramientas de vanguardia y metodologías ágiles.",
+      "p5": "Hoy, con un equipo de cuatro profesionales expertos y una profunda vocación, seguimos comprometidos con la innovación constante. Continuamos resolviendo los cuellos de botella de nuestros clientes, garantizando que cada solución tecnológica genere un impacto real, medible y sostenible en su negocio.",
+      "badge": "15+ Años de trayectoria"
     }
   },
   "services": {

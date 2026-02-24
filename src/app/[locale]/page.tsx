@@ -15,11 +15,13 @@ export default function HomePage() {
     return (
         <>
             <Navbar />
-            <Hero />
-            <About />
-            <Services services={services} />
-            <Methodology />
-            <Contact services={services} />
+            <main>
+                <Hero />
+                <About />
+                <Services services={services} />
+                <Methodology />
+                <Contact services={services} />
+            </main>
             <Footer services={services} />
             <WhatsAppButton />
         </>
