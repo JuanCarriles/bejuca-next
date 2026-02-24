@@ -133,6 +133,9 @@ export default function About() {
               <p>{t('about.history.p1')}</p>
               <p>{t('about.history.p2')}</p>
               <p>{t('about.history.p3')}</p>
+              <p>{t('about.history.p4')}</p>
+              <p>{t('about.history.p5')}</p>
+
             </div>
           </div>
 

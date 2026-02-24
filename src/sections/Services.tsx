@@ -4,12 +4,12 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { useTheme } from '@/context/ThemeContext';
 import {
-  Brain,
+  Brain, GraduationCap,
   Code,
   Database,
   Cloud,
-  Shield,
-  BarChart3,
+  Shield, ScreenShare,
+  BarChart3, Server,
   ArrowRight,
   type LucideIcon,
 } from 'lucide-react';
@@ -21,8 +21,8 @@ import type { Service } from '@/types/services.types';
 const iconMap: Record<string, LucideIcon> = {
   Brain,
   Code,
-  Database,
-  Cloud,
+  Database, ScreenShare, GraduationCap,
+  Cloud, Server,
   Shield,
   BarChart3,
 };
@@ -101,7 +101,7 @@ export default function Services({ services }: { services: Service[] }) {
             return (
               <div
                 key={service.id}
-                className={`group relative p-6 rounded-2xl border transition-all duration-500 cursor-pointer ${theme === 'dark'
+                className={`group relative p-6 rounded-2xl border transition-all duration-500 cursor-pointer flex flex-col ${theme === 'dark'
                   ? 'bg-gradient-to-br from-[#243447] to-[#1a2a3a] border-gray-700/50 hover:border-[#3CB4D8]/50'
                   : 'bg-gradient-to-br from-white to-gray-50 border-gray-200 hover:border-[#3CB4D8]/50 shadow-sm'
                   } ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} ${activeService === index ? 'ring-2 ring-[#3CB4D8]/50' : ''
@@ -119,7 +119,7 @@ export default function Services({ services }: { services: Service[] }) {
                   }}
                 />
 
-                <div className="relative">
+                <div className="relative flex flex-col flex-1">
                   {/* Icon */}
                   <div
                     className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 group-hover:scale-110"
@@ -162,12 +162,15 @@ export default function Services({ services }: { services: Service[] }) {
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
-                      openServiceModal(service);
+                      window.location.href = `/${lang}/servicios/${service.slug}`;
                     }}
-                    className="inline-flex items-center text-[#3CB4D8] text-sm font-medium group/btn"
+                    className={`mt-auto inline-flex items-center gap-1.5 text-sm font-medium transition-colors duration-300 ${theme === 'dark'
+                      ? 'text-gray-400 hover:text-[#3CB4D8]'
+                      : 'text-gray-500 hover:text-[#0891b2]'
+                      }`}
                   >
-                    {t('services.learnMore')}
-                    <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                    {lang === 'en' ? 'Learn more' : 'Saber más'}
+                    <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>
               </div>

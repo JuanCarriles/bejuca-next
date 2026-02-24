@@ -20,13 +20,19 @@ export default function Footer({ services }: { services: Service[] }) {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = `/${lang}${href}`;
     }
   };
 
+  const goToHome = () => {
+    window.location.href = `/${lang}#inicio`;
+  };
+
   const footerLinks = {
-    services: services.slice(0, 5).map((s) => ({
+    services: services.map((s) => ({
       name: resolveTranslation(s.title, lang),
-      href: '#servicios',
+      href: `/${lang}/servicios/${s.slug}`,
     })),
     company: [
       { name: t('about.label'), href: '#nosotros' },
@@ -47,22 +53,22 @@ export default function Footer({ services }: { services: Service[] }) {
       }`}>
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
+            <button onClick={goToHome} className="flex items-center gap-3 mb-6 cursor-pointer">
               <img
                 src={theme === 'dark' ? '/bejuca-logo-reducido-claro.png' : '/bejuca-logo-reducido-oscuro.png'}
                 alt="Bejuca Consulting"
                 className="w-12 h-12 rounded-xl object-contain"
               />
-              <div className="flex flex-col">
+              <div className="flex flex-col text-left">
                 <span className={`font-bold text-xl ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Bejuca</span>
                 <span className="text-[#3CB4D8] text-xs tracking-wider uppercase">
                   Consulting
                 </span>
               </div>
-            </div>
+            </button>
 
             <p className={`text-sm leading-relaxed mb-6 max-w-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
               }`}>
@@ -103,20 +109,20 @@ export default function Footer({ services }: { services: Service[] }) {
           </div>
 
           {/* Services Links */}
-          <div>
+          <div className="lg:col-span-2">
             <h4 className={`font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
               {t('footer.links.services')}
             </h4>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
+                  <a
+                    href={link.href}
                     className={`transition-colors text-sm ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-600 hover:text-[#0891b2]'
                       }`}
                   >
                     {link.name}
-                  </button>
+                  </a>
                 </li>
               ))}
             </ul>

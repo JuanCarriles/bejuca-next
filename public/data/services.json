@@ -1,137 +1,182 @@
 [
     {
-        "id": "ai",
-        "icon": "Brain",
-        "color": "#3CB4D8",
+        "id": "captacion-digital",
+        "slug": "captacion-marketing-digital",
+        "icon": "ScreenShare",
+        "color": "#5DD3F0",
         "title": {
-            "es": "Inteligencia Artificial",
-            "en": "Artificial Intelligence"
+            "es": "Captación y Presencia Digital",
+            "en": "Digital Acquisition & Presence"
         },
         "description": {
-            "es": "Implementamos soluciones de IA y machine learning para automatizar procesos, analizar datos y generar insights accionables para tu negocio.",
-            "en": "We implement AI and machine learning solutions to automate processes, analyze data, and generate actionable insights for your business."
+            "es": "Aumenta tus ventas con nuestra agencia de marketing digital B2B. Combinamos diseño web para empresas y posicionamiento de marca estratégico.",
+            "en": "Increase your sales with our B2B digital marketing agency. We combine enterprise web design and strategic brand positioning."
         },
         "features": [
-            "Machine Learning",
-            "NLP",
-            "Computer Vision",
-            "Predictive Analytics"
+            "Diseño Web para Empresas",
+            "Posicionamiento de Marca",
+            "Gestión de Redes Sociales",
+            "Optimización SEO y Conversión"
         ],
+        "questions": [
+            {
+                "es": "¿Recién estás empezando tu negocio y quieres tener presencia en internet?",
+                "en": "Are you just starting your business and want to establish an online presence?"
+            },
+            {
+                "es": "¿Tu presencia en redes sociales no refleja el nivel corporativo de tu empresa?",
+                "en": "Does your social media presence fail to reflect your company's corporate level?"
+            },
+            {
+                "es": "¿Sientes que tu negocio no se hace conocer?",
+                "en": "Do you feel like your business isn't getting the recognition it deserves?"
+            },
+            {
+                "es": "¿Buscás una agencia de marketing digital que entienda realmente el mercado B2B?",
+                "en": "Are you looking for a digital marketing agency that truly understands the B2B market?"
+            },
+            {
+                "es": "¿Tu web se ve antigua y no refleja la calidad de lo que haces?",
+                "en": "Does your website look outdated and doesn't reflect the quality of what you do?"
+            }
+        ],
+        "modalDescription": {
+            "es": "Operamos como tu agencia de marketing digital interna. Integramos landing pages de alta conversión con una sólida estrategia de posicionamiento de marca para captar clientes.",
+            "en": "We operate as your internal digital marketing agency. We integrate high-converting landing pages with a solid brand positioning strategy to capture clients."
+        },
         "longDescription": {
-            "es": "Diseñamos e implementamos pipelines completos de inteligencia artificial, desde la recopilación y limpieza de datos hasta el entrenamiento de modelos y su despliegue en producción. Nuestro equipo combina experiencia en ciencia de datos con ingeniería de software para crear soluciones robustas y escalables que transforman la forma en que tu empresa opera.",
-            "en": "We design and implement complete artificial intelligence pipelines, from data collection and cleaning to model training and production deployment. Our team combines data science expertise with software engineering to create robust and scalable solutions that transform the way your company operates."
+            "es": "En Bejuca entendemos que el crecimiento B2B requiere mucho más que simples posteos en internet. Hemos creado un ecosistema integral de captación que une el diseño web para empresas con una gestión estratégica de redes sociales. Desarrollamos landing pages rápidas y orientadas a la venta, respaldadas por un posicionamiento de marca que transmite verdadera autoridad corporativa. Así, aseguramos que cada clic e interacción se transforme en una oportunidad de negocio real para tu empresa.",
+            "en": "At Bejuca, we understand that B2B growth requires much more than simple internet posts. We have created a comprehensive acquisition ecosystem that unites enterprise web design with strategic social media management. We develop fast, sales-oriented landing pages backed by brand positioning that conveys true corporate authority. This way, we ensure that every click and interaction transforms into a real business opportunity for your company."
         },
         "useCases": [
             {
                 "title": {
-                    "es": "Chatbots Inteligentes",
-                    "en": "Intelligent Chatbots"
+                    "es": "Landing Pages B2B",
+                    "en": "B2B Landing Pages"
                 },
                 "description": {
-                    "es": "Asistentes virtuales con procesamiento de lenguaje natural para atención al cliente 24/7.",
-                    "en": "Virtual assistants with natural language processing for 24/7 customer support."
+                    "es": "Diseño web para empresas enfocado exclusivamente en la conversión y captación de leads cualificados.",
+                    "en": "Enterprise web design focused exclusively on conversion and capturing qualified leads."
                 }
             },
             {
                 "title": {
-                    "es": "Detección de Fraude",
-                    "en": "Fraud Detection"
+                    "es": "Estrategia Corporativa",
+                    "en": "Corporate Strategy"
                 },
                 "description": {
-                    "es": "Modelos predictivos que identifican patrones sospechosos en tiempo real.",
-                    "en": "Predictive models that identify suspicious patterns in real time."
+                    "es": "Gestión de redes sociales orientada al posicionamiento de marca y generación de confianza en tu sector.",
+                    "en": "Social media management aimed at brand positioning and building trust in your sector."
                 }
             },
             {
                 "title": {
-                    "es": "Automatización Documental",
-                    "en": "Document Automation"
+                    "es": "Ecosistema de Ventas",
+                    "en": "Sales Ecosystem"
                 },
                 "description": {
-                    "es": "Extracción y clasificación automática de información de documentos con OCR e IA.",
-                    "en": "Automatic extraction and classification of document information using OCR and AI."
+                    "es": "Campañas que dirigen tráfico estratégico desde tus canales sociales directamente hacia tu sitio web.",
+                    "en": "Campaigns that drive strategic traffic from your social channels directly to your website."
                 }
             }
         ],
         "technologies": [
-            "Python",
-            "TensorFlow",
-            "PyTorch",
-            "OpenAI",
-            "LangChain",
-            "Hugging Face",
-            "scikit-learn"
+            "Next.js",
+            "React",
+            "Figma",
+            "Google Analytics",
+            "Meta Ads",
+            "SEO Frameworks"
         ],
         "benefits": [
             {
-                "es": "Automatización de procesos repetitivos",
-                "en": "Automation of repetitive processes"
+                "es": "Incremento medible en la captación de clientes B2B.",
+                "en": "Measurable increase in B2B client acquisition."
             },
             {
-                "es": "Decisiones basadas en datos en tiempo real",
-                "en": "Real-time data-driven decisions"
+                "es": "Construcción de un posicionamiento de marca de alta autoridad.",
+                "en": "Building high-authority brand positioning."
             },
             {
-                "es": "Reducción de costos operativos hasta un 40%",
-                "en": "Up to 40% reduction in operational costs"
+                "es": "Diseño web para empresas rápido, escalable y optimizado para Google.",
+                "en": "Fast, scalable enterprise web design optimized for Google."
             },
             {
-                "es": "Escalabilidad y mejora continua de modelos",
-                "en": "Scalability and continuous model improvement"
+                "es": "Estrategia unificada: tu sitio web y tus redes traccionando hacia el mismo objetivo.",
+                "en": "Unified strategy: your website and social media pulling toward the same goal."
             }
         ]
     },
     {
-        "id": "software",
+        "id": "desarrollo-software",
+        "slug": "desarrollo-software-empresas",
         "icon": "Code",
         "color": "#5DD3F0",
         "title": {
-            "es": "Desarrollo de Software",
-            "en": "Software Development"
+            "es": "Desarrollo de Software a Medida",
+            "en": "Custom Software Development"
         },
         "description": {
-            "es": "Creamos aplicaciones web y móviles a medida, utilizando las últimas tecnologías y metodologías ágiles para entregar productos de alta calidad.",
-            "en": "We create custom web and mobile applications using the latest technologies and agile methodologies to deliver high-quality products."
+            "es": "Impulsamos tu negocio con desarrollo de software para empresas. Creamos sistemas a medida y automatizamos procesos para optimizar tus operaciones.",
+            "en": "We boost your business with enterprise software development. We create custom systems and automate processes to optimize your operations."
         },
         "features": [
-            "Web Apps",
-            "Mobile Apps",
-            "APIs",
-            "Microservicios"
+            "Arquitectura de Sistemas Escalables",
+            "Automatización de Procesos",
+            "Desarrollo Web y Aplicaciones (React/Next.js)",
+            "Integración de APIs y Sistemas Legacy"
         ],
+        "questions": [
+            {
+                "es": "¿Tus procesos actuales son manuales y frenan el crecimiento de tu negocio?",
+                "en": "Are your current processes manual and hindering your business growth?"
+            },
+            {
+                "es": "¿Necesitás integrar diferentes sistemas de gestión que hoy no se comunican entre sí?",
+                "en": "Do you need to integrate different management systems that currently don't communicate with each other?"
+            },
+            {
+                "es": "¿Buscás una consultoría tecnológica que entienda la lógica de tu empresa antes de programar?",
+                "en": "Are you looking for a technology consultancy that understands your company's logic before coding?"
+            }
+        ],
+        "modalDescription": {
+            "es": "Nuestro equipo de ingeniería analiza tu arquitectura actual y diseña soluciones tecnológicas robustas. Hacemos desarrollo de software para empresas enfocado en resolver cuellos de botella reales.",
+            "en": "Our engineering team analyzes your current architecture and designs robust technological solutions. We do enterprise software development focused on solving real bottlenecks."
+        },
         "longDescription": {
-            "es": "Desarrollamos software a medida que se adapta a las necesidades específicas de tu negocio. Desde aplicaciones web modernas hasta apps móviles nativas e híbridas, nuestro equipo utiliza arquitecturas escalables y las mejores prácticas de la industria para entregar productos de alta calidad en tiempos competitivos.",
-            "en": "We develop custom software that adapts to your business specific needs. From modern web applications to native and hybrid mobile apps, our team uses scalable architectures and industry best practices to deliver high-quality products in competitive timeframes."
+            "es": "En Bejuca entendemos que la tecnología debe adaptarse a tu negocio, y no al revés. Brindamos servicios de desarrollo de software para empresas enfocados en la eficiencia, la seguridad y la escalabilidad. Ya sea que busques desarrollo de software a medida en Tucumán con alcance nacional, o necesites una profunda automatización de procesos en tu planta comercial, nuestro equipo de ingenieros crea herramientas que transforman tu operación. Analizamos tus procesos y construimos sistemas desde cero que permiten que tu equipo deje atrás las planillas manuales y se concentre en tareas de alto valor estratégico.",
+            "en": "At Bejuca, we understand that technology must adapt to your business, not the other way around. We provide enterprise software development services focused on efficiency, security, and scalability. Whether you are looking for custom software development with national reach or need deep process automation in your commercial plant, our team of engineers creates tools that transform your operation. We analyze your processes and build systems from scratch that allow your team to leave manual spreadsheets behind and focus on high strategic value tasks."
         },
         "useCases": [
             {
                 "title": {
-                    "es": "Plataformas SaaS",
-                    "en": "SaaS Platforms"
+                    "es": "Sistemas de Gestión Interna (ERP/CRM)",
+                    "en": "Internal Management Systems (ERP/CRM)"
                 },
                 "description": {
-                    "es": "Desarrollo de plataformas cloud-native con suscripciones y multi-tenancy.",
-                    "en": "Development of cloud-native platforms with subscriptions and multi-tenancy."
+                    "es": "Plataformas a medida para centralizar la información, ventas y recursos de tu empresa en un solo lugar.",
+                    "en": "Custom platforms to centralize your company's information, sales, and resources in one place."
                 }
             },
             {
                 "title": {
-                    "es": "Apps Móviles",
-                    "en": "Mobile Apps"
+                    "es": "Automatización Comercial e Industrial",
+                    "en": "Commercial and Industrial Automation"
                 },
                 "description": {
-                    "es": "Aplicaciones nativas e híbridas para iOS y Android con experiencia de usuario premium.",
-                    "en": "Native and hybrid applications for iOS and Android with premium user experience."
+                    "es": "Scripts y software que conectan maquinaria, inventarios o bases de datos para funcionar sin intervención manual.",
+                    "en": "Scripts and software that connect machinery, inventories, or databases to operate without manual intervention."
                 }
             },
             {
                 "title": {
-                    "es": "Sistemas Empresariales",
-                    "en": "Enterprise Systems"
+                    "es": "Portales B2B y Aplicaciones Web",
+                    "en": "B2B Portals and Web Applications"
                 },
                 "description": {
-                    "es": "ERPs, CRMs y sistemas de gestión personalizados para operaciones empresariales.",
-                    "en": "Custom ERPs, CRMs, and management systems for business operations."
+                    "es": "Interfaces rápidas y seguras para que tus clientes o proveedores interactúen con tu empresa de forma digital.",
+                    "en": "Fast and secure interfaces for your clients or suppliers to interact with your company digitally."
                 }
             }
         ],
@@ -140,354 +185,227 @@
             "Next.js",
             "Node.js",
             "TypeScript",
-            "React Native",
-            "Flutter",
-            "PostgreSQL"
+            "PostgreSQL",
+            "AWS / Cloud Infrastructure",
+            "n8n (Workflow Automation)"
         ],
         "benefits": [
             {
-                "es": "Productos a medida para tu negocio",
-                "en": "Custom products for your business"
+                "es": "Eliminación de tareas manuales repetitivas y reducción drástica de errores humanos.",
+                "en": "Elimination of repetitive manual tasks and drastic reduction of human errors."
             },
             {
-                "es": "Time-to-market reducido con metodologías ágiles",
-                "en": "Reduced time-to-market with agile methodologies"
+                "es": "Software 100% de tu propiedad que escala a medida que crece tu facturación.",
+                "en": "100% proprietary software that scales as your revenue grows."
             },
             {
-                "es": "Código mantenible y escalable",
-                "en": "Maintainable and scalable code"
+                "es": "Integración fluida con las herramientas y softwares que tu empresa ya utiliza hoy.",
+                "en": "Seamless integration with the tools and software your company already uses today."
             },
             {
-                "es": "Soporte post-lanzamiento continuo",
-                "en": "Continuous post-launch support"
+                "es": "Acompañamiento y consultoría tecnológica continua por parte de ingenieros de sistemas.",
+                "en": "Continuous support and technological consulting by systems engineers."
             }
         ]
     },
     {
-        "id": "data",
-        "icon": "Database",
-        "color": "#3CB4D8",
-        "title": {
-            "es": "Arquitectura de Datos",
-            "en": "Data Architecture"
-        },
-        "description": {
-            "es": "Diseñamos e implementamos arquitecturas de datos escalables que permiten gestionar, procesar y analizar grandes volúmenes de información.",
-            "en": "We design and implement scalable data architectures that enable managing, processing, and analyzing large volumes of information."
-        },
-        "features": [
-            "Data Warehousing",
-            "ETL/ELT",
-            "Big Data",
-            "Data Governance"
-        ],
-        "longDescription": {
-            "es": "Construimos infraestructuras de datos modernas que permiten a tu organización capturar, almacenar, procesar y analizar información a cualquier escala. Desde data lakes hasta warehouses analíticos, diseñamos soluciones que convierten tus datos en el activo más valioso de tu empresa.",
-            "en": "We build modern data infrastructures that enable your organization to capture, store, process, and analyze information at any scale. From data lakes to analytical warehouses, we design solutions that turn your data into your company's most valuable asset."
-        },
-        "useCases": [
-            {
-                "title": {
-                    "es": "Data Lakes Empresariales",
-                    "en": "Enterprise Data Lakes"
-                },
-                "description": {
-                    "es": "Centralización de datos de múltiples fuentes para análisis unificado.",
-                    "en": "Centralization of data from multiple sources for unified analysis."
-                }
-            },
-            {
-                "title": {
-                    "es": "Pipelines de Datos",
-                    "en": "Data Pipelines"
-                },
-                "description": {
-                    "es": "Flujos automatizados de ETL/ELT para procesamiento en tiempo real y batch.",
-                    "en": "Automated ETL/ELT flows for real-time and batch processing."
-                }
-            },
-            {
-                "title": {
-                    "es": "Gobernanza de Datos",
-                    "en": "Data Governance"
-                },
-                "description": {
-                    "es": "Políticas y herramientas para garantizar la calidad, seguridad y cumplimiento de datos.",
-                    "en": "Policies and tools to ensure data quality, security, and compliance."
-                }
-            }
-        ],
-        "technologies": [
-            "Apache Spark",
-            "Airflow",
-            "Snowflake",
-            "dbt",
-            "Kafka",
-            "MongoDB",
-            "Redis"
-        ],
-        "benefits": [
-            {
-                "es": "Datos accesibles y organizados",
-                "en": "Accessible and organized data"
-            },
-            {
-                "es": "Procesamiento en tiempo real",
-                "en": "Real-time processing"
-            },
-            {
-                "es": "Cumplimiento normativo garantizado",
-                "en": "Guaranteed regulatory compliance"
-            },
-            {
-                "es": "Escalabilidad para crecimiento futuro",
-                "en": "Scalability for future growth"
-            }
-        ]
-    },
-    {
-        "id": "cloud",
-        "icon": "Cloud",
+        "id": "infraestructura-it",
+        "slug": "infraestructura-tecnologica-redes",
+        "icon": "Server",
         "color": "#5DD3F0",
         "title": {
-            "es": "Cloud & DevOps",
-            "en": "Cloud & DevOps"
+            "es": "Infraestructura Tecnológica y Redes",
+            "en": "Technological Infrastructure & Networks"
         },
         "description": {
-            "es": "Migración, optimización y gestión de infraestructura en la nube con prácticas DevOps para maximizar eficiencia y reducir costos operativos.",
-            "en": "Migration, optimization, and management of cloud infrastructure with DevOps practices to maximize efficiency and reduce operational costs."
+            "es": "Optimizá y asegurá la operación de tu empresa con nuestros servicios de infraestructura tecnológica e infraestructura de redes a medida.",
+            "en": "Optimize and secure your company's operations with our custom technological infrastructure and network infrastructure services."
         },
         "features": [
-            "AWS/Azure/GCP",
-            "Kubernetes",
-            "CI/CD",
-            "IaC"
+            "Diseño de Infraestructura de Redes",
+            "Migración a la Nube (Cloud)",
+            "Ciberseguridad y Respaldo de Datos",
+            "Consultoría IT Corporativa"
         ],
+        "questions": [
+            {
+                "es": "¿Tus servidores actuales son lentos o presentan caídas que frenan el trabajo?",
+                "en": "Are your current servers slow or experiencing downtime that stops work?"
+            },
+            {
+                "es": "¿Tu infraestructura de redes está preparada para escalar con el crecimiento de tu equipo?",
+                "en": "Is your network infrastructure prepared to scale with your team's growth?"
+            },
+            {
+                "es": "¿Te preocupa la seguridad de los datos de tu empresa frente a ciberataques o pérdidas de información?",
+                "en": "Are you concerned about your company's data security against cyberattacks or information loss?"
+            }
+        ],
+        "modalDescription": {
+            "es": "Diseñamos e implementamos servicios de infraestructura tecnológica robustos. Desde servidores y cableado estructurado hasta entornos cloud seguros para blindar tu negocio.",
+            "en": "We design and implement robust technological infrastructure services. From servers and structured cabling to secure cloud environments to shield your business."
+        },
         "longDescription": {
-            "es": "Acompañamos a tu empresa en todo el ciclo de vida cloud: desde la evaluación y migración hasta la optimización continua. Implementamos prácticas DevOps que automatizan despliegues, monitoreo y gestión de infraestructura, permitiéndote enfocarte en tu negocio mientras nosotros nos encargamos de la infraestructura.",
-            "en": "We accompany your company through the entire cloud lifecycle: from assessment and migration to continuous optimization. We implement DevOps practices that automate deployments, monitoring, and infrastructure management, allowing you to focus on your business while we handle the infrastructure."
+            "es": "La base operativa de cualquier empresa moderna es su tecnología. En Bejuca brindamos servicios de infraestructura tecnológica integral para que tu negocio nunca se detenga. Evaluamos el estado actual de tus sistemas y diseñamos una infraestructura de redes rápida, escalable y segura. Ya sea que necesités modernizar tus servidores físicos, migrar operaciones críticas a la nube (Cloud) o implementar protocolos de ciberseguridad corporativa, nuestro equipo de ingeniería te acompaña en cada paso para garantizar el máximo rendimiento y la protección total de tus datos.",
+            "en": "The operational foundation of any modern company is its technology. At Bejuca, we provide comprehensive technological infrastructure services so your business never stops. We evaluate the current state of your systems and design a fast, scalable, and secure network infrastructure. Whether you need to modernize your physical servers, migrate critical operations to the cloud, or implement corporate cybersecurity protocols, our engineering team supports you every step of the way to ensure maximum performance and total protection of your data."
         },
         "useCases": [
             {
                 "title": {
-                    "es": "Migración a la Nube",
+                    "es": "Migración Cloud (Nube)",
                     "en": "Cloud Migration"
                 },
                 "description": {
-                    "es": "Migración planificada de infraestructura on-premise a cloud con mínimo downtime.",
-                    "en": "Planned migration of on-premise infrastructure to cloud with minimal downtime."
+                    "es": "Traslado seguro y sin interrupciones de tus sistemas locales a servidores en la nube de alta disponibilidad.",
+                    "en": "Secure and seamless transition of your local systems to high-availability cloud servers."
                 }
             },
             {
                 "title": {
-                    "es": "Contenedorización",
-                    "en": "Containerization"
+                    "es": "Arquitectura de Redes Corporativas",
+                    "en": "Corporate Network Architecture"
                 },
                 "description": {
-                    "es": "Modernización de aplicaciones con Docker y orquestación con Kubernetes.",
-                    "en": "Application modernization with Docker and orchestration with Kubernetes."
+                    "es": "Diseño e implementación de infraestructura de redes estable, rápida y protegida para oficinas o plantas industriales.",
+                    "en": "Design and implementation of stable, fast, and protected network infrastructure for offices or industrial plants."
                 }
             },
             {
                 "title": {
-                    "es": "Infraestructura como Código",
-                    "en": "Infrastructure as Code"
+                    "es": "Continuidad de Negocio (Disaster Recovery)",
+                    "en": "Business Continuity (Disaster Recovery)"
                 },
                 "description": {
-                    "es": "Gestión automatizada de infraestructura con Terraform y CloudFormation.",
-                    "en": "Automated infrastructure management with Terraform and CloudFormation."
+                    "es": "Sistemas de respaldo automático para que tu empresa siga operando incluso ante fallos críticos de hardware.",
+                    "en": "Automatic backup systems so your company continues operating even in the event of critical hardware failures."
                 }
             }
         ],
         "technologies": [
-            "AWS",
-            "Azure",
-            "GCP",
-            "Docker",
-            "Kubernetes",
-            "Terraform",
-            "GitHub Actions"
+            "AWS (Amazon Web Services)",
+            "Microsoft Azure",
+            "Cisco / Mikrotik",
+            "Linux / Unix",
+            "Docker / Kubernetes",
+            "Firewalls & VPNs",
+            "VMware"
         ],
         "benefits": [
             {
-                "es": "Reducción de costos de infraestructura",
-                "en": "Infrastructure cost reduction"
+                "es": "Garantía de alta disponibilidad (Uptime) para tus operaciones críticas.",
+                "en": "High availability guarantee (Uptime) for your critical operations."
             },
             {
-                "es": "Despliegues automatizados y confiables",
-                "en": "Automated and reliable deployments"
+                "es": "Infraestructura de redes blindada contra vulnerabilidades y ciberataques.",
+                "en": "Network infrastructure shielded against vulnerabilities and cyberattacks."
             },
             {
-                "es": "Alta disponibilidad y resiliencia",
-                "en": "High availability and resilience"
+                "es": "Reducción de costos de mantenimiento al migrar a entornos escalables en la nube.",
+                "en": "Reduction in maintenance costs by migrating to scalable cloud environments."
             },
             {
-                "es": "Escalado automático según demanda",
-                "en": "Auto-scaling based on demand"
+                "es": "Acompañamiento técnico y consultoría IT por parte de ingenieros expertos.",
+                "en": "Technical support and IT consulting provided by expert engineers."
             }
         ]
     },
     {
-        "id": "security",
-        "icon": "Shield",
-        "color": "#3CB4D8",
-        "title": {
-            "es": "Ciberseguridad",
-            "en": "Cybersecurity"
-        },
-        "description": {
-            "es": "Protegemos tus activos digitales con soluciones de seguridad integral, desde auditorías hasta implementación de controles avanzados.",
-            "en": "We protect your digital assets with comprehensive security solutions, from audits to implementation of advanced controls."
-        },
-        "features": [
-            "Security Audit",
-            "Penetration Testing",
-            "Compliance",
-            "SOC"
-        ],
-        "longDescription": {
-            "es": "Ofrecemos un enfoque integral de ciberseguridad que protege tu organización en todos los niveles. Desde auditorías de seguridad y pruebas de penetración hasta la implementación de centros de operaciones de seguridad (SOC), aseguramos que tus activos digitales estén protegidos contra las amenazas más sofisticadas.",
-            "en": "We offer a comprehensive cybersecurity approach that protects your organization at all levels. From security audits and penetration testing to the implementation of security operations centers (SOC), we ensure your digital assets are protected against the most sophisticated threats."
-        },
-        "useCases": [
-            {
-                "title": {
-                    "es": "Auditoría de Seguridad",
-                    "en": "Security Audit"
-                },
-                "description": {
-                    "es": "Evaluación completa de vulnerabilidades en infraestructura, aplicaciones y procesos.",
-                    "en": "Complete vulnerability assessment in infrastructure, applications, and processes."
-                }
-            },
-            {
-                "title": {
-                    "es": "Respuesta a Incidentes",
-                    "en": "Incident Response"
-                },
-                "description": {
-                    "es": "Planes de respuesta y recuperación ante ataques cibernéticos y brechas de seguridad.",
-                    "en": "Response and recovery plans for cyberattacks and security breaches."
-                }
-            },
-            {
-                "title": {
-                    "es": "Cumplimiento Normativo",
-                    "en": "Regulatory Compliance"
-                },
-                "description": {
-                    "es": "Implementación de marcos de cumplimiento como ISO 27001, SOC 2 y GDPR.",
-                    "en": "Implementation of compliance frameworks such as ISO 27001, SOC 2, and GDPR."
-                }
-            }
-        ],
-        "technologies": [
-            "SIEM",
-            "WAF",
-            "IDS/IPS",
-            "Vault",
-            "CrowdStrike",
-            "Nessus",
-            "Burp Suite"
-        ],
-        "benefits": [
-            {
-                "es": "Protección proactiva contra amenazas",
-                "en": "Proactive threat protection"
-            },
-            {
-                "es": "Cumplimiento de normativas internacionales",
-                "en": "International regulatory compliance"
-            },
-            {
-                "es": "Monitoreo continuo 24/7",
-                "en": "Continuous 24/7 monitoring"
-            },
-            {
-                "es": "Reducción de riesgo empresarial",
-                "en": "Business risk reduction"
-            }
-        ]
-    },
-    {
-        "id": "bi",
-        "icon": "BarChart3",
+        "id": "elearning-blockchain",
+        "slug": "plataforma-elearning-microcredenciales",
+        "icon": "GraduationCap",
         "color": "#5DD3F0",
         "title": {
-            "es": "Business Intelligence",
-            "en": "Business Intelligence"
+            "es": "Plataforma E-learning con Microcredenciales",
+            "en": "E-learning Platform with Microcredentials"
         },
         "description": {
-            "es": "Transformamos tus datos en conocimiento estratégico mediante dashboards interactivos, reportes automatizados y análisis avanzado.",
-            "en": "We transform your data into strategic knowledge through interactive dashboards, automated reports, and advanced analytics."
+            "es": "Creá tu propia plataforma de e-learning. Capacitá a tu equipo corporativo o descubrí cómo vender cursos online con certificados respaldados en tecnología Blockchain.",
+            "en": "Create your own e-learning platform. Train your corporate team or discover how to sell online courses with certificates backed by Blockchain technology."
         },
         "features": [
-            "Dashboards",
-            "KPIs",
-            "Reporting",
-            "Data Visualization"
+            "Plataforma de E-learning a Medida",
+            "Microcredenciales verificables en Blockchain",
+            "Monetización y Venta de Cursos",
+            "Portal de Capacitación Corporativa"
         ],
+        "questions": [
+            {
+                "es": "¿Buscás una plataforma de elearning para empresas que centralice y modernice la capacitación de tu equipo?",
+                "en": "Are you looking for an enterprise e-learning platform that centralizes and modernizes your team's training?"
+            },
+            {
+                "es": "¿Querés saber cómo vender cursos online bajo tu propia marca, con total control y sin pagar comisiones abusivas?",
+                "en": "Do you want to know how to sell online courses under your own brand, with full control and without paying abusive commissions?"
+            },
+            {
+                "es": "¿Te gustaría emitir certificados digitales imposibles de falsificar usando tecnología Web3 y Blockchain?",
+                "en": "Would you like to issue digital certificates that are impossible to forge using Web3 and Blockchain technology?"
+            }
+        ],
+        "modalDescription": {
+            "es": "Desarrollamos tu plataforma elearning corporativa. Ya sea para capacitar a tu personal interno o para comercializar tus conocimientos al mundo, garantizamos la máxima autoridad educativa emitiendo microcredenciales inmutables en Blockchain.",
+            "en": "We develop your corporate e-learning platform. Whether it's to train your internal staff or to market your knowledge to the world, we guarantee maximum educational authority by issuing immutable microcredentials on the Blockchain."
+        },
         "longDescription": {
-            "es": "Convertimos tus datos en decisiones estratégicas a través de soluciones de Business Intelligence personalizadas. Creamos dashboards interactivos, reportes automatizados y sistemas de análisis que permiten a tu equipo acceder a la información correcta en el momento preciso para tomar mejores decisiones de negocio.",
-            "en": "We turn your data into strategic decisions through customized Business Intelligence solutions. We create interactive dashboards, automated reports, and analysis systems that allow your team to access the right information at the right time to make better business decisions."
+            "es": "Transformá la educación en tu organización. Construimos tu propia plataforma de e-learning adaptada 100% a tus necesidades y modelo de negocio. Si sos una empresa, te brindamos un portal robusto para centralizar tu capacitación corporativa; si sos un creador o una academia, te damos la estructura técnica perfecta sobre cómo vender cursos online escalando tus ingresos de forma segura. Nuestro gran diferencial tecnológico es la emisión de microcredenciales verificables mediante contratos inteligentes en Blockchain. Esto significa que cada alumno o empleado obtiene un certificado único, inmutable y de validez global, posicionando a tu marca a la vanguardia de la innovación educativa (EdTech).",
+            "en": "Transform education in your organization. We build your own e-learning platform adapted 100% to your needs and business model. If you are a company, we provide a robust portal to centralize your corporate training; if you are a creator or an academy, we give you the perfect technical structure on how to sell online courses, safely scaling your income. Our great technological differentiator is the issuance of verifiable microcredentials through smart contracts on the Blockchain. This means that each student or employee obtains a unique, immutable certificate with global validity, positioning your brand at the forefront of educational innovation (EdTech)."
         },
         "useCases": [
             {
                 "title": {
-                    "es": "Dashboards Ejecutivos",
-                    "en": "Executive Dashboards"
+                    "es": "Academias y Creadores (Monetización)",
+                    "en": "Academies and Creators (Monetization)"
                 },
                 "description": {
-                    "es": "Paneles de control con KPIs en tiempo real para la toma de decisiones a nivel directivo.",
-                    "en": "Control panels with real-time KPIs for executive-level decision making."
+                    "es": "Infraestructura completa y pasarelas de pago para quienes buscan cómo vender cursos online con tecnología de punta.",
+                    "en": "Complete infrastructure and payment gateways for those looking to sell online courses with cutting-edge technology."
                 }
             },
             {
                 "title": {
-                    "es": "Reportes Automatizados",
-                    "en": "Automated Reports"
+                    "es": "Capacitación Corporativa B2B",
+                    "en": "B2B Corporate Training"
                 },
                 "description": {
-                    "es": "Generación automática de reportes periódicos con distribución programada.",
-                    "en": "Automatic generation of periodic reports with scheduled distribution."
+                    "es": "Una plataforma de elearning para empresas que profesionaliza el entrenamiento y seguimiento de tu capital humano.",
+                    "en": "An enterprise e-learning platform that professionalizes the training and tracking of your human capital."
                 }
             },
             {
                 "title": {
-                    "es": "Análisis Predictivo",
-                    "en": "Predictive Analysis"
+                    "es": "Certificación Institucional Web3",
+                    "en": "Web3 Institutional Certification"
                 },
                 "description": {
-                    "es": "Modelos estadísticos para proyecciones de ventas, demanda y tendencias de mercado.",
-                    "en": "Statistical models for sales projections, demand, and market trends."
+                    "es": "Emisión automatizada de diplomas y microcredenciales en Blockchain, garantizando total transparencia y seguridad.",
+                    "en": "Automated issuance of diplomas and microcredentials on the Blockchain, ensuring total transparency and security."
                 }
             }
         ],
         "technologies": [
-            "Power BI",
-            "Tableau",
-            "Looker",
-            "Metabase",
-            "Apache Superset",
-            "D3.js",
-            "Python"
+            "Next.js",
+            "React",
+            "Web3 / Smart Contracts",
+            "LMS Frameworks",
+            "Bases de Datos Relacionales",
+            "Pasarelas de Pago (Stripe/MercadoPago)"
         ],
         "benefits": [
             {
-                "es": "Visibilidad total del negocio",
-                "en": "Complete business visibility"
+                "es": "Certificados 100% seguros e infalsificables gracias a la red Blockchain.",
+                "en": "100% secure and unforgeable certificates thanks to the Blockchain network."
             },
             {
-                "es": "Reportes automatizados y confiables",
-                "en": "Automated and reliable reports"
+                "es": "Control total sobre tu plataforma de e-learning y tus ingresos (cero comisiones a terceros).",
+                "en": "Full control over your e-learning platform and your income (zero third-party commissions)."
             },
             {
-                "es": "Decisiones basadas en datos, no intuición",
-                "en": "Data-driven decisions, not intuition"
+                "es": "Posicionamiento de tu empresa como líder innovador tecnológico en formación.",
+                "en": "Positioning your company as an innovative technological leader in training."
             },
             {
-                "es": "Identificación de oportunidades de mejora",
-                "en": "Identification of improvement opportunities"
+                "es": "Escalabilidad técnica para soportar desde 10 hasta miles de alumnos en simultáneo.",
+                "en": "Technical scalability to support from 10 to thousands of simultaneous students."
             }
         ]
     }

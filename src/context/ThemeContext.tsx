@@ -13,17 +13,19 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>(() => {
-    // Check localStorage first, then system preference
+  const [theme, setThemeState] = useState<Theme>('dark');
+
+  // Read stored theme or system preference on client mount
+  useEffect(() => {
     const stored = localStorage.getItem('bejuca-theme') as Theme | null;
-    if (stored) return stored;
-
-    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-      return 'light';
+    if (stored) {
+      setThemeState(stored);
+    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      setThemeState('light');
     }
-    return 'dark';
-  });
+  }, []);
 
+  // Apply theme class and persist to localStorage
   useEffect(() => {
     const root = document.documentElement;
 
