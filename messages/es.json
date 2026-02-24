@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "nosotros": "Nosotros",
+    "servicios": "Servicios",
+    "metodologia": "Metodología",
+    "contacto": "Contacto",
+    "consultar": "Consultar"
+  },
+  "hero": {
+    "location": "Tucumán, Argentina • Desde 2010",
+    "title": "Transformación Digital con",
+    "titleHighlight": "Inteligencia Artificial",
+    "description": "Consultora especializada en el desarrollo de proyectos de sistemas de información que impulsan la innovación y eficiencia empresarial mediante tecnologías de última generación.",
+    "ctaPrimary": "Iniciar Proyecto",
+    "ctaSecondary": "Ver Servicios",
+    "stats": {
+      "years": "Años de experiencia",
+      "projects": "Proyectos entregados",
+      "clients": "Clientes satisfechos"
+    }
+  },
+  "about": {
+    "label": "Quiénes Somos",
+    "title": "Innovación y",
+    "titleHighlight": "Excelencia",
+    "description": "En Bejuca Consulting combinamos experiencia técnica con visión estratégica para ofrecer soluciones que marcan la diferencia en el éxito de nuestros clientes.",
+    "values": {
+      "mision": {
+        "title": "Misión",
+        "description": "Transformar organizaciones mediante soluciones tecnológicas innovadoras que impulsen su crecimiento y competitividad en el mercado digital."
+      },
+      "vision": {
+        "title": "Visión",
+        "description": "Ser líderes regionales en consultoría de transformación digital, reconocidos por nuestra excelencia técnica y compromiso con el éxito de nuestros clientes."
+      },
+      "valores": {
+        "title": "Valores",
+        "description": "Innovación, integridad, excelencia y colaboración son los pilares que guían cada proyecto que emprendemos junto a nuestros clientes."
+      },
+      "experiencia": {
+        "title": "Experiencia",
+        "description": "Más de 15 años desarrollando soluciones tecnológicas de alta complejidad para empresas de diversos sectores industriales."
+      }
+    },
+    "history": {
+      "title": "Nuestra Historia",
+      "p1": "Fundada en 2010 en Tucumán, Argentina, Bejuca Consulting nació con la visión de acercar las tecnologías emergentes a las empresas de la región. Lo que comenzó como un pequeño equipo de entusiastas de la tecnología, se ha convertido en una consultora reconocida por su excelencia técnica.",
+      "p2": "A lo largo de más de 15 años, hemos acompañado a empresas de diversos sectores en su journey de transformación digital, desde la modernización de sistemas legados hasta la implementación de soluciones de inteligencia artificial de vanguardia.",
+      "p3": "Nuestro compromiso con la innovación continua y la satisfacción del cliente nos ha permitido construir relaciones duraderas y convertirnos en socios estratégicos de referencia en el mercado.",
+      "badge": "De trayectoria"
+    }
+  },
+  "services": {
+    "label": "Nuestros Servicios",
+    "title": "Soluciones",
+    "titleHighlight": "Integrales",
+    "description": "Ofrecemos un portafolio completo de servicios tecnológicos diseñados para impulsar la transformación digital de tu organización.",
+    "cta": {
+      "title": "¿Necesitas una solución personalizada?",
+      "description": "Contáctanos y diseñemos juntos la estrategia tecnológica para tu negocio.",
+      "button": "Consultar Ahora"
+    },
+    "learnMore": "Saber más"
+  },
+  "methodology": {
+    "label": "Nuestra Metodología",
+    "title": "Cómo",
+    "titleHighlight": "Trabajamos",
+    "description": "Utilizamos metodologías probadas y ágiles para garantizar el éxito de cada proyecto, adaptándonos a las necesidades específicas de tu negocio.",
+    "methods": {
+      "agile": {
+        "title": "Metodología Ágil",
+        "description": "Scrum y Kanban para entregas iterativas y adaptación continua a los cambios."
+      },
+      "rapid": {
+        "title": "Desarrollo Rápido",
+        "description": "Ciclos de desarrollo cortos que permiten validar y ajustar rápidamente."
+      },
+      "scalable": {
+        "title": "Arquitectura Escalable",
+        "description": "Diseños modulares que crecen junto con tu negocio sin comprometer el rendimiento."
+      },
+      "ci": {
+        "title": "Integración Continua",
+        "description": "CI/CD automatizado para despliegues frecuentes y confiables."
+      }
+    },
+    "benefits": {
+      "label": "Resultados Medibles",
+      "title": "Beneficios de trabajar con nosotros",
+      "description": "Nuestro enfoque orientado a resultados garantiza que cada proyecto genere un impacto tangible en tu negocio, medible y sostenible en el tiempo.",
+      "items": [
+        "Reducción de costos operativos hasta un 40%",
+        "Mejora en la eficiencia de procesos en un 60%",
+        "Time-to-market reducido en un 50%",
+        "Escalabilidad garantizada para el crecimiento",
+        "Seguridad y compliance integrados",
+        "Soporte técnico especializado 24/7"
+      ]
+    }
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Empecemos tu",
+    "titleHighlight": "Proyecto",
+    "description": "¿Listo para transformar tu negocio? Contáctanos y descubramos juntos cómo la tecnología puede impulsar tu crecimiento.",
+    "info": {
+      "location": {
+        "title": "Ubicación",
+        "content": "Tucumán, Argentina",
+        "description": "Atención presencial y remota"
+      },
+      "email": {
+        "title": "Email",
+        "content": "contacto@bejuca.com",
+        "description": "Respondemos en 24hs"
+      },
+      "phone": {
+        "title": "Teléfono",
+        "content": "+54 381 123 4567",
+        "description": "Lun-Vie de 9:00 a 18:00"
+      },
+      "hours": {
+        "title": "Horario",
+        "content": "Lunes a Viernes",
+        "description": "9:00 - 18:00 (ART)"
+      }
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "name": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Nombre de tu empresa",
+      "service": "Servicio de interés",
+      "servicePlaceholder": "Selecciona un servicio",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado!",
+      "successDescription": "Nos pondremos en contacto contigo pronto.",
+      "privacy": "Al enviar este formulario, aceptas nuestra política de privacidad."
+    },
+    "social": "Síguenos"
+  },
+  "footer": {
+    "description": "Consultora especializada en transformación digital e inteligencia artificial. Impulsamos la innovación empresarial desde Tucumán, Argentina.",
+    "links": {
+      "services": "Servicios",
+      "company": "Empresa",
+      "support": "Soporte"
+    },
+    "copyright": "Bejuca Consulting. Todos los derechos reservados.",
+    "location": "Tucumán, Argentina • Desde 2010"
+  }
+}

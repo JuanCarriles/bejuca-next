@@ -1,0 +1,494 @@
+[
+    {
+        "id": "ai",
+        "icon": "Brain",
+        "color": "#3CB4D8",
+        "title": {
+            "es": "Inteligencia Artificial",
+            "en": "Artificial Intelligence"
+        },
+        "description": {
+            "es": "Implementamos soluciones de IA y machine learning para automatizar procesos, analizar datos y generar insights accionables para tu negocio.",
+            "en": "We implement AI and machine learning solutions to automate processes, analyze data, and generate actionable insights for your business."
+        },
+        "features": [
+            "Machine Learning",
+            "NLP",
+            "Computer Vision",
+            "Predictive Analytics"
+        ],
+        "longDescription": {
+            "es": "Diseñamos e implementamos pipelines completos de inteligencia artificial, desde la recopilación y limpieza de datos hasta el entrenamiento de modelos y su despliegue en producción. Nuestro equipo combina experiencia en ciencia de datos con ingeniería de software para crear soluciones robustas y escalables que transforman la forma en que tu empresa opera.",
+            "en": "We design and implement complete artificial intelligence pipelines, from data collection and cleaning to model training and production deployment. Our team combines data science expertise with software engineering to create robust and scalable solutions that transform the way your company operates."
+        },
+        "useCases": [
+            {
+                "title": {
+                    "es": "Chatbots Inteligentes",
+                    "en": "Intelligent Chatbots"
+                },
+                "description": {
+                    "es": "Asistentes virtuales con procesamiento de lenguaje natural para atención al cliente 24/7.",
+                    "en": "Virtual assistants with natural language processing for 24/7 customer support."
+                }
+            },
+            {
+                "title": {
+                    "es": "Detección de Fraude",
+                    "en": "Fraud Detection"
+                },
+                "description": {
+                    "es": "Modelos predictivos que identifican patrones sospechosos en tiempo real.",
+                    "en": "Predictive models that identify suspicious patterns in real time."
+                }
+            },
+            {
+                "title": {
+                    "es": "Automatización Documental",
+                    "en": "Document Automation"
+                },
+                "description": {
+                    "es": "Extracción y clasificación automática de información de documentos con OCR e IA.",
+                    "en": "Automatic extraction and classification of document information using OCR and AI."
+                }
+            }
+        ],
+        "technologies": [
+            "Python",
+            "TensorFlow",
+            "PyTorch",
+            "OpenAI",
+            "LangChain",
+            "Hugging Face",
+            "scikit-learn"
+        ],
+        "benefits": [
+            {
+                "es": "Automatización de procesos repetitivos",
+                "en": "Automation of repetitive processes"
+            },
+            {
+                "es": "Decisiones basadas en datos en tiempo real",
+                "en": "Real-time data-driven decisions"
+            },
+            {
+                "es": "Reducción de costos operativos hasta un 40%",
+                "en": "Up to 40% reduction in operational costs"
+            },
+            {
+                "es": "Escalabilidad y mejora continua de modelos",
+                "en": "Scalability and continuous model improvement"
+            }
+        ]
+    },
+    {
+        "id": "software",
+        "icon": "Code",
+        "color": "#5DD3F0",
+        "title": {
+            "es": "Desarrollo de Software",
+            "en": "Software Development"
+        },
+        "description": {
+            "es": "Creamos aplicaciones web y móviles a medida, utilizando las últimas tecnologías y metodologías ágiles para entregar productos de alta calidad.",
+            "en": "We create custom web and mobile applications using the latest technologies and agile methodologies to deliver high-quality products."
+        },
+        "features": [
+            "Web Apps",
+            "Mobile Apps",
+            "APIs",
+            "Microservicios"
+        ],
+        "longDescription": {
+            "es": "Desarrollamos software a medida que se adapta a las necesidades específicas de tu negocio. Desde aplicaciones web modernas hasta apps móviles nativas e híbridas, nuestro equipo utiliza arquitecturas escalables y las mejores prácticas de la industria para entregar productos de alta calidad en tiempos competitivos.",
+            "en": "We develop custom software that adapts to your business specific needs. From modern web applications to native and hybrid mobile apps, our team uses scalable architectures and industry best practices to deliver high-quality products in competitive timeframes."
+        },
+        "useCases": [
+            {
+                "title": {
+                    "es": "Plataformas SaaS",
+                    "en": "SaaS Platforms"
+                },
+                "description": {
+                    "es": "Desarrollo de plataformas cloud-native con suscripciones y multi-tenancy.",
+                    "en": "Development of cloud-native platforms with subscriptions and multi-tenancy."
+                }
+            },
+            {
+                "title": {
+                    "es": "Apps Móviles",
+                    "en": "Mobile Apps"
+                },
+                "description": {
+                    "es": "Aplicaciones nativas e híbridas para iOS y Android con experiencia de usuario premium.",
+                    "en": "Native and hybrid applications for iOS and Android with premium user experience."
+                }
+            },
+            {
+                "title": {
+                    "es": "Sistemas Empresariales",
+                    "en": "Enterprise Systems"
+                },
+                "description": {
+                    "es": "ERPs, CRMs y sistemas de gestión personalizados para operaciones empresariales.",
+                    "en": "Custom ERPs, CRMs, and management systems for business operations."
+                }
+            }
+        ],
+        "technologies": [
+            "React",
+            "Next.js",
+            "Node.js",
+            "TypeScript",
+            "React Native",
+            "Flutter",
+            "PostgreSQL"
+        ],
+        "benefits": [
+            {
+                "es": "Productos a medida para tu negocio",
+                "en": "Custom products for your business"
+            },
+            {
+                "es": "Time-to-market reducido con metodologías ágiles",
+                "en": "Reduced time-to-market with agile methodologies"
+            },
+            {
+                "es": "Código mantenible y escalable",
+                "en": "Maintainable and scalable code"
+            },
+            {
+                "es": "Soporte post-lanzamiento continuo",
+                "en": "Continuous post-launch support"
+            }
+        ]
+    },
+    {
+        "id": "data",
+        "icon": "Database",
+        "color": "#3CB4D8",
+        "title": {
+            "es": "Arquitectura de Datos",
+            "en": "Data Architecture"
+        },
+        "description": {
+            "es": "Diseñamos e implementamos arquitecturas de datos escalables que permiten gestionar, procesar y analizar grandes volúmenes de información.",
+            "en": "We design and implement scalable data architectures that enable managing, processing, and analyzing large volumes of information."
+        },
+        "features": [
+            "Data Warehousing",
+            "ETL/ELT",
+            "Big Data",
+            "Data Governance"
+        ],
+        "longDescription": {
+            "es": "Construimos infraestructuras de datos modernas que permiten a tu organización capturar, almacenar, procesar y analizar información a cualquier escala. Desde data lakes hasta warehouses analíticos, diseñamos soluciones que convierten tus datos en el activo más valioso de tu empresa.",
+            "en": "We build modern data infrastructures that enable your organization to capture, store, process, and analyze information at any scale. From data lakes to analytical warehouses, we design solutions that turn your data into your company's most valuable asset."
+        },
+        "useCases": [
+            {
+                "title": {
+                    "es": "Data Lakes Empresariales",
+                    "en": "Enterprise Data Lakes"
+                },
+                "description": {
+                    "es": "Centralización de datos de múltiples fuentes para análisis unificado.",
+                    "en": "Centralization of data from multiple sources for unified analysis."
+                }
+            },
+            {
+                "title": {
+                    "es": "Pipelines de Datos",
+                    "en": "Data Pipelines"
+                },
+                "description": {
+                    "es": "Flujos automatizados de ETL/ELT para procesamiento en tiempo real y batch.",
+                    "en": "Automated ETL/ELT flows for real-time and batch processing."
+                }
+            },
+            {
+                "title": {
+                    "es": "Gobernanza de Datos",
+                    "en": "Data Governance"
+                },
+                "description": {
+                    "es": "Políticas y herramientas para garantizar la calidad, seguridad y cumplimiento de datos.",
+                    "en": "Policies and tools to ensure data quality, security, and compliance."
+                }
+            }
+        ],
+        "technologies": [
+            "Apache Spark",
+            "Airflow",
+            "Snowflake",
+            "dbt",
+            "Kafka",
+            "MongoDB",
+            "Redis"
+        ],
+        "benefits": [
+            {
+                "es": "Datos accesibles y organizados",
+                "en": "Accessible and organized data"
+            },
+            {
+                "es": "Procesamiento en tiempo real",
+                "en": "Real-time processing"
+            },
+            {
+                "es": "Cumplimiento normativo garantizado",
+                "en": "Guaranteed regulatory compliance"
+            },
+            {
+                "es": "Escalabilidad para crecimiento futuro",
+                "en": "Scalability for future growth"
+            }
+        ]
+    },
+    {
+        "id": "cloud",
+        "icon": "Cloud",
+        "color": "#5DD3F0",
+        "title": {
+            "es": "Cloud & DevOps",
+            "en": "Cloud & DevOps"
+        },
+        "description": {
+            "es": "Migración, optimización y gestión de infraestructura en la nube con prácticas DevOps para maximizar eficiencia y reducir costos operativos.",
+            "en": "Migration, optimization, and management of cloud infrastructure with DevOps practices to maximize efficiency and reduce operational costs."
+        },
+        "features": [
+            "AWS/Azure/GCP",
+            "Kubernetes",
+            "CI/CD",
+            "IaC"
+        ],
+        "longDescription": {
+            "es": "Acompañamos a tu empresa en todo el ciclo de vida cloud: desde la evaluación y migración hasta la optimización continua. Implementamos prácticas DevOps que automatizan despliegues, monitoreo y gestión de infraestructura, permitiéndote enfocarte en tu negocio mientras nosotros nos encargamos de la infraestructura.",
+            "en": "We accompany your company through the entire cloud lifecycle: from assessment and migration to continuous optimization. We implement DevOps practices that automate deployments, monitoring, and infrastructure management, allowing you to focus on your business while we handle the infrastructure."
+        },
+        "useCases": [
+            {
+                "title": {
+                    "es": "Migración a la Nube",
+                    "en": "Cloud Migration"
+                },
+                "description": {
+                    "es": "Migración planificada de infraestructura on-premise a cloud con mínimo downtime.",
+                    "en": "Planned migration of on-premise infrastructure to cloud with minimal downtime."
+                }
+            },
+            {
+                "title": {
+                    "es": "Contenedorización",
+                    "en": "Containerization"
+                },
+                "description": {
+                    "es": "Modernización de aplicaciones con Docker y orquestación con Kubernetes.",
+                    "en": "Application modernization with Docker and orchestration with Kubernetes."
+                }
+            },
+            {
+                "title": {
+                    "es": "Infraestructura como Código",
+                    "en": "Infrastructure as Code"
+                },
+                "description": {
+                    "es": "Gestión automatizada de infraestructura con Terraform y CloudFormation.",
+                    "en": "Automated infrastructure management with Terraform and CloudFormation."
+                }
+            }
+        ],
+        "technologies": [
+            "AWS",
+            "Azure",
+            "GCP",
+            "Docker",
+            "Kubernetes",
+            "Terraform",
+            "GitHub Actions"
+        ],
+        "benefits": [
+            {
+                "es": "Reducción de costos de infraestructura",
+                "en": "Infrastructure cost reduction"
+            },
+            {
+                "es": "Despliegues automatizados y confiables",
+                "en": "Automated and reliable deployments"
+            },
+            {
+                "es": "Alta disponibilidad y resiliencia",
+                "en": "High availability and resilience"
+            },
+            {
+                "es": "Escalado automático según demanda",
+                "en": "Auto-scaling based on demand"
+            }
+        ]
+    },
+    {
+        "id": "security",
+        "icon": "Shield",
+        "color": "#3CB4D8",
+        "title": {
+            "es": "Ciberseguridad",
+            "en": "Cybersecurity"
+        },
+        "description": {
+            "es": "Protegemos tus activos digitales con soluciones de seguridad integral, desde auditorías hasta implementación de controles avanzados.",
+            "en": "We protect your digital assets with comprehensive security solutions, from audits to implementation of advanced controls."
+        },
+        "features": [
+            "Security Audit",
+            "Penetration Testing",
+            "Compliance",
+            "SOC"
+        ],
+        "longDescription": {
+            "es": "Ofrecemos un enfoque integral de ciberseguridad que protege tu organización en todos los niveles. Desde auditorías de seguridad y pruebas de penetración hasta la implementación de centros de operaciones de seguridad (SOC), aseguramos que tus activos digitales estén protegidos contra las amenazas más sofisticadas.",
+            "en": "We offer a comprehensive cybersecurity approach that protects your organization at all levels. From security audits and penetration testing to the implementation of security operations centers (SOC), we ensure your digital assets are protected against the most sophisticated threats."
+        },
+        "useCases": [
+            {
+                "title": {
+                    "es": "Auditoría de Seguridad",
+                    "en": "Security Audit"
+                },
+                "description": {
+                    "es": "Evaluación completa de vulnerabilidades en infraestructura, aplicaciones y procesos.",
+                    "en": "Complete vulnerability assessment in infrastructure, applications, and processes."
+                }
+            },
+            {
+                "title": {
+                    "es": "Respuesta a Incidentes",
+                    "en": "Incident Response"
+                },
+                "description": {
+                    "es": "Planes de respuesta y recuperación ante ataques cibernéticos y brechas de seguridad.",
+                    "en": "Response and recovery plans for cyberattacks and security breaches."
+                }
+            },
+            {
+                "title": {
+                    "es": "Cumplimiento Normativo",
+                    "en": "Regulatory Compliance"
+                },
+                "description": {
+                    "es": "Implementación de marcos de cumplimiento como ISO 27001, SOC 2 y GDPR.",
+                    "en": "Implementation of compliance frameworks such as ISO 27001, SOC 2, and GDPR."
+                }
+            }
+        ],
+        "technologies": [
+            "SIEM",
+            "WAF",
+            "IDS/IPS",
+            "Vault",
+            "CrowdStrike",
+            "Nessus",
+            "Burp Suite"
+        ],
+        "benefits": [
+            {
+                "es": "Protección proactiva contra amenazas",
+                "en": "Proactive threat protection"
+            },
+            {
+                "es": "Cumplimiento de normativas internacionales",
+                "en": "International regulatory compliance"
+            },
+            {
+                "es": "Monitoreo continuo 24/7",
+                "en": "Continuous 24/7 monitoring"
+            },
+            {
+                "es": "Reducción de riesgo empresarial",
+                "en": "Business risk reduction"
+            }
+        ]
+    },
+    {
+        "id": "bi",
+        "icon": "BarChart3",
+        "color": "#5DD3F0",
+        "title": {
+            "es": "Business Intelligence",
+            "en": "Business Intelligence"
+        },
+        "description": {
+            "es": "Transformamos tus datos en conocimiento estratégico mediante dashboards interactivos, reportes automatizados y análisis avanzado.",
+            "en": "We transform your data into strategic knowledge through interactive dashboards, automated reports, and advanced analytics."
+        },
+        "features": [
+            "Dashboards",
+            "KPIs",
+            "Reporting",
+            "Data Visualization"
+        ],
+        "longDescription": {
+            "es": "Convertimos tus datos en decisiones estratégicas a través de soluciones de Business Intelligence personalizadas. Creamos dashboards interactivos, reportes automatizados y sistemas de análisis que permiten a tu equipo acceder a la información correcta en el momento preciso para tomar mejores decisiones de negocio.",
+            "en": "We turn your data into strategic decisions through customized Business Intelligence solutions. We create interactive dashboards, automated reports, and analysis systems that allow your team to access the right information at the right time to make better business decisions."
+        },
+        "useCases": [
+            {
+                "title": {
+                    "es": "Dashboards Ejecutivos",
+                    "en": "Executive Dashboards"
+                },
+                "description": {
+                    "es": "Paneles de control con KPIs en tiempo real para la toma de decisiones a nivel directivo.",
+                    "en": "Control panels with real-time KPIs for executive-level decision making."
+                }
+            },
+            {
+                "title": {
+                    "es": "Reportes Automatizados",
+                    "en": "Automated Reports"
+                },
+                "description": {
+                    "es": "Generación automática de reportes periódicos con distribución programada.",
+                    "en": "Automatic generation of periodic reports with scheduled distribution."
+                }
+            },
+            {
+                "title": {
+                    "es": "Análisis Predictivo",
+                    "en": "Predictive Analysis"
+                },
+                "description": {
+                    "es": "Modelos estadísticos para proyecciones de ventas, demanda y tendencias de mercado.",
+                    "en": "Statistical models for sales projections, demand, and market trends."
+                }
+            }
+        ],
+        "technologies": [
+            "Power BI",
+            "Tableau",
+            "Looker",
+            "Metabase",
+            "Apache Superset",
+            "D3.js",
+            "Python"
+        ],
+        "benefits": [
+            {
+                "es": "Visibilidad total del negocio",
+                "en": "Complete business visibility"
+            },
+            {
+                "es": "Reportes automatizados y confiables",
+                "en": "Automated and reliable reports"
+            },
+            {
+                "es": "Decisiones basadas en datos, no intuición",
+                "en": "Data-driven decisions, not intuition"
+            },
+            {
+                "es": "Identificación de oportunidades de mejora",
+                "en": "Identification of improvement opportunities"
+            }
+        ]
+    }
+]

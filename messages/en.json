@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "nosotros": "About",
+    "servicios": "Services",
+    "metodologia": "Methodology",
+    "contacto": "Contact",
+    "consultar": "Get in Touch"
+  },
+  "hero": {
+    "location": "Tucumán, Argentina • Since 2010",
+    "title": "Digital Transformation with",
+    "titleHighlight": "Artificial Intelligence",
+    "description": "Specialized consultancy in developing information systems projects that drive innovation and business efficiency through cutting-edge technologies.",
+    "ctaPrimary": "Start Project",
+    "ctaSecondary": "View Services",
+    "stats": {
+      "years": "Years of experience",
+      "projects": "Projects delivered",
+      "clients": "Satisfied clients"
+    }
+  },
+  "about": {
+    "label": "Who We Are",
+    "title": "Innovation and",
+    "titleHighlight": "Excellence",
+    "description": "At Bejuca Consulting we combine technical expertise with strategic vision to deliver solutions that make a difference in our clients' success.",
+    "values": {
+      "mision": {
+        "title": "Mission",
+        "description": "Transform organizations through innovative technological solutions that drive their growth and competitiveness in the digital market."
+      },
+      "vision": {
+        "title": "Vision",
+        "description": "To be regional leaders in digital transformation consultancy, recognized for our technical excellence and commitment to our clients' success."
+      },
+      "valores": {
+        "title": "Values",
+        "description": "Innovation, integrity, excellence, and collaboration are the pillars that guide every project we undertake with our clients."
+      },
+      "experiencia": {
+        "title": "Experience",
+        "description": "Over 15 years developing high-complexity technological solutions for companies across various industrial sectors."
+      }
+    },
+    "history": {
+      "title": "Our History",
+      "p1": "Founded in 2010 in Tucumán, Argentina, Bejuca Consulting was born with the vision of bringing emerging technologies to companies in the region. What started as a small team of technology enthusiasts has become a consultancy recognized for its technical excellence.",
+      "p2": "Over more than 15 years, we have accompanied companies from various sectors in their digital transformation journey, from modernizing legacy systems to implementing cutting-edge artificial intelligence solutions.",
+      "p3": "Our commitment to continuous innovation and customer satisfaction has allowed us to build lasting relationships and become a reference strategic partner in the market.",
+      "badge": "Years of trajectory"
+    }
+  },
+  "services": {
+    "label": "Our Services",
+    "title": "Comprehensive",
+    "titleHighlight": "Solutions",
+    "description": "We offer a complete portfolio of technological services designed to drive your organization's digital transformation.",
+    "cta": {
+      "title": "Need a custom solution?",
+      "description": "Contact us and let's design the technology strategy for your business together.",
+      "button": "Contact Now"
+    },
+    "learnMore": "Learn more"
+  },
+  "methodology": {
+    "label": "Our Methodology",
+    "title": "How We",
+    "titleHighlight": "Work",
+    "description": "We use proven and agile methodologies to ensure the success of each project, adapting to the specific needs of your business.",
+    "methods": {
+      "agile": {
+        "title": "Agile Methodology",
+        "description": "Scrum and Kanban for iterative deliveries and continuous adaptation to changes."
+      },
+      "rapid": {
+        "title": "Rapid Development",
+        "description": "Short development cycles that allow for quick validation and adjustment."
+      },
+      "scalable": {
+        "title": "Scalable Architecture",
+        "description": "Modular designs that grow with your business without compromising performance."
+      },
+      "ci": {
+        "title": "Continuous Integration",
+        "description": "Automated CI/CD for frequent and reliable deployments."
+      }
+    },
+    "benefits": {
+      "label": "Measurable Results",
+      "title": "Benefits of working with us",
+      "description": "Our results-oriented approach ensures that each project generates a tangible, measurable, and sustainable impact on your business over time.",
+      "items": [
+        "Up to 40% reduction in operational costs",
+        "60% improvement in process efficiency",
+        "50% reduced time-to-market",
+        "Guaranteed scalability for growth",
+        "Integrated security and compliance",
+        "24/7 specialized technical support"
+      ]
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's Start Your",
+    "titleHighlight": "Project",
+    "description": "Ready to transform your business? Contact us and let's discover together how technology can drive your growth.",
+    "info": {
+      "location": {
+        "title": "Location",
+        "content": "Tucumán, Argentina",
+        "description": "In-person and remote service"
+      },
+      "email": {
+        "title": "Email",
+        "content": "contacto@bejuca.com",
+        "description": "We respond within 24h"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "+54 381 123 4567",
+        "description": "Mon-Fri 9:00-18:00"
+      },
+      "hours": {
+        "title": "Hours",
+        "content": "Monday to Friday",
+        "description": "9:00 - 18:00 (ART)"
+      }
+    },
+    "social": "Follow us",
+    "form": {
+      "title": "Send us a message",
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "service": "Service of interest",
+      "servicePlaceholder": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent!",
+      "successDescription": "We will get in touch with you soon.",
+      "privacy": "By submitting this form, you agree to our privacy policy."
+    }
+  },
+  "footer": {
+    "description": "Specialized consultancy in digital transformation and artificial intelligence. We drive business innovation from Tucumán, Argentina.",
+    "links": {
+      "services": "Services",
+      "company": "Company",
+      "support": "Support"
+    },
+    "copyright": "Bejuca Consulting. All rights reserved.",
+    "location": "Tucumán, Argentina • Since 2010"
+  }
+}
