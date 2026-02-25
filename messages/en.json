@@ -3,17 +3,17 @@
     "inicio": "Home",
     "nosotros": "About",
     "servicios": "Services",
-    "metodologia": "Methodology",
+    "equipo": "Team",
     "contacto": "Contact",
     "consultar": "Get in Touch"
   },
   "hero": {
     "location": "Tucumán, Argentina • Since 2010",
     "title": "Company Consultancy:",
-    "titleHighlight": "Digital Transformation and B2B Growth",
-    "description": "We integrate the precision of software engineering with high-impact communication strategies. From custom system development and IT infrastructure modernization to brand positioning to scale your sales measurably.",
+    "titleHighlight": "Digital Transformation and Growth",
+    "description": "We integrate the precision of software engineering with high-impact communication strategies and artificial intelligence. From developing custom systems and modernizing IT infrastructure to positioning your brand to measurably scale your sales.",
     "ctaPrimary": "Contact Consultants",
-    "ctaSecondary": "View Services",
+    "ctaSecondary": "Explore Our Services",
     "stats": {
       "years": "Years of experience",
       "projects": "Projects delivered",
@@ -21,34 +21,36 @@
     }
   },
   "about": {
-    "label": "Who We Are",
-    "title": "Innovation and",
-    "titleHighlight": "Excellence",
-    "description": "At Bejuca Consulting we combine technical expertise with strategic vision to deliver solutions that make a difference in our clients' success.",
+    "label": "About Us",
+    "title": "The perfect fusion between",
+    "titleHighlight": "Engineering and Communication",
+    "description": "We are your new strategic partner, integrating engineering, innovation, and business vision to transform technology into real results. We design solutions that optimize processes, improve operational efficiency, and generate new growth opportunities.",
     "values": {
       "mision": {
         "title": "Mission",
-        "description": "Transform organizations through innovative technological solutions that drive their growth and competitiveness in the digital market."
+        "description": "To transform business operations through custom software development, process automation, and artificial intelligence, driving growth and competitiveness in the digital market."
       },
       "vision": {
         "title": "Vision",
-        "description": "To be regional leaders in digital transformation consultancy, recognized for our technical excellence and commitment to our clients' success."
+        "description": "To be the go-to strategic partner in technology and business consulting, recognized for our technical excellence and commitment to our clients' measurable results."
       },
       "valores": {
         "title": "Values",
-        "description": "Innovation, integrity, excellence, and collaboration are the pillars that guide every project we undertake with our clients."
+        "description": "Constant innovation, technical excellence, and a real commitment to every client. We work with integrity, strategic vision, and close support at every stage of the process."
       },
       "experiencia": {
         "title": "Experience",
-        "description": "Over 15 years developing high-complexity technological solutions for companies across various industrial sectors."
+        "description": "Over 15 years developing high-complexity technological solutions for companies across various sectors, helping them modernize operations, automate processes, and scale their growth."
       }
     },
     "history": {
       "title": "Our History",
-      "p1": "Founded in 2010 in Tucumán, Argentina, Bejuca Consulting was born with the vision of bringing emerging technologies to companies in the region. What started as a small team of technology enthusiasts has become a consultancy recognized for its technical excellence.",
-      "p2": "Over more than 15 years, we have accompanied companies from various sectors in their digital transformation journey, from modernizing legacy systems to implementing cutting-edge artificial intelligence solutions.",
-      "p3": "Our commitment to continuous innovation and customer satisfaction has allowed us to build lasting relationships and become a reference strategic partner in the market.",
-      "badge": "Years of trajectory"
+      "p1": "BEJUCA Consulting was founded in 2010 in Tucumán, Argentina, with the vision of bringing innovation to organizations in a strategic and human way. What began as a family project is now a business consultancy recognized for integrating engineering rigor with the fresh perspective of professional communication.",
+      "p2": "For over 15 years, we have accompanied companies across various sectors through their digital transformation journeys. Our track record has allowed us to evolve from basic system optimization to custom software development and high-complexity technological infrastructure solutions.",
+      "p3": "Our commitment to technical excellence and strategic brand positioning allows us to build long-lasting relationships. More than just service providers, we become allies for each organization, understanding their reality to design digital ecosystems that drive sales and authority.",
+      "p4": "Since our beginnings, we have maintained a human-centric, interdisciplinary approach. We specialize in training and supporting teams through their evolution, facilitating the transition from traditional models to efficient management powered by cutting-edge tools and agile methodologies.",
+      "p5": "Today, with a team of four expert professionals and a deep-seated passion, we remain committed to constant innovation. We continue to resolve our clients' bottlenecks, ensuring that every technological solution generates a real, measurable, and sustainable impact on their business.",
+      "badge": "Years of experience"
     }
   },
   "services": {
@@ -63,41 +65,32 @@
     },
     "learnMore": "Learn more"
   },
-  "methodology": {
-    "label": "Our Methodology",
-    "title": "How We",
-    "titleHighlight": "Work",
-    "description": "We use proven and agile methodologies to ensure the success of each project, adapting to the specific needs of your business.",
-    "methods": {
-      "agile": {
-        "title": "Agile Methodology",
-        "description": "Scrum and Kanban for iterative deliveries and continuous adaptation to changes."
+  "team": {
+    "label": "Our Team",
+    "title": "Meet",
+    "titleHighlight": "Our Team",
+    "description": "A multidisciplinary team of professionals committed to excellence, innovation, and the growth of your business.",
+    "members": {
+      "silvana": {
+        "name": "Silvana Marsiglia",
+        "role": "Co-Founder",
+        "degree": "Systems Information Engineer"
       },
-      "rapid": {
-        "title": "Rapid Development",
-        "description": "Short development cycles that allow for quick validation and adjustment."
+      "luis": {
+        "name": "Luis María Carriles",
+        "role": "Co-Founder",
+        "degree": "Systems Information Engineer"
       },
-      "scalable": {
-        "title": "Scalable Architecture",
-        "description": "Modular designs that grow with your business without compromising performance."
+      "belen": {
+        "name": "María Belén Carriles",
+        "role": "Director of Communications",
+        "degree": "Bachelor in Communications"
       },
-      "ci": {
-        "title": "Continuous Integration",
-        "description": "Automated CI/CD for frequent and reliable deployments."
+      "juan": {
+        "name": "Juan María Carriles",
+        "role": "IT Manager",
+        "degree": "Systems Information Engineer"
       }
-    },
-    "benefits": {
-      "label": "Measurable Results",
-      "title": "Benefits of working with us",
-      "description": "Our results-oriented approach ensures that each project generates a tangible, measurable, and sustainable impact on your business over time.",
-      "items": [
-        "Up to 40% reduction in operational costs",
-        "60% improvement in process efficiency",
-        "50% reduced time-to-market",
-        "Guaranteed scalability for growth",
-        "Integrated security and compliance",
-        "24/7 specialized technical support"
-      ]
     }
   },
   "contact": {

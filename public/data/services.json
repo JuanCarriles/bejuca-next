@@ -5,12 +5,12 @@
         "icon": "ScreenShare",
         "color": "#5DD3F0",
         "title": {
-            "es": "Captación y Presencia Digital",
-            "en": "Digital Acquisition & Presence"
+            "es": "Growth Partner",
+            "en": "Growth Partner"
         },
         "description": {
-            "es": "Aumenta tus ventas con nuestra agencia de marketing digital B2B. Combinamos diseño web para empresas y posicionamiento de marca estratégico.",
-            "en": "Increase your sales with our B2B digital marketing agency. We combine enterprise web design and strategic brand positioning."
+            "es": "Actuamos como tu Growth Partner estratégico, combinando diseño web para empresas y posicionamiento de marca para escalar tus ventas, mejorando tu presencia digital.",
+            "en": "We act as your Growth Partner, combining enterprise web design and brand positioning to scale your sales, improving your digital presence."
         },
         "features": [
             "Diseño Web para Empresas",
@@ -32,8 +32,8 @@
                 "en": "Do you feel like your business isn't getting the recognition it deserves?"
             },
             {
-                "es": "¿Buscás una agencia de marketing digital que entienda realmente el mercado B2B?",
-                "en": "Are you looking for a digital marketing agency that truly understands the B2B market?"
+                "es": "¿Buscás una agencia de marketing digital que entienda realmente el mercado?",
+                "en": "Are you looking for a digital marketing agency that truly understands the market?"
             },
             {
                 "es": "¿Tu web se ve antigua y no refleja la calidad de lo que haces?",
@@ -45,14 +45,14 @@
             "en": "We operate as your internal digital marketing agency. We integrate high-converting landing pages with a solid brand positioning strategy to capture clients."
         },
         "longDescription": {
-            "es": "En Bejuca entendemos que el crecimiento B2B requiere mucho más que simples posteos en internet. Hemos creado un ecosistema integral de captación que une el diseño web para empresas con una gestión estratégica de redes sociales. Desarrollamos landing pages rápidas y orientadas a la venta, respaldadas por un posicionamiento de marca que transmite verdadera autoridad corporativa. Así, aseguramos que cada clic e interacción se transforme en una oportunidad de negocio real para tu empresa.",
-            "en": "At Bejuca, we understand that B2B growth requires much more than simple internet posts. We have created a comprehensive acquisition ecosystem that unites enterprise web design with strategic social media management. We develop fast, sales-oriented landing pages backed by brand positioning that conveys true corporate authority. This way, we ensure that every click and interaction transforms into a real business opportunity for your company."
+            "es": "En Bejuca entendemos que el crecimiento requiere mucho más que simples posteos en internet. Hemos creado un ecosistema integral de captación que une el diseño web para empresas con una gestión estratégica de redes sociales. Desarrollamos landing pages rápidas y orientadas a la venta, respaldadas por un posicionamiento de marca que transmite verdadera autoridad corporativa. Así, aseguramos que cada clic e interacción se transforme en una oportunidad de negocio real para tu empresa.",
+            "en": "At Bejuca, we understand that  growth requires much more than simple internet posts. We have created a comprehensive acquisition ecosystem that unites enterprise web design with strategic social media management. We develop fast, sales-oriented landing pages backed by brand positioning that conveys true corporate authority. This way, we ensure that every click and interaction transforms into a real business opportunity for your company."
         },
         "useCases": [
             {
                 "title": {
-                    "es": "Landing Pages B2B",
-                    "en": "B2B Landing Pages"
+                    "es": "Landing Pages",
+                    "en": "Landing Pages"
                 },
                 "description": {
                     "es": "Diseño web para empresas enfocado exclusivamente en la conversión y captación de leads cualificados.",
@@ -90,8 +90,8 @@
         ],
         "benefits": [
             {
-                "es": "Incremento medible en la captación de clientes B2B.",
-                "en": "Measurable increase in B2B client acquisition."
+                "es": "Incremento medible en la captación de clientes .",
+                "en": "Measurable increase in  client acquisition."
             },
             {
                 "es": "Construcción de un posicionamiento de marca de alta autoridad.",
@@ -171,8 +171,8 @@
             },
             {
                 "title": {
-                    "es": "Portales B2B y Aplicaciones Web",
-                    "en": "B2B Portals and Web Applications"
+                    "es": "Portales  y Aplicaciones Web",
+                    "en": " Portals and Web Applications"
                 },
                 "description": {
                     "es": "Interfaces rápidas y seguras para que tus clientes o proveedores interactúen con tu empresa de forma digital.",
@@ -363,8 +363,8 @@
             },
             {
                 "title": {
-                    "es": "Capacitación Corporativa B2B",
-                    "en": "B2B Corporate Training"
+                    "es": "Capacitación Corporativa ",
+                    "en": " Corporate Training"
                 },
                 "description": {
                     "es": "Una plataforma de elearning para empresas que profesionaliza el entrenamiento y seguimiento de tu capital humano.",
