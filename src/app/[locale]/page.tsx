@@ -2,7 +2,7 @@ import Navbar from '@/sections/Navbar';
 import Hero from '@/sections/Hero';
 import About from '@/sections/About';
 import Services from '@/sections/Services';
-import Methodology from '@/sections/Methodology';
+import Team from '@/sections/Team';
 import Contact from '@/sections/Contact';
 import Footer from '@/sections/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -19,7 +19,7 @@ export default function HomePage() {
                 <Hero />
                 <About />
                 <Services services={services} />
-                <Methodology />
+                <Team />
                 <Contact services={services} />
             </main>
             <Footer services={services} />

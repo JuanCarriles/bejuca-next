@@ -2,7 +2,7 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { useTheme } from '@/context/ThemeContext';
-import { Facebook, Instagram, ArrowUp } from 'lucide-react';
+import { Facebook, Instagram, ArrowUp, MapPin, Phone, Mail } from 'lucide-react';
 import { resolveTranslation } from '@/hooks/useServicesData';
 import type { Service } from '@/types/services.types';
 
@@ -37,14 +37,8 @@ export default function Footer({ services }: { services: Service[] }) {
     company: [
       { name: t('about.label'), href: '#nosotros' },
       { name: t('about.values.experiencia.title'), href: '#nosotros' },
-      { name: t('nav.metodologia'), href: '#metodologia' },
+      { name: t('nav.equipo'), href: '#equipo' },
       { name: t('footer.links.company'), href: '#contacto' },
-    ],
-    support: [
-      { name: t('nav.contacto'), href: '#contacto' },
-      { name: 'FAQ', href: '#' },
-      { name: t('footer.links.support'), href: '#' },
-      { name: 'Política de Privacidad', href: '#' },
     ],
   };
 
@@ -148,23 +142,36 @@ export default function Footer({ services }: { services: Service[] }) {
             </ul>
           </div>
 
-          {/* Support Links */}
+          {/* Contact Info */}
           <div>
             <h4 className={`font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-              {t('footer.links.support')}
+              {t('contact.label')}
             </h4>
-            <ul className="space-y-3">
-              {footerLinks.support.map((link) => (
-                <li key={link.name}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className={`transition-colors text-sm ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-600 hover:text-[#0891b2]'
-                      }`}
-                  >
-                    {link.name}
-                  </button>
-                </li>
-              ))}
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 mt-0.5 text-[#3CB4D8] flex-shrink-0" />
+                <span className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+                  {t('contact.info.location.content')}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="w-4 h-4 mt-0.5 text-[#3CB4D8] flex-shrink-0" />
+                <a
+                  href={`tel:${t('contact.info.phone.content').replace(/\s/g, '')}`}
+                  className={`text-sm transition-colors ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-600 hover:text-[#0891b2]'}`}
+                >
+                  {t('contact.info.phone.content')}
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="w-4 h-4 mt-0.5 text-[#3CB4D8] flex-shrink-0" />
+                <a
+                  href={`mailto:${t('contact.info.email.content')}`}
+                  className={`text-sm transition-colors ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-600 hover:text-[#0891b2]'}`}
+                >
+                  {t('contact.info.email.content')}
+                </a>
+              </li>
             </ul>
           </div>
         </div>

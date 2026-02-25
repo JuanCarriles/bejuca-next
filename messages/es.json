@@ -3,17 +3,17 @@
     "inicio": "Inicio",
     "nosotros": "Nosotros",
     "servicios": "Servicios",
-    "metodologia": "Metodología",
+    "equipo": "Equipo",
     "contacto": "Contacto",
     "consultar": "Consultar"
   },
   "hero": {
     "location": "Tucumán, Argentina • Desde 2010",
     "title": "Consultora de Empresas:",
-    "titleHighlight": "Transformación Digital y Crecimiento B2B",
-    "description": "Integramos la precisión de la ingeniería de software con estrategias de comunicación de alto impacto. Desde el desarrollo de sistemas a medida y modernización de infraestructura IT, hasta el posicionamiento de tu marca para escalar tus ventas de forma medible.",
+    "titleHighlight": "Transformación Digital y Crecimiento",
+    "description": "Integramos la precisión de la ingeniería de software con estrategias de comunicación de alto impacto e inteligencia artificial. Desde el desarrollo de sistemas a medida y modernización de infraestructura IT, hasta el posicionamiento de tu marca para escalar tus ventas de forma medible.",
     "ctaPrimary": "Contactar Consultores",
-    "ctaSecondary": "Ver Servicios",
+    "ctaSecondary": "Conoce nuestros servicios",
     "stats": {
       "years": "Años de experiencia",
       "projects": "Proyectos entregados",
@@ -22,13 +22,13 @@
   },
   "about": {
     "label": "Quiénes Somos",
-    "title": "Ingeniería y Comunicación",
-    "titleHighlight": "B2B",
-    "description": "Combinamos el rigor técnico y la experiencia en ingeniería de sistemas con estrategias de comunicación de alto impacto. Nuestro objetivo es resolver los cuellos de botella de tu negocio a través de la transformación digital.",
+    "title": "La fusión perfecta entre",
+    "titleHighlight": "Ingeniería y Comunicación",
+    "description": "Somos tu nuevo socio estratégico, integrando ingeniería, innovación y visión de negocio para transformar la tecnología en resultados reales. Diseñamos soluciones que optimizan procesos, mejoran la eficiencia operativa y generan nuevas oportunidades de crecimiento.",
     "values": {
       "mision": {
         "title": "Misión",
-        "description": "Transformar la operación de las empresas mediante desarrollo de software a medida y automatización de procesos, impulsando su crecimiento y competitividad en el mercado digital."
+        "description": "Transformar la operación de las empresas mediante desarrollo de software a medida, automatización de procesos e inteligencia artificial, impulsando su crecimiento y competitividad en el mercado digital."
       },
       "vision": {
         "title": "Visión",
@@ -36,11 +36,11 @@
       },
       "valores": {
         "title": "Valores",
-        "description": "Innovación constante y excelencia técnica en cada solución que desarrollamos. Nos distingue el compromiso absoluto con tu proyecto, respaldado por la integridad, el profesionalismo y un acompañamiento cercano y real en cada paso."
+        "description": "Innovación constante, excelencia técnica y compromiso real con cada cliente. Trabajamos con integridad, visión estratégica y un acompañamiento cercano en cada etapa del proceso."
       },
       "experiencia": {
         "title": "Experiencia",
-        "description": "Más de 15 años desarrollando soluciones tecnológicas de alta complejidad para empresas de diversos sectores industriales."
+        "description": "Más de 15 años desarrollando soluciones tecnológicas de alta complejidad para empresas de diversos sectores, ayudándolas a modernizar su operación, automatizar procesos y escalar su crecimiento."
       }
     },
     "history": {
@@ -48,9 +48,9 @@
       "p1": "BEJUCA Consulting nació en 2010 en Tucumán, Argentina, con la visión de acercar la innovación a las organizaciones de manera estratégica y humana. Lo que comenzó como un proyecto familiar, hoy es una consultora de empresas reconocida por integrar la rigurosidad de la ingeniería con la frescura de la comunicación profesional.",
       "p2": "A lo largo de más de 15 años, hemos acompañado a empresas de diversos sectores en su proceso de transformación digital. Nuestra trayectoria nos ha permitido evolucionar desde la optimización de sistemas básicos hasta el desarrollo de software a medida y soluciones de infraestructura tecnológica de alta complejidad.",
       "p3": "Nuestro compromiso con la excelencia técnica y el posicionamiento de marca estratégico nos permite construir relaciones duraderas. Más que proveedores de servicios, nos convertimos en aliados de cada organización, entendiendo su realidad para diseñar ecosistemas digitales que impulsen sus ventas y autoridad.",
-      "p4": "Desde nuestros inicios, hemos mantenido un enfoque interdisciplinario centrado en el capital humano. Nos especializamos en capacitar y acompañar equipos en su evolución, facilitando la transición desde modelos tradicionales hacia una gestión eficiente potenciada por herramientas de vanguardia y metodologías ágiles.",
+      "p4": "Desde nuestros inicios, hemos mantenido un 15+ enfoque interdisciplinario centrado en el capital humano. Nos especializamos en capacitar y acompañar equipos en su evolución, facilitando la transición desde modelos tradicionales hacia una gestión eficiente potenciada por herramientas de vanguardia y metodologías ágiles.",
       "p5": "Hoy, con un equipo de cuatro profesionales expertos y una profunda vocación, seguimos comprometidos con la innovación constante. Continuamos resolviendo los cuellos de botella de nuestros clientes, garantizando que cada solución tecnológica genere un impacto real, medible y sostenible en su negocio.",
-      "badge": "15+ Años de trayectoria"
+      "badge": "Años de trayectoria"
     }
   },
   "services": {
@@ -65,41 +65,32 @@
     },
     "learnMore": "Saber más"
   },
-  "methodology": {
-    "label": "Nuestra Metodología",
-    "title": "Cómo",
-    "titleHighlight": "Trabajamos",
-    "description": "Utilizamos metodologías probadas y ágiles para garantizar el éxito de cada proyecto, adaptándonos a las necesidades específicas de tu negocio.",
-    "methods": {
-      "agile": {
-        "title": "Metodología Ágil",
-        "description": "Scrum y Kanban para entregas iterativas y adaptación continua a los cambios."
+  "team": {
+    "label": "Nuestro Equipo",
+    "title": "Conoce a",
+    "titleHighlight": "Nuestro Equipo",
+    "description": "Un equipo multidisciplinario de profesionales comprometidos con la excelencia, la innovación y el crecimiento de tu negocio.",
+    "members": {
+      "silvana": {
+        "name": "Silvana Marsiglia",
+        "role": "Co-Fundadora",
+        "degree": "Ingeniera en Sistemas de Información"
       },
-      "rapid": {
-        "title": "Desarrollo Rápido",
-        "description": "Ciclos de desarrollo cortos que permiten validar y ajustar rápidamente."
+      "luis": {
+        "name": "Luis María Carriles",
+        "role": "Co-Fundador",
+        "degree": "Ingeniero en Sistemas de Información"
       },
-      "scalable": {
-        "title": "Arquitectura Escalable",
-        "description": "Diseños modulares que crecen junto con tu negocio sin comprometer el rendimiento."
+      "belen": {
+        "name": "María Belén Carriles",
+        "role": "Directora de Comunicación",
+        "degree": "Licenciada en Comunicación"
       },
-      "ci": {
-        "title": "Integración Continua",
-        "description": "CI/CD automatizado para despliegues frecuentes y confiables."
+      "juan": {
+        "name": "Juan María Carriles",
+        "role": "Gerente de TI",
+        "degree": "Ingeniero en Sistemas de Información"
       }
-    },
-    "benefits": {
-      "label": "Resultados Medibles",
-      "title": "Beneficios de trabajar con nosotros",
-      "description": "Nuestro enfoque orientado a resultados garantiza que cada proyecto genere un impacto tangible en tu negocio, medible y sostenible en el tiempo.",
-      "items": [
-        "Reducción de costos operativos hasta un 40%",
-        "Mejora en la eficiencia de procesos en un 60%",
-        "Time-to-market reducido en un 50%",
-        "Escalabilidad garantizada para el crecimiento",
-        "Seguridad y compliance integrados",
-        "Soporte técnico especializado 24/7"
-      ]
     }
   },
   "contact": {
