@@ -9,7 +9,7 @@
   },
   "hero": {
     "location": "Tucumán, Argentina • Since 2010",
-    "title": "Company Consultancy:",
+    "title": "Consultancy for",
     "titleHighlight": "Digital Transformation and Growth",
     "description": "We integrate the precision of software engineering with high-impact communication strategies and artificial intelligence. From developing custom systems and modernizing IT infrastructure to positioning your brand to measurably scale your sales.",
     "ctaPrimary": "Contact Consultants",
@@ -28,11 +28,11 @@
     "values": {
       "mision": {
         "title": "Mission",
-        "description": "To transform business operations through custom software development, process automation, and artificial intelligence, driving growth and competitiveness in the digital market."
+        "description": "To transform business operations through custom software development, process automation, and and artificial intelligence, boosting their growth, competitiveness, and brand positioning."
       },
       "vision": {
         "title": "Vision",
-        "description": "To be the go-to strategic partner in technology and business consulting, recognized for our technical excellence and commitment to our clients' measurable results."
+        "description": "To be the benchmark strategic partner for technology and business consulting, expanding our technical excellence globally to deliver measurable impact across all international markets where our clients compete."
       },
       "valores": {
         "title": "Values",
@@ -84,7 +84,7 @@
       "belen": {
         "name": "María Belén Carriles",
         "role": "Director of Communications",
-        "degree": "Bachelor in Communications"
+        "degree": "Bachelor in Communication Sciences"
       },
       "juan": {
         "name": "Juan María Carriles",
@@ -106,12 +106,12 @@
       },
       "email": {
         "title": "Email",
-        "content": "contacto@bejuca.com",
+        "content": "informes@bejuca.com.ar",
         "description": "We respond within 24h"
       },
       "phone": {
         "title": "Phone",
-        "content": "+54 381 123 4567",
+        "content": "+543815244468",
         "description": "Mon-Fri 9:00-18:00"
       },
       "hours": {
@@ -133,10 +133,12 @@
       "servicePlaceholder": "Select a service",
       "message": "Message",
       "messagePlaceholder": "Tell us about your project...",
+      "optional": "optional",
       "submit": "Send message",
       "sending": "Sending...",
       "success": "Message sent!",
       "successDescription": "We will get in touch with you soon.",
+      "error": "There was an error sending the message. Please try again.",
       "privacy": "By submitting this form, you agree to our privacy policy."
     }
   },

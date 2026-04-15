@@ -9,7 +9,7 @@
   },
   "hero": {
     "location": "Tucumán, Argentina • Desde 2010",
-    "title": "Consultora de Empresas:",
+    "title": "Consultora de",
     "titleHighlight": "Transformación Digital y Crecimiento",
     "description": "Integramos la precisión de la ingeniería de software con estrategias de comunicación de alto impacto e inteligencia artificial. Desde el desarrollo de sistemas a medida y modernización de infraestructura IT, hasta el posicionamiento de tu marca para escalar tus ventas de forma medible.",
     "ctaPrimary": "Contactar Consultores",
@@ -28,11 +28,11 @@
     "values": {
       "mision": {
         "title": "Misión",
-        "description": "Transformar la operación de las empresas mediante desarrollo de software a medida, automatización de procesos e inteligencia artificial, impulsando su crecimiento y competitividad en el mercado digital."
+        "description": "Transformar la operación de las empresas mediante desarrollo de software a medida, automatización de procesos e inteligencia artificial, impulsando su crecimiento, competitividad y posicionamiento de marca."
       },
       "vision": {
         "title": "Visión",
-        "description": "Ser el socio estratégico de referencia en consultoría tecnológica y de negocios, reconocidos por nuestra excelencia técnica y compromiso con los resultados medibles de nuestros clientes."
+        "description": "Ser el socio estratégico de referencia en consultoría tecnológica y de negocios, escalando nuestra excelencia técnica a nivel internacional para garantizar resultados medibles en cada mercado donde operan nuestros clientes."
       },
       "valores": {
         "title": "Valores",
@@ -44,13 +44,13 @@
       }
     },
     "history": {
-      "title": "Nuestra Historia",
-      "p1": "BEJUCA Consulting nació en 2010 en Tucumán, Argentina, con la visión de acercar la innovación a las organizaciones de manera estratégica y humana. Lo que comenzó como un proyecto familiar, hoy es una consultora de empresas reconocida por integrar la rigurosidad de la ingeniería con la frescura de la comunicación profesional.",
-      "p2": "A lo largo de más de 15 años, hemos acompañado a empresas de diversos sectores en su proceso de transformación digital. Nuestra trayectoria nos ha permitido evolucionar desde la optimización de sistemas básicos hasta el desarrollo de software a medida y soluciones de infraestructura tecnológica de alta complejidad.",
-      "p3": "Nuestro compromiso con la excelencia técnica y el posicionamiento de marca estratégico nos permite construir relaciones duraderas. Más que proveedores de servicios, nos convertimos en aliados de cada organización, entendiendo su realidad para diseñar ecosistemas digitales que impulsen sus ventas y autoridad.",
-      "p4": "Desde nuestros inicios, hemos mantenido un 15+ enfoque interdisciplinario centrado en el capital humano. Nos especializamos en capacitar y acompañar equipos en su evolución, facilitando la transición desde modelos tradicionales hacia una gestión eficiente potenciada por herramientas de vanguardia y metodologías ágiles.",
-      "p5": "Hoy, con un equipo de cuatro profesionales expertos y una profunda vocación, seguimos comprometidos con la innovación constante. Continuamos resolviendo los cuellos de botella de nuestros clientes, garantizando que cada solución tecnológica genere un impacto real, medible y sostenible en su negocio.",
-      "badge": "Años de trayectoria"
+      "title": "Our History",
+      "p1": "BEJUCA Consulting was founded in 2010 in Tucumán, Argentina, with the vision of bringing innovation to organizations in a strategic and human way. What began as a family project has grown into a business consultancy recognized for integrating engineering rigor with the freshness of professional communication.",
+      "p2": "For over 15 years, we have accompanied companies from various sectors through their digital transformation processes. Our journey has allowed us to evolve from basic system optimization to custom software development and high-complexity technological infrastructure solutions.",
+      "p3": "Our commitment to technical excellence and strategic brand positioning allows us to build lasting relationships. More than just service providers, we become allies to each organization, understanding their reality to design digital ecosystems that drive sales and authority.",
+      "p4": "From our beginnings, we have maintained an interdisciplinary approach strongly focused on human capital. We specialize in supporting team evolution through non-formal training backed by international certifications. To date, we have trained dozens of professionals, transforming them into essential assets for their organizations and ensuring their talent gains high-value recognition within the industry.",
+      "p5": "Today, with a team of four expert professionals and a deep vocation, we remain committed to constant innovation. We continue to resolve our clients' bottlenecks, ensuring that every technological solution generates a real, measurable, and sustainable impact on their business.",
+      "badge": "Years of experience"
     }
   },
   "services": {
@@ -84,7 +84,7 @@
       "belen": {
         "name": "María Belén Carriles",
         "role": "Directora de Comunicación",
-        "degree": "Licenciada en Comunicación"
+        "degree": "Licenciada en Ciencias de la Comunicación"
       },
       "juan": {
         "name": "Juan María Carriles",
@@ -106,12 +106,12 @@
       },
       "email": {
         "title": "Email",
-        "content": "contacto@bejuca.com",
+        "content": "informes@bejuca.com.ar",
         "description": "Respondemos en 24hs"
       },
       "phone": {
         "title": "Teléfono",
-        "content": "+54 381 123 4567",
+        "content": "+543815244468",
         "description": "Lun-Vie de 9:00 a 18:00"
       },
       "hours": {
@@ -132,10 +132,12 @@
       "servicePlaceholder": "Selecciona un servicio",
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+      "optional": "opcional",
       "submit": "Enviar mensaje",
       "sending": "Enviando...",
       "success": "¡Mensaje enviado!",
       "successDescription": "Nos pondremos en contacto contigo pronto.",
+      "error": "Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.",
       "privacy": "Al enviar este formulario, aceptas nuestra política de privacidad."
     },
     "social": "Síguenos"

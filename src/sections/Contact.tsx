@@ -24,7 +24,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { smtpexpressClient, SENDER_EMAIL } from '@/lib/smtp';
+import emailjs from '@emailjs/browser';
 import { resolveTranslation } from '@/hooks/useServicesData';
 import type { Service } from '@/types/services.types';
 
@@ -76,28 +76,32 @@ export default function Contact({ services }: { services: Service[] }) {
           ? 'Otro'
           : t('contact.form.servicePlaceholder');
 
-      const result = await smtpexpressClient.sendApi.sendMail({
-        subject: `Nuevo contacto: ${formData.name} — ${serviceName}`,
-        message: `
-          <h2>Nuevo mensaje de contacto - Bejuca Consulting</h2>
-          <table style="border-collapse: collapse; width: 100%;">
-            <tr><td style="padding: 8px; font-weight: bold;">Nombre:</td><td style="padding: 8px;">${formData.name}</td></tr>
-            <tr><td style="padding: 8px; font-weight: bold;">Email:</td><td style="padding: 8px;">${formData.email}</td></tr>
-            <tr><td style="padding: 8px; font-weight: bold;">Empresa:</td><td style="padding: 8px;">${formData.company || 'No proporcionada'}</td></tr>
-            <tr><td style="padding: 8px; font-weight: bold;">Servicio:</td><td style="padding: 8px;">${serviceName}</td></tr>
-          </table>
-          <h3>Mensaje:</h3>
-          <p>${formData.message}</p>
-        `,
-        sender: {
-          name: 'Bejuca Consulting Contact Form',
-          email: SENDER_EMAIL,
-        },
-        recipients: {
-          email: "informes@bejuca.com.ar",
-        },
-      });
-      console.log('SMTP Express response:', result);
+      // CREDENCIALES DE EMAILJS DESDE EL .ENV
+      const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+      if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+        console.error('Faltan cargar las variables de EmailJS en el archivo .env');
+        throw new Error('Faltan credenciales de EmailJS');
+      }
+
+      // Los parámetros que se envían a la plantilla de EmailJS
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        company: formData.company || 'No proporcionada',
+        service: serviceName,
+        message: formData.message,
+      };
+
+      const result = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        templateParams,
+        PUBLIC_KEY
+      );
+      console.log('EmailJS response:', result.text);
 
       setSubmitted(true);
       setFormData({
@@ -298,7 +302,7 @@ export default function Contact({ services }: { services: Service[] }) {
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
                       <Label htmlFor="company" className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}>
-                        {t('contact.form.company')}
+                        {t('contact.form.company')} <span className="text-xs opacity-50">({t('contact.form.optional')})</span>
                       </Label>
                       <Input
                         id="company"
@@ -314,7 +318,7 @@ export default function Contact({ services }: { services: Service[] }) {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="service" className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}>
-                        {t('contact.form.service')}
+                        {t('contact.form.service')} <span className="text-xs opacity-50">({t('contact.form.optional')})</span>
                       </Label>
                       <Select
                         value={formData.service}
