@@ -19,7 +19,7 @@ export default function HomePage() {
                 <Hero />
                 <About />
                 <Services services={services} />
-                <Team />
+                {/*<Team />*/}
                 <Contact services={services} />
             </main>
             <Footer services={services} />
