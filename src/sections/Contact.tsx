@@ -207,7 +207,7 @@ export default function Contact({ services }: { services: Service[] }) {
               </h4>
               <div className="flex gap-3">
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/bejuca"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-lg bg-[#3CB4D8]/10 flex items-center justify-center hover:bg-[#3CB4D8]/20 transition-colors"
@@ -215,7 +215,7 @@ export default function Contact({ services }: { services: Service[] }) {
                   <Facebook className="w-5 h-5 text-[#3CB4D8]" />
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/consultorabejuca/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-lg bg-[#3CB4D8]/10 flex items-center justify-center hover:bg-[#3CB4D8]/20 transition-colors"
