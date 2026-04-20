@@ -71,7 +71,7 @@ export default function Footer({ services }: { services: Service[] }) {
 
             <div className="flex gap-3">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/bejuca"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${theme === 'dark' ? 'bg-[#243447] hover:bg-[#3CB4D8]/20' : 'bg-gray-100 hover:bg-[#3CB4D8]/10'
@@ -80,7 +80,7 @@ export default function Footer({ services }: { services: Service[] }) {
                 <Facebook className={`w-5 h-5 ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-500'}`} />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/consultorabejuca/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${theme === 'dark' ? 'bg-[#243447] hover:bg-[#3CB4D8]/20' : 'bg-gray-100 hover:bg-[#3CB4D8]/10'
@@ -89,7 +89,7 @@ export default function Footer({ services }: { services: Service[] }) {
                 <Instagram className={`w-5 h-5 ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-500'}`} />
               </a>
               <a
-                href="https://wa.me/"
+                href={`https://wa.me/${t('contact.info.phone.content').replace(/\\D/g, '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${theme === 'dark' ? 'bg-[#243447] hover:bg-[#3CB4D8]/20' : 'bg-gray-100 hover:bg-[#3CB4D8]/10'

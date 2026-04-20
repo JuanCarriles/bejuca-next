@@ -5,17 +5,18 @@
         "icon": "ScreenShare",
         "color": "#5DD3F0",
         "title": {
-            "es": "Growth Partner",
-            "en": "Growth Partner"
+            "es": "Landing Page + Redes Sociales",
+            "en": "Landing Page + Social Media"
         },
         "description": {
-            "es": "Actuamos como tu Growth Partner estratégico, combinando diseño web para empresas y posicionamiento de marca para escalar tus ventas, mejorando tu presencia digital.",
-            "en": "We act as your Growth Partner, combining enterprise web design and brand positioning to scale your sales, improving your digital presence."
+            "es": "Actuamos como tu socio estratégico, combinando diseño web para empresas y posicionamiento de marca para escalar tus ventas, mejorando tu presencia digital.",
+            "en": "We act as your strategic partner, combining enterprise web design and brand positioning to scale your sales, improving your digital presence."
         },
         "features": [
             "Diseño Web para Empresas",
             "Posicionamiento de Marca",
             "Gestión de Redes Sociales",
+            "Meta Ads",
             "Optimización SEO y Conversión"
         ],
         "questions": [
