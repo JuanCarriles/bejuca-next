@@ -111,7 +111,7 @@
       },
       "phone": {
         "title": "Teléfono",
-        "content": "+543815244468",
+        "content": "+5493815326666",
         "description": "Lun-Vie de 9:00 a 18:00"
       },
       "hours": {
@@ -145,9 +145,10 @@
   "footer": {
     "description": "Consultora especializada en transformación digital e inteligencia artificial. Impulsamos la innovación empresarial desde Tucumán, Argentina.",
     "links": {
+      "empresa": "Empresa",
+      "company": "Nosotros",
       "services": "Servicios",
-      "company": "Empresa",
-      "support": "Soporte"
+      "contact": "Contacto"
     },
     "copyright": "Bejuca Consulting. Todos los derechos reservados.",
     "location": "Tucumán, Argentina • Desde 2010"
