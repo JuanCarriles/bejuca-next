@@ -47,7 +47,6 @@ export default function Navbar() {
     { name: t('nav.inicio'), href: '#inicio' },
     { name: t('nav.nosotros'), href: '#nosotros' },
     { name: t('nav.servicios'), href: '#servicios' },
-    { name: t('nav.equipo'), href: '#equipo' },
     { name: t('nav.contacto'), href: '#contacto' },
   ];
 
