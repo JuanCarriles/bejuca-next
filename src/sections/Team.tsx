@@ -98,7 +98,7 @@ export default function Team() {
                             >
                                 <Image
                                     src={member.image}
-                                    alt={t(`team.members.${member.key}.name`)}
+                                    alt={`${t(`team.members.${member.key}.name`)}, ${t(`team.members.${member.key}.role`)} en Bejuca Consulting`}
                                     fill
                                     className="object-cover"
                                     sizes="144px"

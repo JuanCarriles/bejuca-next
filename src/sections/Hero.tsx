@@ -15,8 +15,17 @@ export default function Hero() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    // Respect prefers-reduced-motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
+
+    const isMobile = window.innerWidth < 768;
+    const particleCount = isMobile ? 30 : 80;
+    const connectionDistance = 150;
+    const maxConnections = isMobile ? 2 : 3;
 
     const resizeCanvas = () => {
       const section = canvas.parentElement;
@@ -26,7 +35,6 @@ export default function Hero() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Also observe section size changes
     const resizeObserver = new ResizeObserver(resizeCanvas);
     if (canvas.parentElement) {
       resizeObserver.observe(canvas.parentElement);
@@ -41,9 +49,6 @@ export default function Hero() {
       opacity: number;
     }> = [];
 
-    const particleCount = 80;
-    const connectionDistance = 150;
-
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,
@@ -56,8 +61,16 @@ export default function Hero() {
     }
 
     let animationId: number;
+    let frameCount = 0;
+    const skipFrames = isMobile ? 2 : 0; // Skip every 2nd frame on mobile
 
     const animate = () => {
+      frameCount++;
+      if (skipFrames > 0 && frameCount % (skipFrames + 1) !== 0) {
+        animationId = requestAnimationFrame(animate);
+        return;
+      }
+
       ctx.fillStyle = theme === 'dark'
         ? 'rgba(26, 42, 58, 0.1)'
         : 'rgba(248, 250, 252, 0.1)';
@@ -77,7 +90,8 @@ export default function Hero() {
         ctx.fillStyle = `rgba(${particleColor}, ${particle.opacity})`;
         ctx.fill();
 
-        for (let j = i + 1; j < particles.length; j++) {
+        let connections = 0;
+        for (let j = i + 1; j < particles.length && connections < maxConnections; j++) {
           const dx = particles[j].x - particle.x;
           const dy = particles[j].y - particle.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
@@ -89,6 +103,7 @@ export default function Hero() {
             ctx.strokeStyle = `rgba(${particleColor}, ${0.15 * (1 - distance / connectionDistance)})`;
             ctx.lineWidth = 1;
             ctx.stroke();
+            connections++;
           }
         }
       });

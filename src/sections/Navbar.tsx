@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { useTheme } from '@/context/ThemeContext';
+import { Link } from '@/i18n/navigation';
+import Image from 'next/image';
 import { Menu, X, Globe, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -28,27 +30,26 @@ export default function Navbar() {
   }, []);
 
   const changeLanguage = (lng: string) => {
-    // Navigate to the same page in the new locale
-    window.location.pathname = `/${lng}`;
+    const pathname = window.location.pathname;
+    const search = window.location.search;
+    const hash = window.location.hash;
+    const newUrl = `/${lng}${pathname.replace(/^\/[^/]+/, '')}${search}${hash}`;
+    window.location.href = newUrl;
   };
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      // Navigate to landing page with the section hash
-      window.location.href = `/${locale}${href}`;
-    }
-    setIsMobileMenuOpen(false);
-  };
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   const navLinks = [
-    { name: t('nav.inicio'), href: '#inicio' },
-    { name: t('nav.nosotros'), href: '#nosotros' },
-    { name: t('nav.servicios'), href: '#servicios' },
-    { name: t('nav.contacto'), href: '#contacto' },
+    { name: t('nav.inicio'), hash: '#inicio' },
+    { name: t('nav.nosotros'), hash: '#nosotros' },
+    { name: t('nav.servicios'), hash: '#servicios' },
+    { name: t('nav.contacto'), hash: '#contacto' },
   ];
+
+  const linkClasses = `transition-colors duration-200 text-sm font-medium ${theme === 'dark'
+    ? 'text-gray-300 hover:text-[#3CB4D8]'
+    : 'text-gray-600 hover:text-[#0891b2]'
+    }`;
 
   return (
     <nav
@@ -62,30 +63,27 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection('#inicio')}
-            className="flex items-center cursor-pointer"
-          >
-            <img
+          <Link href="/" className="flex items-center cursor-pointer relative h-12 w-[160px]">
+            <Image
               src={theme === 'dark' ? '/bejuca-logo-claro.png' : '/bejuca-logo-oscuro.png'}
-              alt="Bejuca Consulting"
-              className="h-12 w-auto object-contain"
+              alt="Logo Bejuca Consulting - Consultora de transformación digital en Tucumán"
+              fill
+              className="object-contain"
+              priority
+              sizes="160px"
             />
-          </button>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <button
+              <a
                 key={link.name}
-                onClick={() => scrollToSection(link.href)}
-                className={`transition-colors duration-200 text-sm font-medium ${theme === 'dark'
-                  ? 'text-gray-300 hover:text-[#3CB4D8]'
-                  : 'text-gray-600 hover:text-[#0891b2]'
-                  }`}
+                href={`/${locale}${link.hash}`}
+                className={linkClasses}
               >
                 {link.name}
-              </button>
+              </a>
             ))}
 
             {/* Theme Toggle */}
@@ -127,12 +125,11 @@ export default function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button
-              onClick={() => scrollToSection('#contacto')}
-              className="bg-[#3CB4D8] hover:bg-[#2a9bc0] text-white px-6"
-            >
-              {t('nav.consultar')}
-            </Button>
+            <a href={`/${locale}#contacto`}>
+              <Button className="bg-[#3CB4D8] hover:bg-[#2a9bc0] text-white px-6">
+                {t('nav.consultar')}
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -153,16 +150,17 @@ export default function Navbar() {
           }`}>
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
-              <button
+              <a
                 key={link.name}
-                onClick={() => scrollToSection(link.href)}
+                href={`/${locale}${link.hash}`}
+                onClick={closeMobileMenu}
                 className={`block w-full text-left transition-colors duration-200 py-2 ${theme === 'dark'
                   ? 'text-gray-300 hover:text-[#3CB4D8]'
                   : 'text-gray-600 hover:text-[#0891b2]'
                   }`}
               >
                 {link.name}
-              </button>
+              </a>
             ))}
 
             {/* Mobile Theme Toggle */}
@@ -193,12 +191,11 @@ export default function Navbar() {
               </button>
             </div>
 
-            <Button
-              onClick={() => scrollToSection('#contacto')}
-              className="w-full bg-[#3CB4D8] hover:bg-[#2a9bc0] text-white mt-4"
-            >
-              {t('nav.consultar')}
-            </Button>
+            <a href={`/${locale}#contacto`} onClick={closeMobileMenu} className="block">
+              <Button className="w-full bg-[#3CB4D8] hover:bg-[#2a9bc0] text-white mt-4">
+                {t('nav.consultar')}
+              </Button>
+            </a>
           </div>
         </div>
       )}
