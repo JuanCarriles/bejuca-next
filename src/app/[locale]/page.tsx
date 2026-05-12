@@ -111,7 +111,7 @@ export default async function HomePage({ params }: Props) {
                 <Hero />
                 <About />
                 <Services services={services} />
-                <Team />
+                {/* <Team /> */}
                 <Contact services={services} />
             </main>
             <Footer services={services} />
