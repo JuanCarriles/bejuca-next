@@ -145,9 +145,10 @@
   "footer": {
     "description": "Specialized consultancy in digital transformation and artificial intelligence. We drive business innovation from Tucumán, Argentina.",
     "links": {
+      "empresa": "Company",
+      "company": "About",
       "services": "Services",
-      "company": "Company",
-      "support": "Support"
+      "contact": "Contact"
     },
     "copyright": "Bejuca Consulting. All rights reserved.",
     "location": "Tucumán, Argentina • Since 2010"

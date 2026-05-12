@@ -187,9 +187,9 @@ export default function Contact({ services }: { services: Service[] }) {
                     <info.icon className="w-5 h-5 text-[#3CB4D8]" />
                   </div>
                   <div>
-                    <h4 className={`font-medium mb-1 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                    <h3 className={`text-base font-medium mb-1 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
                       {t(`contact.info.${info.key}.title`)}
-                    </h4>
+                    </h3>
                     <p className="text-[#3CB4D8] font-semibold">{t(`contact.info.${info.key}.content`)}</p>
                     <p className={`text-sm ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>
                       {t(`contact.info.${info.key}.description`)}
@@ -202,9 +202,9 @@ export default function Contact({ services }: { services: Service[] }) {
             {/* Social Links */}
             <div className={`p-6 rounded-xl border ${theme === 'dark' ? 'bg-[#243447] border-gray-700/50' : 'bg-white border-gray-200 shadow-sm'
               }`}>
-              <h4 className={`font-medium mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+              <h3 className={`text-base font-medium mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
                 {t('contact.social')}
-              </h4>
+              </h3>
               <div className="flex gap-3">
                 <a
                   href="https://www.facebook.com/bejuca"
@@ -252,9 +252,9 @@ export default function Contact({ services }: { services: Service[] }) {
                   <div className="w-16 h-16 rounded-full bg-[#3CB4D8]/20 flex items-center justify-center mx-auto mb-4">
                     <Send className="w-8 h-8 text-[#3CB4D8]" />
                   </div>
-                  <h4 className={`text-xl font-semibold mb-2 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                  <h3 className={`text-xl font-semibold mb-2 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
                     {t('contact.form.success')}
-                  </h4>
+                  </h3>
                   <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>
                     {t('contact.form.successDescription')}
                   </p>

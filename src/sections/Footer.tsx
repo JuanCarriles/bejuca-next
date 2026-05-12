@@ -2,6 +2,8 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { useTheme } from '@/context/ThemeContext';
+import { Link } from '@/i18n/navigation';
+import Image from 'next/image';
 import { Facebook, Instagram, ArrowUp, MapPin, Phone, Mail } from 'lucide-react';
 import { resolveTranslation } from '@/hooks/useServicesData';
 import type { Service } from '@/types/services.types';
@@ -15,29 +17,15 @@ export default function Footer({ services }: { services: Service[] }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const scrollToSection = (href: string) => {
-    if (href === '#') return;
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.location.href = `/${lang}${href}`;
-    }
-  };
-
-  const goToHome = () => {
-    window.location.href = `/${lang}#inicio`;
-  };
-
   const footerLinks = {
     services: services.map((s) => ({
       name: resolveTranslation(s.title, lang),
-      href: `/${lang}/servicios/${s.slug}`,
+      href: `/servicios/${s.slug}`,
     })),
     company: [
-      { name: t('footer.links.company'), href: '#nosotros' },
-      { name: t('footer.links.services'), href: '#servicios' },
-      { name: t('footer.links.contact'), href: '#contacto' },
+      { name: t('footer.links.company'), hash: '#nosotros' },
+      { name: t('footer.links.services'), hash: '#servicios' },
+      { name: t('footer.links.contact'), hash: '#contacto' },
     ],
   };
 
@@ -49,19 +37,23 @@ export default function Footer({ services }: { services: Service[] }) {
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <button onClick={goToHome} className="flex items-center gap-3 mb-6 cursor-pointer">
-              <img
-                src={theme === 'dark' ? '/bejuca-logo-reducido-claro.png' : '/bejuca-logo-reducido-oscuro.png'}
-                alt="Bejuca Consulting"
-                className="w-12 h-12 rounded-xl object-contain"
-              />
+            <Link href="/" className="flex items-center gap-3 mb-6 cursor-pointer">
+              <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0">
+                <Image
+                  src={theme === 'dark' ? '/bejuca-logo-reducido-claro.png' : '/bejuca-logo-reducido-oscuro.png'}
+                  alt="Logo reducido Bejuca Consulting"
+                  fill
+                  className="object-contain"
+                  sizes="48px"
+                />
+              </div>
               <div className="flex flex-col text-left">
                 <span className={`font-bold text-xl ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Bejuca</span>
                 <span className="text-[#3CB4D8] text-xs tracking-wider uppercase">
                   Consulting
                 </span>
               </div>
-            </button>
+            </Link>
 
             <p className={`text-sm leading-relaxed mb-6 max-w-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
               }`}>
@@ -103,14 +95,34 @@ export default function Footer({ services }: { services: Service[] }) {
 
           {/* Services Links */}
           <div className="lg:col-span-2">
-            <h4 className={`font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+            <p className={`text-base font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
               {t('footer.links.services')}
-            </h4>
+            </p>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <a
+                  <Link
                     href={link.href}
+                    className={`transition-colors text-sm ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-600 hover:text-[#0891b2]'
+                      }`}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company Links */}
+          <div>
+            <p className={`text-base font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+              {t('footer.links.empresa')}
+            </p>
+            <ul className="space-y-3">
+              {footerLinks.company.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={`/${lang}${link.hash}`}
                     className={`transition-colors text-sm ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-600 hover:text-[#0891b2]'
                       }`}
                   >
@@ -121,31 +133,11 @@ export default function Footer({ services }: { services: Service[] }) {
             </ul>
           </div>
 
-          {/* Company Links */}
-          <div>
-            <h4 className={`font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-              {t('footer.links.empresa')}
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className={`transition-colors text-sm ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-600 hover:text-[#0891b2]'
-                      }`}
-                  >
-                    {link.name}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact Info */}
           <div>
-            <h4 className={`font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+            <p className={`text-base font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
               {t('contact.label')}
-            </h4>
+            </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-[#3CB4D8] flex-shrink-0" />
