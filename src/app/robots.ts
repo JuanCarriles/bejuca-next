@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/api', '/_next', '/_vercel'],
         },
-        sitemap: 'https://bejuca.com/sitemap.xml',
+        sitemap: 'https://bejuca.com.ar/sitemap.xml',
     };
 }
