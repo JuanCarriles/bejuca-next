@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import Navbar from '@/sections/Navbar';
 import Hero from '@/sections/Hero';
+import About from '@/sections/About';
 import dynamic from 'next/dynamic';
 
-const About = dynamic(() => import('@/sections/About'));
 const Services = dynamic(() => import('@/sections/Services'));
 const Team = dynamic(() => import('@/sections/Team'));
 const Contact = dynamic(() => import('@/sections/Contact'));
