@@ -47,22 +47,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         alternates: {
-            canonical: `https://bejuca.com/${locale}/servicios/${slug}`,
+            canonical: `https://bejuca.com.ar/${locale}/servicios/${slug}`,
             languages: {
-                es: `https://bejuca.com/es/servicios/${slug}`,
-                en: `https://bejuca.com/en/servicios/${slug}`,
+                es: `https://bejuca.com.ar/es/servicios/${slug}`,
+                en: `https://bejuca.com.ar/en/servicios/${slug}`,
             },
         },
         openGraph: {
             title: `${title} | Bejuca Consulting`,
             description,
-            url: `https://bejuca.com/${locale}/servicios/${slug}`,
+            url: `https://bejuca.com.ar/${locale}/servicios/${slug}`,
             siteName: 'Bejuca Consulting',
             locale: locale === 'es' ? 'es_AR' : 'en_US',
             type: 'website',
             images: [
                 {
-                    url: 'https://bejuca.com/bejuca-logo-oscuro.png',
+                    url: 'https://bejuca.com.ar/bejuca-logo-oscuro.png',
                     width: 800,
                     height: 800,
                     alt: `${title} | Bejuca Consulting`,
@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title: `${title} | Bejuca Consulting`,
             description,
             site: '@bejucatuc',
-            images: ['https://bejuca.com/bejuca-logo-oscuro.png'],
+            images: ['https://bejuca.com.ar/bejuca-logo-oscuro.png'],
         },
     };
 }
@@ -99,15 +99,15 @@ export default async function ServicePage({ params }: Props) {
     const breadcrumbItems = [
         {
             name: isEs ? 'Inicio' : 'Home',
-            url: `https://bejuca.com/${locale}`,
+            url: `https://bejuca.com.ar/${locale}`,
         },
         {
             name: isEs ? 'Servicios' : 'Services',
-            url: `https://bejuca.com/${locale}/servicios`,
+            url: `https://bejuca.com.ar/${locale}/servicios`,
         },
         {
             name: title,
-            url: `https://bejuca.com/${locale}/servicios/${slug}`,
+            url: `https://bejuca.com.ar/${locale}/servicios/${slug}`,
         },
     ];
 

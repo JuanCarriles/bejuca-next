@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
 import Navbar from '@/sections/Navbar';
 import Hero from '@/sections/Hero';
-import About from '@/sections/About';
-import Services from '@/sections/Services';
-import Team from '@/sections/Team';
-import Contact from '@/sections/Contact';
-import Footer from '@/sections/Footer';
-import WhatsAppButton from '@/components/WhatsAppButton';
+import dynamic from 'next/dynamic';
+
+const About = dynamic(() => import('@/sections/About'));
+const Services = dynamic(() => import('@/sections/Services'));
+const Team = dynamic(() => import('@/sections/Team'));
+const Contact = dynamic(() => import('@/sections/Contact'));
+const Footer = dynamic(() => import('@/sections/Footer'));
+const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'));
 import servicesData from '../../../public/data/services.json';
 import type { Service } from '@/types/services.types';
 import {
@@ -48,22 +50,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             },
         },
         alternates: {
-            canonical: `https://bejuca.com/${locale}`,
+            canonical: `https://bejuca.com.ar/${locale}`,
             languages: {
-                es: 'https://bejuca.com/es',
-                en: 'https://bejuca.com/en',
+                es: 'https://bejuca.com.ar/es',
+                en: 'https://bejuca.com.ar/en',
             },
         },
         openGraph: {
             title,
             description,
-            url: `https://bejuca.com/${locale}`,
+            url: `https://bejuca.com.ar/${locale}`,
             siteName: 'Bejuca Consulting',
             locale: isEs ? 'es_AR' : 'en_US',
             type: 'website',
             images: [
                 {
-                    url: 'https://bejuca.com/bejuca-logo-oscuro.png',
+                    url: 'https://bejuca.com.ar/bejuca-logo-oscuro.png',
                     width: 800,
                     height: 800,
                     alt: 'Bejuca Consulting Logo',
@@ -75,7 +77,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title,
             description,
             site: '@bejucatuc',
-            images: ['https://bejuca.com/bejuca-logo-oscuro.png'],
+            images: ['https://bejuca.com.ar/bejuca-logo-oscuro.png'],
         },
     };
 }

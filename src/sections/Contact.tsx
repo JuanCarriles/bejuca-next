@@ -210,6 +210,7 @@ export default function Contact({ services }: { services: Service[] }) {
                   href="https://www.facebook.com/bejuca"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visitar Facebook de Bejuca"
                   className="w-10 h-10 rounded-lg bg-[#3CB4D8]/10 flex items-center justify-center hover:bg-[#3CB4D8]/20 transition-colors"
                 >
                   <Facebook className="w-5 h-5 text-[#3CB4D8]" />
@@ -218,6 +219,7 @@ export default function Contact({ services }: { services: Service[] }) {
                   href="https://www.instagram.com/bejucatuc/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visitar Instagram de Bejuca"
                   className="w-10 h-10 rounded-lg bg-[#3CB4D8]/10 flex items-center justify-center hover:bg-[#3CB4D8]/20 transition-colors"
                 >
                   <Instagram className="w-5 h-5 text-[#3CB4D8]" />
@@ -326,7 +328,9 @@ export default function Contact({ services }: { services: Service[] }) {
                           setFormData((prev) => ({ ...prev, service: value }))
                         }
                       >
-                        <SelectTrigger className={`${theme === 'dark'
+                        <SelectTrigger 
+                          aria-label={t('contact.form.servicePlaceholder')}
+                          className={`${theme === 'dark'
                           ? 'bg-[#1a2a3a] border-gray-700 text-white'
                           : 'bg-white border-gray-300 text-gray-900'
                           } focus:ring-[#3CB4D8]/20`}>
@@ -369,7 +373,7 @@ export default function Contact({ services }: { services: Service[] }) {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#3CB4D8] hover:bg-[#2a9bc0] text-white py-6"
+                    className="w-full bg-[#3CB4D8] hover:bg-[#2a9bc0] text-gray-900 font-semibold py-6"
                   >
                     {isSubmitting ? (
                       <span className="flex items-center gap-2">

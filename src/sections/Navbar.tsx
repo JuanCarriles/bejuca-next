@@ -126,7 +126,7 @@ export default function Navbar() {
             </DropdownMenu>
 
             <a href={`/${locale}#contacto`}>
-              <Button className="bg-[#3CB4D8] hover:bg-[#2a9bc0] text-white px-6">
+              <Button className="bg-[#3CB4D8] hover:bg-[#2a9bc0] text-gray-900 font-semibold px-6">
                 {t('nav.consultar')}
               </Button>
             </a>
@@ -136,6 +136,7 @@ export default function Navbar() {
           <button
             className={`md:hidden p-2 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú principal"}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -192,7 +193,7 @@ export default function Navbar() {
             </div>
 
             <a href={`/${locale}#contacto`} onClick={closeMobileMenu} className="block">
-              <Button className="w-full bg-[#3CB4D8] hover:bg-[#2a9bc0] text-white mt-4">
+              <Button className="w-full bg-[#3CB4D8] hover:bg-[#2a9bc0] text-gray-900 font-semibold mt-4">
                 {t('nav.consultar')}
               </Button>
             </a>

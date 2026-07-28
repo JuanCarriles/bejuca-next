@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import servicesData from '../../public/data/services.json';
 
-const BASE_URL = 'https://bejuca.com';
+const BASE_URL = 'https://bejuca.com.ar';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const locales = ['es', 'en'];
