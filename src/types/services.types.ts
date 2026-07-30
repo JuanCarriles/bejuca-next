@@ -24,4 +24,11 @@ export interface Service {
     useCases: ServiceUseCase[];
     technologies: string[];
     benefits: Translation[];
+    cta?: {
+        title?: Translation;
+        description?: Translation;
+        text: Translation;
+        link: string;
+        isExternal?: boolean;
+    };
 }

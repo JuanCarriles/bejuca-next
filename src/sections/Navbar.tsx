@@ -43,6 +43,7 @@ export default function Navbar() {
     { name: t('nav.inicio'), hash: '#inicio' },
     { name: t('nav.nosotros'), hash: '#nosotros' },
     { name: t('nav.servicios'), hash: '#servicios' },
+    // { name: 'Cursos', hash: '/cursos' }, // Oculto temporalmente para pruebas en producción
     { name: t('nav.contacto'), hash: '#contacto' },
   ];
 
