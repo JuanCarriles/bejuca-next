@@ -1,0 +1,326 @@
+[
+    {
+        "id": "c_marketing_digital_01",
+        "slug": "marketing-digital-estrategico",
+        "title": {
+            "es": "Marketing Digital Estratégico",
+            "en": "Strategic Digital Marketing"
+        },
+        "subtitle": {
+            "es": "Domina las estrategias para hacer crecer cualquier negocio en internet.",
+            "en": "Master the strategies to grow any business online."
+        },
+        "description": {
+            "es": "Aprende a planificar, ejecutar y medir campañas de marketing digital multiplataforma.",
+            "en": "Learn to plan, execute and measure multi-platform digital marketing campaigns."
+        },
+        "fullDescription": {
+            "es": "Este curso intensivo te llevará desde los fundamentos del marketing digital hasta la ejecución de estrategias avanzadas en redes sociales, SEO, SEM y email marketing. Está diseñado con un enfoque 100% práctico, donde aplicarás lo aprendido en casos reales de negocio.",
+            "en": "This intensive course will take you from digital marketing fundamentals to advanced strategies in social media, SEO, SEM, and email marketing. Designed with a 100% practical approach, you will apply your knowledge to real business cases."
+        },
+        "modality": "online-en-vivo",
+        "startDate": {
+            "es": "15 de Septiembre, 2026",
+            "en": "September 15, 2026"
+        },
+        "schedule": {
+            "es": "Martes y Jueves, 19:00 a 21:00 hs (ART)",
+            "en": "Tuesday and Thursday, 7:00 PM to 9:00 PM (ART)"
+        },
+        "duration": {
+            "es": "8 semanas",
+            "en": "8 weeks"
+        },
+        "totalHours": 32,
+        "priceARS": 95,
+        "priceUSD": 8,
+        "prerequisites": [
+            {
+                "es": "Conocimientos básicos de uso de PC e internet.",
+                "en": "Basic PC and internet skills."
+            },
+            {
+                "es": "No requiere experiencia previa en marketing.",
+                "en": "No previous marketing experience required."
+            }
+        ],
+        "targetAudience": [
+            {
+                "es": "Emprendedores que buscan escalar sus ventas.",
+                "en": "Entrepreneurs looking to scale sales."
+            },
+            {
+                "es": "Profesionales que quieren actualizarse en marketing digital.",
+                "en": "Professionals wanting to update their digital marketing skills."
+            },
+            {
+                "es": "Estudiantes de comunicación o publicidad.",
+                "en": "Communication or advertising students."
+            }
+        ],
+        "objectives": [
+            {
+                "es": "Crear un Plan de Marketing Digital completo.",
+                "en": "Create a complete Digital Marketing Plan."
+            },
+            {
+                "es": "Lanzar campañas rentables en Meta Ads y Google Ads.",
+                "en": "Launch profitable campaigns on Meta Ads and Google Ads."
+            },
+            {
+                "es": "Medir y analizar el ROI de tus estrategias.",
+                "en": "Measure and analyze the ROI of your strategies."
+            }
+        ],
+        "syllabus": [
+            {
+                "title": {
+                    "es": "Módulo 1: Fundamentos",
+                    "en": "Module 1: Fundamentals"
+                },
+                "topics": [
+                    {
+                        "es": "El ecosistema digital actual",
+                        "en": "The current digital ecosystem"
+                    },
+                    {
+                        "es": "Buyer Persona y Customer Journey",
+                        "en": "Buyer Persona and Customer Journey"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "es": "Módulo 2: Publicidad Paid (SEM & Social Ads)",
+                    "en": "Module 2: Paid Advertising"
+                },
+                "topics": [
+                    {
+                        "es": "Introducción a Meta Ads Manager",
+                        "en": "Intro to Meta Ads Manager"
+                    },
+                    {
+                        "es": "Google Ads: Búsqueda y Display",
+                        "en": "Google Ads: Search and Display"
+                    }
+                ]
+            }
+        ],
+        "instructor": {
+            "name": "Lic. Belén Ovejero",
+            "role": {
+                "es": "Especialista en Marketing Digital",
+                "en": "Digital Marketing Specialist"
+            },
+            "bio": {
+                "es": "Licenciada en Comunicación con más de 10 años de experiencia gestionando pautas para marcas internacionales.",
+                "en": "Communication graduate with 10+ years of experience managing campaigns for international brands."
+            },
+            "photo": "https://ui-avatars.com/api/?name=Belen+Ovejero&background=3CB4D8&color=fff&size=200",
+            "email": "belen@bejuca.com.ar"
+        },
+        "certificate": {
+            "es": "Certificado de Aprobación expedido por Bejuca Consulting.",
+            "en": "Certificate of Approval issued by Bejuca Consulting."
+        },
+        "includes": [
+            {
+                "es": "Material de lectura descargable",
+                "en": "Downloadable reading material"
+            },
+            {
+                "es": "Acceso al grupo exclusivo de WhatsApp",
+                "en": "Access to exclusive WhatsApp group"
+            },
+            {
+                "es": "Plantillas de estrategias de marketing",
+                "en": "Marketing strategy templates"
+            }
+        ],
+        "whatsappGroupLink": "https://chat.whatsapp.com/INVITE_LINK_DEMO",
+        "faq": [
+            {
+                "question": {
+                    "es": "¿Las clases quedan grabadas?",
+                    "en": "Are classes recorded?"
+                },
+                "answer": {
+                    "es": "Sí, podrás acceder a las grabaciones durante 6 meses.",
+                    "en": "Yes, you can access recordings for 6 months."
+                }
+            },
+            {
+                "question": {
+                    "es": "¿Necesito conocimientos previos?",
+                    "en": "Do I need previous knowledge?"
+                },
+                "answer": {
+                    "es": "No, empezamos desde los conceptos más básicos.",
+                    "en": "No, we start from the most basic concepts."
+                }
+            }
+        ]
+    },
+    {
+        "id": "c_marketing_digital_01",
+        "slug": "marketing-digital-estrategico",
+        "title": {
+            "es": "Marketing Digital Estratégico",
+            "en": "Strategic Digital Marketing"
+        },
+        "subtitle": {
+            "es": "Domina las estrategias para hacer crecer cualquier negocio en internet.",
+            "en": "Master the strategies to grow any business online."
+        },
+        "description": {
+            "es": "Aprende a planificar, ejecutar y medir campañas de marketing digital multiplataforma.",
+            "en": "Learn to plan, execute and measure multi-platform digital marketing campaigns."
+        },
+        "fullDescription": {
+            "es": "Este curso intensivo te llevará desde los fundamentos del marketing digital hasta la ejecución de estrategias avanzadas en redes sociales, SEO, SEM y email marketing. Está diseñado con un enfoque 100% práctico, donde aplicarás lo aprendido en casos reales de negocio.",
+            "en": "This intensive course will take you from digital marketing fundamentals to advanced strategies in social media, SEO, SEM, and email marketing. Designed with a 100% practical approach, you will apply your knowledge to real business cases."
+        },
+        "modality": "online-en-vivo",
+        "startDate": {
+            "es": "15 de Septiembre, 2026",
+            "en": "September 15, 2026"
+        },
+        "schedule": {
+            "es": "Martes y Jueves, 19:00 a 21:00 hs (ART)",
+            "en": "Tuesday and Thursday, 7:00 PM to 9:00 PM (ART)"
+        },
+        "duration": {
+            "es": "8 semanas",
+            "en": "8 weeks"
+        },
+        "totalHours": 32,
+        "priceARS": 95000,
+        "priceUSD": 85,
+        "prerequisites": [
+            {
+                "es": "Conocimientos básicos de uso de PC e internet.",
+                "en": "Basic PC and internet skills."
+            },
+            {
+                "es": "No requiere experiencia previa en marketing.",
+                "en": "No previous marketing experience required."
+            }
+        ],
+        "targetAudience": [
+            {
+                "es": "Emprendedores que buscan escalar sus ventas.",
+                "en": "Entrepreneurs looking to scale sales."
+            },
+            {
+                "es": "Profesionales que quieren actualizarse en marketing digital.",
+                "en": "Professionals wanting to update their digital marketing skills."
+            },
+            {
+                "es": "Estudiantes de comunicación o publicidad.",
+                "en": "Communication or advertising students."
+            }
+        ],
+        "objectives": [
+            {
+                "es": "Crear un Plan de Marketing Digital completo.",
+                "en": "Create a complete Digital Marketing Plan."
+            },
+            {
+                "es": "Lanzar campañas rentables en Meta Ads y Google Ads.",
+                "en": "Launch profitable campaigns on Meta Ads and Google Ads."
+            },
+            {
+                "es": "Medir y analizar el ROI de tus estrategias.",
+                "en": "Measure and analyze the ROI of your strategies."
+            }
+        ],
+        "syllabus": [
+            {
+                "title": {
+                    "es": "Módulo 1: Fundamentos",
+                    "en": "Module 1: Fundamentals"
+                },
+                "topics": [
+                    {
+                        "es": "El ecosistema digital actual",
+                        "en": "The current digital ecosystem"
+                    },
+                    {
+                        "es": "Buyer Persona y Customer Journey",
+                        "en": "Buyer Persona and Customer Journey"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "es": "Módulo 2: Publicidad Paid (SEM & Social Ads)",
+                    "en": "Module 2: Paid Advertising"
+                },
+                "topics": [
+                    {
+                        "es": "Introducción a Meta Ads Manager",
+                        "en": "Intro to Meta Ads Manager"
+                    },
+                    {
+                        "es": "Google Ads: Búsqueda y Display",
+                        "en": "Google Ads: Search and Display"
+                    }
+                ]
+            }
+        ],
+        "instructor": {
+            "name": "Lic. Belén Ovejero",
+            "role": {
+                "es": "Especialista en Marketing Digital",
+                "en": "Digital Marketing Specialist"
+            },
+            "bio": {
+                "es": "Licenciada en Comunicación con más de 10 años de experiencia gestionando pautas para marcas internacionales.",
+                "en": "Communication graduate with 10+ years of experience managing campaigns for international brands."
+            },
+            "photo": "https://ui-avatars.com/api/?name=Belen+Ovejero&background=3CB4D8&color=fff&size=200",
+            "email": "belen@bejuca.com.ar"
+        },
+        "certificate": {
+            "es": "Certificado de Aprobación expedido por Bejuca Consulting.",
+            "en": "Certificate of Approval issued by Bejuca Consulting."
+        },
+        "includes": [
+            {
+                "es": "Material de lectura descargable",
+                "en": "Downloadable reading material"
+            },
+            {
+                "es": "Acceso al grupo exclusivo de WhatsApp",
+                "en": "Access to exclusive WhatsApp group"
+            },
+            {
+                "es": "Plantillas de estrategias de marketing",
+                "en": "Marketing strategy templates"
+            }
+        ],
+        "whatsappGroupLink": "https://chat.whatsapp.com/INVITE_LINK_DEMO",
+        "faq": [
+            {
+                "question": {
+                    "es": "¿Las clases quedan grabadas?",
+                    "en": "Are classes recorded?"
+                },
+                "answer": {
+                    "es": "Sí, podrás acceder a las grabaciones durante 6 meses.",
+                    "en": "Yes, you can access recordings for 6 months."
+                }
+            },
+            {
+                "question": {
+                    "es": "¿Necesito conocimientos previos?",
+                    "en": "Do I need previous knowledge?"
+                },
+                "answer": {
+                    "es": "No, empezamos desde los conceptos más básicos.",
+                    "en": "No, we start from the most basic concepts."
+                }
+            }
+        ]
+    }
+]
