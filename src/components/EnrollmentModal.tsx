@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Course } from "@/data/courses";
 import { useTheme } from "@/context/ThemeContext";
-import { Loader2 } from "lucide-react";
+import { Loader2, AlertCircle, CheckCircle2, Handshake } from "lucide-react";
 
 // Schema for validation
 const schema = z.object({
@@ -192,13 +192,8 @@ export default function EnrollmentModal({ isOpen, onClose, course, locale }: Pro
                 <div className="w-full flex justify-center"><Loader2 className="w-5 h-5 animate-spin" /></div>
               ) : (
                 <div className="flex items-center justify-between w-full">
-                  <div className="w-8 flex justify-start overflow-hidden">
-                    <img 
-                      src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.5/mercadopago/logo__small@2x.png" 
-                      alt="Mercado Pago" 
-                      className="h-6 max-w-none filter brightness-0 invert" 
-                      style={{ objectPosition: 'left' }}
-                    />
+                  <div className="w-8 flex justify-start items-center">
+                    <Handshake className="w-6 h-6 text-white" />
                   </div>
                   <span className="font-bold text-base flex-1 text-center">
                     {locale === "en" ? "Pay with Mercado Pago" : "Pagar con Mercado Pago"}
