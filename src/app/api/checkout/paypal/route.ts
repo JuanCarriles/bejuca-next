@@ -15,7 +15,8 @@ export async function POST(req: Request) {
         // Set up PayPal environment
         const clientId = process.env.PAYPAL_CLIENT_ID || '';
         const clientSecret = process.env.PAYPAL_CLIENT_SECRET || '';
-        const environment = process.env.NODE_ENV === 'production' 
+        const isLive = process.env.PAYPAL_MODE === 'live';
+        const environment = isLive 
             ? new checkoutNodeJssdk.core.LiveEnvironment(clientId, clientSecret)
             : new checkoutNodeJssdk.core.SandboxEnvironment(clientId, clientSecret);
         const client = new checkoutNodeJssdk.core.PayPalHttpClient(environment);
@@ -42,11 +43,11 @@ export async function POST(req: Request) {
         });
 
         const response = await client.execute(request);
-        
+
         // Find the approve link
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const approveLink = response.result.links.find((link: any) => link.rel === 'approve')?.href;
-        
+
         return NextResponse.json({ approveLink, orderId: response.result.id });
     } catch (error) {
         console.error("PayPal Checkout Error:", error);
