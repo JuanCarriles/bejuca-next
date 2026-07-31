@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Course } from "@/data/courses";
 import { useTheme } from "@/context/ThemeContext";
-import { Loader2, AlertCircle, CheckCircle2, Handshake } from "lucide-react";
+import { Loader2, AlertCircle, CheckCircle2 } from "lucide-react";
 
 // Schema for validation
 const schema = z.object({
@@ -58,31 +58,31 @@ export default function EnrollmentModal({ isOpen, onClose, course, locale }: Pro
     setError(null);
     try {
       if (paymentMethod === 'mercadopago') {
-          // MercadoPago para ARS
-          const res = await fetch('/api/checkout/mercadopago', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ ...data, courseSlug: course.slug })
-          });
-          const json = await res.json();
-          if (json.init_point) {
-              window.location.href = json.init_point;
-          } else {
-              throw new Error("No init_point returned");
-          }
+        // MercadoPago para ARS
+        const res = await fetch('/api/checkout/mercadopago', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...data, courseSlug: course.slug })
+        });
+        const json = await res.json();
+        if (json.init_point) {
+          window.location.href = json.init_point;
+        } else {
+          throw new Error("No init_point returned");
+        }
       } else if (paymentMethod === 'paypal') {
-          // PayPal para USD
-          const res = await fetch('/api/checkout/paypal', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ ...data, courseSlug: course.slug })
-          });
-          const json = await res.json();
-          if (json.approveLink) {
-              window.location.href = json.approveLink;
-          } else {
-              throw new Error("No approve link returned");
-          }
+        // PayPal para USD
+        const res = await fetch('/api/checkout/paypal', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...data, courseSlug: course.slug })
+        });
+        const json = await res.json();
+        if (json.approveLink) {
+          window.location.href = json.approveLink;
+        } else {
+          throw new Error("No approve link returned");
+        }
       }
     } catch (err: any) {
       setError("Ocurrió un error al procesar tu solicitud. Intenta nuevamente.");
@@ -174,7 +174,7 @@ export default function EnrollmentModal({ isOpen, onClose, course, locale }: Pro
                 {locale === "en" ? "Total to pay:" : "Total a pagar:"}
               </span>
               <span className="text-2xl font-bold text-[#3CB4D8]">
-                {locale === "en" 
+                {locale === "en"
                   ? `US$${course.priceUSD}`
                   : `$${course.priceARS.toLocaleString('es-AR')} ARS`
                 }
@@ -193,7 +193,7 @@ export default function EnrollmentModal({ isOpen, onClose, course, locale }: Pro
               ) : (
                 <div className="flex items-center justify-between w-full">
                   <div className="w-8 flex justify-start items-center">
-                    <Handshake className="w-6 h-6 text-white" />
+                    <img src="/marcadologo.png" alt="Mercado Pago" className="h-6 w-auto object-contain" />
                   </div>
                   <span className="font-bold text-base flex-1 text-center">
                     {locale === "en" ? "Pay with Mercado Pago" : "Pagar con Mercado Pago"}
@@ -215,10 +215,10 @@ export default function EnrollmentModal({ isOpen, onClose, course, locale }: Pro
               ) : (
                 <div className="flex items-center justify-between w-full">
                   <div className="w-8 flex justify-start">
-                    <img 
-                      src="https://upload.wikimedia.org/wikipedia/commons/b/b7/PayPal_Logo_Icon_2014.svg" 
-                      alt="PayPal" 
-                      className="h-6 object-contain" 
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/b/b7/PayPal_Logo_Icon_2014.svg"
+                      alt="PayPal"
+                      className="h-6 object-contain"
                     />
                   </div>
                   <span className="font-bold text-base flex-1 text-center">
