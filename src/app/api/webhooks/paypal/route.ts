@@ -78,13 +78,19 @@ export async function POST(req: Request) {
 
         console.log(`[Webhook PayPal] Captura ${captureId} APROBADA.`);
 
+        // Marcar en DB como procesado PRIMERO para evitar enviar 2 veces
+        const guardado = await marcarComoProcesado(captureId, email, courseSlug);
+        
+        if (!guardado) {
+            console.log(`[Webhook PayPal] Pago ${captureId} ya existía en la Base de Datos. Omitiendo envío de correos duplicados.`);
+            return NextResponse.json({ received: true, status: 'already_processed_race_condition' });
+        }
+
+        console.log(`[Webhook PayPal] Pago ${captureId} registrado en DB con éxito. Procediendo a enviar correos...`);
+
         // Enviar Correos
         await sendWelcomeEmail(email, course.title.en, course.whatsappGroupLink);
         await sendProfessorNotification(course.instructor.email, email, course.title.en);
-
-        // Marcar procesado
-        await marcarComoProcesado(captureId, email, courseSlug);
-        console.log(`[Webhook PayPal] Pago ${captureId} procesado con éxito en Base de Datos.`);
 
         return NextResponse.json({ received: true, status: 'processed' });
 
