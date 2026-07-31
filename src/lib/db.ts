@@ -29,22 +29,22 @@ export async function yaFueProcesado(idPago: string): Promise<boolean> {
     }
 }
 
-export async function marcarComoProcesado(idPago: string, email: string, curso: string): Promise<void> {
+export async function marcarComoProcesado(idPago: string, email: string, courseSlug: string): Promise<boolean> {
     try {
         await pool.query(
-            "INSERT INTO pagos_procesados (id_pago, email, curso) VALUES (?, ?, ?)",
-            [idPago, email, curso]
+            "INSERT INTO pagos_procesados (id_pago, email, course_slug) VALUES (?, ?, ?)",
+            [idPago, email, courseSlug]
         );
+        return true;
     } catch (error: any) {
-        // Error ER_DUP_ENTRY significa que otro hilo/webhook ya lo insertó (condición de carrera)
         if (error.code === 'ER_DUP_ENTRY') {
             console.log(`El pago ${idPago} ya estaba procesado (detectado por duplicidad PRIMARY KEY)`);
-            return;
+            return false;
         }
         console.error("Error al marcar pago como procesado:", error.message);
         if (error.code === 'ECONNREFUSED') {
-            console.log("⚠️ [Modo Local] Omitiendo guardado en BD porque no hay conexión local.");
-            return;
+            console.log("⚠️ [Modo Local] Omitiendo guardado en BD porque no hay conexión local. Permitiendo correos.");
+            return true; // En modo local permitimos que siga para poder testear los correos
         }
         throw error;
     }

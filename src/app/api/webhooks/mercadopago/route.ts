@@ -84,13 +84,19 @@ export async function POST(req: Request) {
             return NextResponse.json({ received: true });
         }
 
+        // Marcar en DB como procesado PRIMERO para evitar enviar 2 veces si hay una condición de carrera
+        const guardado = await marcarComoProcesado(paymentId.toString(), email, courseSlug);
+        
+        if (!guardado) {
+            console.log(`[Webhook MP] Pago ${paymentId} ya existía en la Base de Datos. Omitiendo envío de correos duplicados.`);
+            return NextResponse.json({ received: true, status: 'already_processed_race_condition' });
+        }
+
+        console.log(`[Webhook MP] Pago ${paymentId} registrado en DB con éxito. Procediendo a enviar correos...`);
+
         // Enviar Correos!
         await sendWelcomeEmail(email, course.title.es, course.whatsappGroupLink);
         await sendProfessorNotification(course.instructor.email, email, course.title.es);
-
-        // Marcar en DB como procesado para no volver a enviar correos
-        await marcarComoProcesado(paymentId.toString(), email, courseSlug);
-        console.log(`[Webhook MP] Pago ${paymentId} procesado con éxito en Base de Datos.`);
 
         return NextResponse.json({ received: true, status: 'processed' });
 
