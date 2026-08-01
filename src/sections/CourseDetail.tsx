@@ -2,10 +2,10 @@
 
 import { useTheme } from '@/context/ThemeContext';
 import { Course } from '@/data/courses';
-import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText } from 'lucide-react';
+import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText, MonitorPlay, CalendarDays } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
-import EnrollmentModal from '@/components/EnrollmentModal';
+import Link from 'next/link';
 
 interface Props {
     course: Course;
@@ -14,7 +14,6 @@ interface Props {
 
 export default function CourseDetail({ course, locale }: Props) {
     const { theme } = useTheme();
-    const [isEnrollModalOpen, setIsEnrollModalOpen] = useState(false);
     const currentLocale = locale as 'es' | 'en';
 
     return (
@@ -26,7 +25,7 @@ export default function CourseDetail({ course, locale }: Props) {
                         <div className="grid lg:grid-cols-3 gap-12 items-start">
                             <div className="lg:col-span-2 space-y-6">
                                 <span className="inline-block px-3 py-1 bg-[#3CB4D8]/10 text-[#3CB4D8] rounded-full text-sm font-semibold uppercase tracking-wider">
-                                    {course.modality}
+                                    {course.modality.replace(/-/g, ' ')}
                                 </span>
                                 <h1 className={`text-4xl md:text-5xl font-bold leading-tight ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
                                     {course.title[currentLocale]}
@@ -34,14 +33,14 @@ export default function CourseDetail({ course, locale }: Props) {
                                 <p className={`text-xl ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
                                     {course.subtitle[currentLocale]}
                                 </p>
-                                
-                                <div className="flex flex-wrap gap-6 pt-6">
+
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
                                     <div className={`flex items-center gap-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
                                         <div className={`flex items-center justify-center w-12 h-12 rounded-xl shrink-0 ${theme === 'dark' ? 'bg-[#3CB4D8]/10' : 'bg-cyan-50'}`}>
                                             <Calendar className="w-5 h-5 text-[#3CB4D8]" />
                                         </div>
                                         <div>
-                                            <p className={`text-xs uppercase tracking-wider font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>Inicio</p>
+                                            <p className={`text-xs uppercase tracking-wider font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>{currentLocale === 'es' ? 'Inicio' : 'Start Date'}</p>
                                             <p className="font-bold">{course.startDate[currentLocale]}</p>
                                         </div>
                                     </div>
@@ -50,25 +49,76 @@ export default function CourseDetail({ course, locale }: Props) {
                                             <Clock className="w-5 h-5 text-[#3CB4D8]" />
                                         </div>
                                         <div>
-                                            <p className={`text-xs uppercase tracking-wider font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>Duración</p>
+                                            <p className={`text-xs uppercase tracking-wider font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>{currentLocale === 'es' ? 'Duración' : 'Duration'}</p>
                                             <p className="font-bold">{course.duration[currentLocale]}</p>
+                                        </div>
+                                    </div>
+                                    <div className={`flex items-center gap-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                                        <div className={`flex items-center justify-center w-12 h-12 rounded-xl shrink-0 ${theme === 'dark' ? 'bg-[#3CB4D8]/10' : 'bg-cyan-50'}`}>
+                                            <CalendarDays className="w-5 h-5 text-[#3CB4D8]" />
+                                        </div>
+                                        <div>
+                                            <p className={`text-xs uppercase tracking-wider font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>{currentLocale === 'es' ? 'Horario' : 'Schedule'}</p>
+                                            <p className="font-bold">{course.schedule[currentLocale]}</p>
+                                        </div>
+                                    </div>
+                                    <div className={`flex items-center gap-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                                        <div className={`flex items-center justify-center w-12 h-12 rounded-xl shrink-0 ${theme === 'dark' ? 'bg-[#3CB4D8]/10' : 'bg-cyan-50'}`}>
+                                            <MonitorPlay className="w-5 h-5 text-[#3CB4D8]" />
+                                        </div>
+                                        <div>
+                                            <p className={`text-xs uppercase tracking-wider font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>{currentLocale === 'es' ? 'Modalidad' : 'Modality'}</p>
+                                            <p className="font-bold capitalize">{course.modality.replace(/-/g, ' ')}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             {/* Sticky Checkout Card */}
                             <div className={`lg:sticky lg:top-32 rounded-2xl p-8 border shadow-xl ${theme === 'dark' ? 'bg-[#243447] border-gray-700' : 'bg-gray-50 border-gray-200'}`}>
                                 <p className={`text-sm mb-2 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>Inversión</p>
-                                <div className={`text-4xl font-bold mb-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-                                    {currentLocale === 'es' ? `$${course.priceARS.toLocaleString('es-AR')}` : `US$${course.priceUSD}`}
+                                <div className="space-y-4 mb-6 mt-2">
+                                    {currentLocale === 'es' ? (
+                                        <>
+                                            <div className={`p-4 rounded-xl border-2 transition-all ${theme === 'dark' ? 'bg-[#009EE3]/10 border-[#009EE3]/30' : 'bg-white border-[#009EE3]/20 shadow-sm'}`}>
+                                                <div className="flex justify-between items-center mb-1">
+                                                    <span className={`text-xs font-bold uppercase tracking-wider ${theme === 'dark' ? 'text-[#38bdf8]' : 'text-[#009EE3]'}`}>Mercado Pago (Argentina)</span>
+                                                    <img src="/marcadologo.png" alt="Mercado Pago" className="h-5 opacity-90" />
+                                                </div>
+                                                <div className={`text-3xl font-extrabold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                                                    ${course.priceARS.toLocaleString('es-AR')} <span className={`text-sm font-medium ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>ARS</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div className={`p-4 rounded-xl border-2 transition-all ${theme === 'dark' ? 'bg-[#0070BA]/10 border-[#0070BA]/30' : 'bg-white border-[#0070BA]/20 shadow-sm'}`}>
+                                                <div className="flex justify-between items-center mb-1">
+                                                    <span className={`text-xs font-bold uppercase tracking-wider ${theme === 'dark' ? 'text-[#60a5fa]' : 'text-[#0070BA]'}`}>PayPal (Internacional)</span>
+                                                    <span className={`text-sm font-extrabold italic ${theme === 'dark' ? 'text-[#60a5fa]' : 'text-[#0070BA]'}`}>PayPal</span>
+                                                </div>
+                                                <div className={`text-3xl font-extrabold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                                                    US$ {course.priceUSD}
+                                                </div>
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <div className={`p-4 rounded-xl border-2 transition-all ${theme === 'dark' ? 'bg-[#0070BA]/10 border-[#0070BA]/30' : 'bg-white border-[#0070BA]/20 shadow-sm'}`}>
+                                            <div className="flex justify-between items-center mb-1">
+                                                <span className={`text-xs font-bold uppercase tracking-wider ${theme === 'dark' ? 'text-[#60a5fa]' : 'text-[#0070BA]'}`}>PayPal (International)</span>
+                                                <span className={`text-sm font-extrabold italic ${theme === 'dark' ? 'text-[#60a5fa]' : 'text-[#0070BA]'}`}>PayPal</span>
+                                            </div>
+                                            <div className={`text-3xl font-extrabold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                                                US$ {course.priceUSD}
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
-                                <Button 
-                                    onClick={() => setIsEnrollModalOpen(true)}
-                                    className="w-full sm:w-auto bg-[#3CB4D8] hover:bg-[#2a9bc0] text-gray-900 font-bold px-10 py-6 text-lg rounded-xl shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl"
-                                >
-                                    {currentLocale === 'es' ? 'Inscribirme Ahora' : 'Enroll Now'}
-                                </Button>
+                                <Link href={`/${locale}/cursos/${course.slug}/inscripcion`}>
+                                    <Button
+                                        className="w-full sm:w-auto bg-[#3CB4D8] hover:bg-[#2a9bc0] text-gray-900 font-bold px-10 py-6 text-lg rounded-xl shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl"
+                                    >
+                                        {currentLocale === 'es' ? 'Inscribirme Ahora' : 'Enroll Now'}
+                                    </Button>
+                                </Link>
                                 <p className={`text-xs text-center mt-4 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>
                                     {currentLocale === 'es' ? 'Pagos seguros por Mercado Pago o PayPal' : 'Secure payments via PayPal'}
                                 </p>
@@ -81,7 +131,7 @@ export default function CourseDetail({ course, locale }: Props) {
                     <div className="grid lg:grid-cols-3 gap-12">
                         {/* Main Content */}
                         <div className="lg:col-span-2 flex flex-col gap-12">
-                            
+
                             {/* About */}
                             <section>
                                 <h2 className={`text-2xl font-bold mb-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Acerca del Curso</h2>
@@ -129,7 +179,7 @@ export default function CourseDetail({ course, locale }: Props) {
 
                         {/* Sidebar details */}
                         <div className="space-y-8">
-                            
+
                             {/* Includes */}
                             <div className={`rounded-2xl p-6 border ${theme === 'dark' ? 'bg-[#1a2a3a] border-gray-800' : 'bg-white border-gray-100'}`}>
                                 <h3 className={`font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>El curso incluye:</h3>
@@ -167,13 +217,6 @@ export default function CourseDetail({ course, locale }: Props) {
                     </div>
                 </div>
             </main>
-
-            <EnrollmentModal 
-                isOpen={isEnrollModalOpen} 
-                onClose={() => setIsEnrollModalOpen(false)} 
-                course={course} 
-                locale={locale} 
-            />
         </>
     );
 }

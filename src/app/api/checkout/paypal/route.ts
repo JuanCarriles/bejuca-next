@@ -5,7 +5,7 @@ import { getCourseBySlug } from '@/data/courses';
 export async function POST(req: Request) {
     try {
         const body = await req.json();
-        const { courseSlug, email } = body;
+        const { courseSlug, email, fullName, phone, dni } = body;
 
         const course = getCourseBySlug(courseSlug);
         if (!course) {
@@ -28,7 +28,7 @@ export async function POST(req: Request) {
             purchase_units: [
                 {
                     reference_id: course.id,
-                    custom_id: JSON.stringify({ e: email, c: course.slug }),
+                    custom_id: JSON.stringify({ e: email, c: course.slug, n: fullName, p: phone, d: dni }),
                     description: `Course Enrollment: ${course.title.en}`,
                     amount: {
                         currency_code: 'USD',
