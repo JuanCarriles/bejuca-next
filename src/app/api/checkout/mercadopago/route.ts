@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     try {
         const body = await req.json();
         console.log("Datos recibidos del frontend:", body);
-        const { courseSlug, fullName, email, dni } = body;
+        const { courseSlug, fullName, email, dni, phone } = body;
 
         const course = getCourseBySlug(courseSlug);
         if (!course) {
@@ -52,7 +52,7 @@ export async function POST(req: Request) {
             // Mercado Pago requiere que la URL de retorno sea HTTPS segura o pública para habilitar el auto_return.
             // Si detectamos localhost, lo apagamos para que no tire error 400.
             auto_return: (process.env.NEXT_PUBLIC_APP_URL || '').startsWith('https') ? 'approved' : undefined,
-            external_reference: JSON.stringify({ e: email, c: course.slug }),
+            external_reference: JSON.stringify({ e: email, c: course.slug, n: fullName, p: phone, d: dni }),
             notification_url: (process.env.NEXT_PUBLIC_APP_URL && process.env.NEXT_PUBLIC_APP_URL.startsWith('https'))
                 ? `${process.env.NEXT_PUBLIC_APP_URL}/api/webhooks/mercadopago`
                 : undefined,

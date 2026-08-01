@@ -68,11 +68,17 @@ export async function POST(req: Request) {
 
         let email = "";
         let courseSlug = "";
+        let fullName = "No provisto";
+        let phone = "No provisto";
+        let dni = "No provisto";
         
         try {
             const meta = JSON.parse(externalRef);
             email = meta.e;
             courseSlug = meta.c;
+            if (meta.n) fullName = meta.n;
+            if (meta.p) phone = meta.p;
+            if (meta.d) dni = meta.d;
         } catch (e) {
             console.error(`[Webhook MP] Error parseando external_reference: ${externalRef}`);
             return NextResponse.json({ received: true });
@@ -96,7 +102,7 @@ export async function POST(req: Request) {
 
         // Enviar Correos!
         await sendWelcomeEmail(email, course.title.es, course.whatsappGroupLink);
-        await sendProfessorNotification(course.instructor.email, email, course.title.es);
+        await sendProfessorNotification(course.instructor.email, { email, fullName, phone, dni }, course.title.es);
 
         return NextResponse.json({ received: true, status: 'processed' });
 
