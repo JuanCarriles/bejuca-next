@@ -11,13 +11,13 @@ export async function sendWelcomeEmail(studentEmail: string, courseName: string,
         }
 
         const data = await resend.emails.send({
-            from: 'Bejuca Cursos <onboarding@resend.dev>', // Debe ser un dominio verificado en Resend para producción
+            from: 'Bejuca Cursos <informes@bejuca.com.ar>', // Dominio verificado en Resend
             to: studentEmail,
             subject: `¡Bienvenido a ${courseName}! - Instrucciones de acceso`,
             html: `
                 <div style="font-family: 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; border: 1px solid #e5e7eb;">
                     <div style="background-color: #0d1b2a; padding: 30px 20px; text-align: center; border-bottom: 4px solid #3CB4D8;">
-                        <img src="${process.env.NEXT_PUBLIC_APP_URL || 'https://bejuca.com'}/logo-oscuro.png" alt="Bejuca Consulting" style="height: 50px; width: auto;" />
+                        <img src="${process.env.NEXT_PUBLIC_APP_URL || 'https://bejuca.com'}/bejuca-logo-claro.png" alt="Bejuca Consulting" style="height: 50px; width: auto;" />
                     </div>
                     <div style="padding: 40px 30px; color: #1f2937; line-height: 1.6;">
                         <h2 style="color: #0d1b2a; margin-top: 0; font-size: 24px;">¡Inscripción Confirmada! 🎉</h2>
@@ -56,13 +56,13 @@ export async function sendProfessorNotification(professorEmail: string, student:
         }
 
         const data = await resend.emails.send({
-            from: 'Bejuca Cursos <onboarding@resend.dev>', // Debe ser un dominio verificado
+            from: 'Bejuca Cursos <informes@bejuca.com.ar>', // Dominio verificado
             to: professorEmail, // En prueba de Resend gratis, solo puedes enviar correos a tu propia dirección verificada
             subject: `🚨 NUEVA VENTA - ${courseName}`,
             html: `
                 <div style="font-family: 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; border: 1px solid #e5e7eb;">
                     <div style="background-color: #0d1b2a; padding: 30px 20px; text-align: center; border-bottom: 4px solid #3CB4D8;">
-                        <img src="${process.env.NEXT_PUBLIC_APP_URL || 'https://bejuca.com'}/logo-oscuro.png" alt="Bejuca Consulting" style="height: 50px; width: auto;" />
+                        <img src="${process.env.NEXT_PUBLIC_APP_URL || 'https://bejuca.com'}/bejuca-logo-claro.png" alt="Bejuca Consulting" style="height: 50px; width: auto;" />
                     </div>
                     <div style="padding: 40px 30px; color: #1f2937; line-height: 1.6;">
                         <div style="text-align: center; margin-bottom: 30px;">
