@@ -32,8 +32,8 @@
             "en": "8 weeks"
         },
         "totalHours": 32,
-        "priceARS": 95,
-        "priceUSD": 8,
+        "priceARS": 100,
+        "priceUSD": 1,
         "prerequisites": [
             {
                 "es": "Conocimientos básicos de uso de PC e internet.",
@@ -194,7 +194,7 @@
             "en": "8 weeks"
         },
         "totalHours": 32,
-        "priceARS": 95000,
+        "priceARS": 1000,
         "priceUSD": 85,
         "prerequisites": [
             {
