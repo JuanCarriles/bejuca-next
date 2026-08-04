@@ -2,7 +2,7 @@
 
 import { useTheme } from '@/context/ThemeContext';
 import { Course } from '@/data/courses';
-import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText, MonitorPlay, CalendarDays } from 'lucide-react';
+import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText, MonitorPlay, CalendarDays, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -24,9 +24,19 @@ export default function CourseDetail({ course, locale }: Props) {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
                         <div className="grid lg:grid-cols-3 gap-12 items-start">
                             <div className="lg:col-span-2 space-y-6">
-                                <span className="inline-block px-3 py-1 bg-[#3CB4D8]/10 text-[#3CB4D8] rounded-full text-sm font-semibold uppercase tracking-wider">
-                                    {course.modality.replace(/-/g, ' ')}
-                                </span>
+                                <div>
+                                    <Link 
+                                        href={`/${locale}/cursos`} 
+                                        className={`inline-flex items-center gap-2 mb-6 text-sm font-medium transition-colors ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-500 hover:text-[#3CB4D8]'}`}
+                                    >
+                                        <ArrowLeft className="w-4 h-4" />
+                                        {currentLocale === 'es' ? 'Volver a cursos' : 'Back to courses'}
+                                    </Link>
+                                    <br />
+                                    <span className="inline-block px-3 py-1 bg-[#3CB4D8]/10 text-[#3CB4D8] rounded-full text-sm font-semibold uppercase tracking-wider">
+                                        {course.modality.replace(/-/g, ' ')}
+                                    </span>
+                                </div>
                                 <h1 className={`text-4xl md:text-5xl font-bold leading-tight ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
                                     {course.title[currentLocale]}
                                 </h1>
