@@ -80,12 +80,20 @@
                 },
                 "topics": [
                     {
-                        "es": "Arquitectura e Instalación de Proxmox VE",
-                        "en": "Architecture and Installation of Proxmox VE"
+                        "es": "Arquitectura del Sistema: KVM, LXC y diseño Multi-Master.",
+                        "en": "System Architecture: KVM, LXC, and Multi-Master design."
                     },
                     {
-                        "es": "Interfaces de Administración y Gestión del Nodo",
-                        "en": "Administration Interfaces and Node Management"
+                        "es": "Requisitos del sistema, proceso de instalación y configuración inicial.",
+                        "en": "System requirements, installation process, and initial configuration."
+                    },
+                    {
+                        "es": "Gestión vía Interfaz Gráfica (GUI) Web y monitorización.",
+                        "en": "Management via Web Graphical User Interface (GUI) and monitoring."
+                    },
+                    {
+                        "es": "Uso de la Interfaz de Línea de Comandos (CLI) y API REST.",
+                        "en": "Using the Command Line Interface (CLI) and REST API."
                     }
                 ]
             },
@@ -96,12 +104,20 @@
                 },
                 "topics": [
                     {
-                        "es": "Configuración y Administración de Redes",
-                        "en": "Network Configuration and Administration"
+                        "es": "Modelos de red: Puenteada (Bridged) y NAT.",
+                        "en": "Network models: Bridged and NAT."
                     },
                     {
-                        "es": "Administración de Almacenamiento Local",
-                        "en": "Local Storage Administration"
+                        "es": "Configuraciones avanzadas: Bonding, VLANs y SDN.",
+                        "en": "Advanced configurations: Bonding, VLANs, and SDN."
+                    },
+                    {
+                        "es": "Tipos de almacenamiento local: nivel de bloques y archivos.",
+                        "en": "Local storage types: block and file level."
+                    },
+                    {
+                        "es": "Implementación y optimización de LVM, LVM-thin y ZFS.",
+                        "en": "Implementation and optimization of LVM, LVM-thin, and ZFS."
                     }
                 ]
             },
@@ -112,12 +128,20 @@
                 },
                 "topics": [
                     {
-                        "es": "Administración de VMs y Contenedores (LXC)",
-                        "en": "Administration of VMs and Containers (LXC)"
+                        "es": "Creación, emulación y optimización de Máquinas Virtuales (KVM).",
+                        "en": "Creation, emulation, and optimization of Virtual Machines (KVM)."
                     },
                     {
-                        "es": "Migración V2V y P2V hacia Proxmox",
-                        "en": "V2V and P2V Migration to Proxmox"
+                        "es": "Implementación de Contenedores Linux (LXC) y plantillas.",
+                        "en": "Implementation of Linux Containers (LXC) and templates."
+                    },
+                    {
+                        "es": "Migraciones V2V usando el asistente de importación nativo (ej. VMware).",
+                        "en": "V2V migrations using the native import wizard (e.g., VMware)."
+                    },
+                    {
+                        "es": "Estrategias P2V (Físico a Virtual) y pasos post-migración.",
+                        "en": "P2V (Physical to Virtual) strategies and post-migration steps."
                     }
                 ]
             },
@@ -128,18 +152,26 @@
                 },
                 "topics": [
                     {
-                        "es": "Estrategias de Copia de Seguridad y Restauración",
-                        "en": "Backup and Restore Strategies"
+                        "es": "Copias de seguridad integradas (vzdump) y políticas de retención.",
+                        "en": "Integrated backups (vzdump) and retention policies."
                     },
                     {
-                        "es": "Autenticación, Cortafuegos y Solución de Problemas",
-                        "en": "Authentication, Firewall and Troubleshooting"
+                        "es": "Integración con Proxmox Backup Server (PBS) y restauración.",
+                        "en": "Integration with Proxmox Backup Server (PBS) and restoration."
+                    },
+                    {
+                        "es": "Dominios de autenticación, roles, permisos y cortafuegos integrado.",
+                        "en": "Authentication domains, roles, permissions, and integrated firewall."
+                    },
+                    {
+                        "es": "Monitorización (S.M.A.R.T.) y solución de problemas comunes.",
+                        "en": "Monitoring (S.M.A.R.T.) and common troubleshooting."
                     }
                 ]
             }
         ],
         "instructor": {
-            "name": "Ing. Carriles Luis Maria",
+            "name": "Ing. Carriles Luis María",
             "role": {
                 "es": "Ingeniero en Sistemas de Información",
                 "en": "Information Systems Engineer"
