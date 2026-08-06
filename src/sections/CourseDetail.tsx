@@ -2,10 +2,11 @@
 
 import { useTheme } from '@/context/ThemeContext';
 import { Course } from '@/data/courses';
-import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText, MonitorPlay, CalendarDays, ArrowLeft } from 'lucide-react';
+import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText, MonitorPlay, CalendarDays, ArrowLeft, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 interface Props {
     course: Course;
@@ -15,6 +16,7 @@ interface Props {
 export default function CourseDetail({ course, locale }: Props) {
     const { theme } = useTheme();
     const currentLocale = locale as 'es' | 'en';
+    const t = useTranslations('courses');
 
     return (
         <>
@@ -25,8 +27,8 @@ export default function CourseDetail({ course, locale }: Props) {
                         <div className="grid lg:grid-cols-3 gap-12 items-start">
                             <div className="lg:col-span-2 space-y-6">
                                 <div>
-                                    <Link 
-                                        href={`/${locale}/cursos`} 
+                                    <Link
+                                        href={`/${locale}/cursos`}
                                         className={`inline-flex items-center gap-2 mb-6 text-sm font-medium transition-colors ${theme === 'dark' ? 'text-gray-400 hover:text-[#3CB4D8]' : 'text-gray-500 hover:text-[#3CB4D8]'}`}
                                     >
                                         <ArrowLeft className="w-4 h-4" />
@@ -99,7 +101,7 @@ export default function CourseDetail({ course, locale }: Props) {
                                                     ${course.priceARS.toLocaleString('es-AR')} <span className={`text-sm font-medium ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>ARS</span>
                                                 </div>
                                             </div>
-                                            
+
                                             <div className={`p-4 rounded-xl border-2 transition-all ${theme === 'dark' ? 'bg-[#0070BA]/10 border-[#0070BA]/30' : 'bg-white border-[#0070BA]/20 shadow-sm'}`}>
                                                 <div className="flex justify-between items-center mb-1">
                                                     <span className={`text-xs font-bold uppercase tracking-wider ${theme === 'dark' ? 'text-[#60a5fa]' : 'text-[#0070BA]'}`}>PayPal (Internacional)</span>
@@ -122,16 +124,23 @@ export default function CourseDetail({ course, locale }: Props) {
                                         </div>
                                     )}
                                 </div>
-                                <Link href={`/${locale}/cursos/${course.slug}/inscripcion`}>
+                                <Link href={`/${locale}/cursos/${course.slug}/inscripcion`} className="block w-full">
                                     <Button
-                                        className="w-full sm:w-auto bg-[#3CB4D8] hover:bg-[#2a9bc0] text-gray-900 font-bold px-10 py-6 text-lg rounded-xl shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl"
+                                        className="w-full bg-[#3CB4D8] hover:bg-[#2a9bc0] text-gray-900 font-bold px-10 py-6 text-lg rounded-xl shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl"
                                     >
                                         {currentLocale === 'es' ? 'Inscribirme Ahora' : 'Enroll Now'}
                                     </Button>
                                 </Link>
-                                <p className={`text-xs text-center mt-4 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>
+                                <p className={`text-xs text-center mt-3 mb-6 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>
                                     {currentLocale === 'es' ? 'Pagos seguros por Mercado Pago o PayPal' : 'Secure payments via PayPal'}
                                 </p>
+
+                                <div className={`p-4 rounded-xl flex items-start gap-3 ${theme === 'dark' ? 'bg-[#3CB4D8]/10 border border-[#3CB4D8]/20' : 'bg-[#e0f2fe] border border-[#bae6fd]'}`}>
+                                    <Mail className="w-5 h-5 text-[#0284c7] dark:text-[#3CB4D8] shrink-0 mt-0.5" />
+                                    <p className={`text-sm leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-[#0369a1]'}`}>
+                                        {t('emailNotification')}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
