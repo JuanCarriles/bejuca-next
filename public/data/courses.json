@@ -1,324 +1,194 @@
 [
     {
-        "id": "c_marketing_digital_01",
-        "slug": "marketing-digital-estrategico",
+        "id": "c_proxmox_inicial_01",
+        "slug": "proxmox-inicial",
         "title": {
-            "es": "Marketing Digital Estratégico",
-            "en": "Strategic Digital Marketing"
+            "es": "Proxmox Inicial",
+            "en": "Proxmox Initial"
         },
         "subtitle": {
-            "es": "Domina las estrategias para hacer crecer cualquier negocio en internet.",
-            "en": "Master the strategies to grow any business online."
+            "es": "Despliegue y Administración en la Plataforma Proxmox",
+            "en": "Deployment and Administration on the Proxmox Platform"
         },
         "description": {
-            "es": "Aprende a planificar, ejecutar y medir campañas de marketing digital multiplataforma.",
-            "en": "Learn to plan, execute and measure multi-platform digital marketing campaigns."
+            "es": "Capacitar a los alumnos en la implementación, gestión y aseguramiento de infraestructuras virtualizadas utilizando Proxmox VE.",
+            "en": "Train students in the implementation, management, and securing of virtualized infrastructures using Proxmox VE."
         },
         "fullDescription": {
-            "es": "Este curso intensivo te llevará desde los fundamentos del marketing digital hasta la ejecución de estrategias avanzadas en redes sociales, SEO, SEM y email marketing. Está diseñado con un enfoque 100% práctico, donde aplicarás lo aprendido en casos reales de negocio.",
-            "en": "This intensive course will take you from digital marketing fundamentals to advanced strategies in social media, SEO, SEM, and email marketing. Designed with a 100% practical approach, you will apply your knowledge to real business cases."
+            "es": "El curso desarrolla una serie de contenidos orientados a adquirir competencias referidas al nivel introductorio de la Plataforma Proxmox. Se desarrollan conceptos de modalidades de virtualización y el manejo de las cuatro categorías esenciales de recursos computacionales que conforman un escenario computacional.",
+            "en": "The course develops a series of contents aimed at acquiring skills related to the introductory level of the Proxmox Platform. Concepts of virtualization modalities and the management of the four essential categories of computational resources that make up a computational scenario are developed."
         },
-        "modality": "online-en-vivo",
+        "modality": "Online-en-vivo",
         "startDate": {
-            "es": "15 de Septiembre, 2026",
-            "en": "September 15, 2026"
+            "es": "00/00/0000",
+            "en": "00/00/0000"
         },
         "schedule": {
-            "es": "Martes y Jueves, 19:00 a 21:00 hs (ART)",
-            "en": "Tuesday and Thursday, 7:00 PM to 9:00 PM (ART)"
+            "es": "Martes y Jueves, 20 a 22 hs",
+            "en": "Tuesday and Thursday, 8:00 PM to 10:00 PM"
         },
         "duration": {
-            "es": "8 semanas",
-            "en": "8 weeks"
+            "es": "4 Semanas",
+            "en": "4 Weeks"
         },
-        "totalHours": 32,
+        "totalHours": 16,
         "priceARS": 100,
         "priceUSD": 1,
         "prerequisites": [
             {
-                "es": "Conocimientos básicos de uso de PC e internet.",
-                "en": "Basic PC and internet skills."
-            },
-            {
-                "es": "No requiere experiencia previa en marketing.",
-                "en": "No previous marketing experience required."
+                "es": "Conocimientos en sistemas operativos y redes.",
+                "en": "Knowledge of operating systems and networks."
             }
         ],
         "targetAudience": [
             {
-                "es": "Emprendedores que buscan escalar sus ventas.",
-                "en": "Entrepreneurs looking to scale sales."
+                "es": "Alumnos de carreras tecnológicas",
+                "en": "Technology students"
             },
             {
-                "es": "Profesionales que quieren actualizarse en marketing digital.",
-                "en": "Professionals wanting to update their digital marketing skills."
+                "es": "Docentes de áreas tecnológicas",
+                "en": "Technology teachers"
             },
             {
-                "es": "Estudiantes de comunicación o publicidad.",
-                "en": "Communication or advertising students."
+                "es": "Desarrolladores Full Stack",
+                "en": "Full Stack Developers"
             }
         ],
         "objectives": [
             {
-                "es": "Crear un Plan de Marketing Digital completo.",
-                "en": "Create a complete Digital Marketing Plan."
+                "es": "Comprender la arquitectura de Proxmox VE",
+                "en": "Understand the architecture of Proxmox VE"
             },
             {
-                "es": "Lanzar campañas rentables en Meta Ads y Google Ads.",
-                "en": "Launch profitable campaigns on Meta Ads and Google Ads."
+                "es": "Dominar el proceso de instalación y actualización",
+                "en": "Master the installation and update process"
             },
             {
-                "es": "Medir y analizar el ROI de tus estrategias.",
-                "en": "Measure and analyze the ROI of your strategies."
+                "es": "Diseñar infraestructuras de red flexibles y administrar almacenamiento local avanzado",
+                "en": "Design flexible network infrastructures and manage advanced local storage"
+            },
+            {
+                "es": "Optimizar el despliegue de invitados y ejecutar estrategias de migración",
+                "en": "Optimize guest deployment and execute migration strategies"
             }
         ],
         "syllabus": [
             {
                 "title": {
-                    "es": "Módulo 1: Fundamentos",
-                    "en": "Module 1: Fundamentals"
+                    "es": "Semana 1: Fundamentos y Gestión",
+                    "en": "Week 1: Fundamentals and Management"
                 },
                 "topics": [
                     {
-                        "es": "El ecosistema digital actual",
-                        "en": "The current digital ecosystem"
+                        "es": "Arquitectura e Instalación de Proxmox VE",
+                        "en": "Architecture and Installation of Proxmox VE"
                     },
                     {
-                        "es": "Buyer Persona y Customer Journey",
-                        "en": "Buyer Persona and Customer Journey"
+                        "es": "Interfaces de Administración y Gestión del Nodo",
+                        "en": "Administration Interfaces and Node Management"
                     }
                 ]
             },
             {
                 "title": {
-                    "es": "Módulo 2: Publicidad Paid (SEM & Social Ads)",
-                    "en": "Module 2: Paid Advertising"
+                    "es": "Semana 2: Redes y Almacenamiento",
+                    "en": "Week 2: Networks and Storage"
                 },
                 "topics": [
                     {
-                        "es": "Introducción a Meta Ads Manager",
-                        "en": "Intro to Meta Ads Manager"
+                        "es": "Configuración y Administración de Redes",
+                        "en": "Network Configuration and Administration"
                     },
                     {
-                        "es": "Google Ads: Búsqueda y Display",
-                        "en": "Google Ads: Search and Display"
+                        "es": "Administración de Almacenamiento Local",
+                        "en": "Local Storage Administration"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "es": "Semana 3: Cargas de Trabajo y Migración",
+                    "en": "Week 3: Workloads and Migration"
+                },
+                "topics": [
+                    {
+                        "es": "Administración de VMs y Contenedores (LXC)",
+                        "en": "Administration of VMs and Containers (LXC)"
+                    },
+                    {
+                        "es": "Migración V2V y P2V hacia Proxmox",
+                        "en": "V2V and P2V Migration to Proxmox"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "es": "Semana 4: Continuidad, Seguridad y Diagnóstico",
+                    "en": "Week 4: Continuity, Security and Diagnostics"
+                },
+                "topics": [
+                    {
+                        "es": "Estrategias de Copia de Seguridad y Restauración",
+                        "en": "Backup and Restore Strategies"
+                    },
+                    {
+                        "es": "Autenticación, Cortafuegos y Solución de Problemas",
+                        "en": "Authentication, Firewall and Troubleshooting"
                     }
                 ]
             }
         ],
         "instructor": {
-            "name": "Lic. Belén Ovejero",
+            "name": "Ing. Carriles Luis Maria",
             "role": {
-                "es": "Especialista en Marketing Digital",
-                "en": "Digital Marketing Specialist"
+                "es": "Ingeniero en Sistemas de Información",
+                "en": "Information Systems Engineer"
             },
             "bio": {
-                "es": "Licenciada en Comunicación con más de 10 años de experiencia gestionando pautas para marcas internacionales.",
-                "en": "Communication graduate with 10+ years of experience managing campaigns for international brands."
+                "es": "Ingeniero en Sistemas de Información, egresado de la Universidad Tecnológica Nacional (UTN). Con años de experiencia en la capacitación y consultoría IT.",
+                "en": "Information Systems Engineer, graduate of the National Technological University (UTN). With years of experience in IT training and consulting."
             },
-            "photo": "https://ui-avatars.com/api/?name=Belen+Ovejero&background=3CB4D8&color=fff&size=200",
+            "photo": "/images/team/luis.jpg",
             "email": "informes@bejuca.com.ar"
         },
         "certificate": {
-            "es": "Certificado de Aprobación expedido por Bejuca Consulting.",
-            "en": "Certificate of Approval issued by Bejuca Consulting."
+            "es": "Certificado oficial con verificación Blockchain emitido por Bejuca Consulting.",
+            "en": "Official certificate with Blockchain verification issued by Bejuca Consulting."
         },
         "includes": [
             {
-                "es": "Material de lectura descargable",
-                "en": "Downloadable reading material"
+                "es": "Acompañamiento permanente de tutores",
+                "en": "Permanent support from tutors"
             },
             {
-                "es": "Acceso al grupo exclusivo de WhatsApp",
-                "en": "Access to exclusive WhatsApp group"
+                "es": "Acceso a material a través de una plataforma colaborativa",
+                "en": "Access to material through a collaborative platform"
             },
             {
-                "es": "Plantillas de estrategias de marketing",
-                "en": "Marketing strategy templates"
+                "es": "Laboratorios remotos disponibles las 24 hs",
+                "en": "Remote labs available 24/7"
             }
         ],
-        "whatsappGroupLink": "https://chat.whatsapp.com/INVITE_LINK_DEMO",
+        "whatsappGroupLink": "https://chat.whatsapp.com/GfADjBqU39tL3cpsSz1OkI?s=cl&p=a&ilr=4",
         "faq": [
             {
                 "question": {
-                    "es": "¿Las clases quedan grabadas?",
-                    "en": "Are classes recorded?"
+                    "es": "¿Cómo es la modalidad de evaluación y acreditación?",
+                    "en": "What is the evaluation and accreditation modality?"
                 },
                 "answer": {
-                    "es": "Sí, podrás acceder a las grabaciones durante 6 meses.",
-                    "en": "Yes, you can access recordings for 6 months."
+                    "es": "La evaluación es personalizada a través de una videollamada con el Instructor.",
+                    "en": "The evaluation is personalized through a video call with the Instructor."
                 }
             },
             {
                 "question": {
-                    "es": "¿Necesito conocimientos previos?",
-                    "en": "Do I need previous knowledge?"
+                    "es": "¿Qué sucede si completo solo parte de la cursada?",
+                    "en": "What happens if I only complete part of the course?"
                 },
                 "answer": {
-                    "es": "No, empezamos desde los conceptos más básicos.",
-                    "en": "No, we start from the most basic concepts."
-                }
-            }
-        ]
-    },
-    {
-        "id": "c_marketing_digital_01",
-        "slug": "marketing-digital-estrategico",
-        "title": {
-            "es": "Marketing Digital Estratégico",
-            "en": "Strategic Digital Marketing"
-        },
-        "subtitle": {
-            "es": "Domina las estrategias para hacer crecer cualquier negocio en internet.",
-            "en": "Master the strategies to grow any business online."
-        },
-        "description": {
-            "es": "Aprende a planificar, ejecutar y medir campañas de marketing digital multiplataforma.",
-            "en": "Learn to plan, execute and measure multi-platform digital marketing campaigns."
-        },
-        "fullDescription": {
-            "es": "Este curso intensivo te llevará desde los fundamentos del marketing digital hasta la ejecución de estrategias avanzadas en redes sociales, SEO, SEM y email marketing. Está diseñado con un enfoque 100% práctico, donde aplicarás lo aprendido en casos reales de negocio.",
-            "en": "This intensive course will take you from digital marketing fundamentals to advanced strategies in social media, SEO, SEM, and email marketing. Designed with a 100% practical approach, you will apply your knowledge to real business cases."
-        },
-        "modality": "online-en-vivo",
-        "startDate": {
-            "es": "15 de Septiembre, 2026",
-            "en": "September 15, 2026"
-        },
-        "schedule": {
-            "es": "Martes y Jueves, 19:00 a 21:00 hs (ART)",
-            "en": "Tuesday and Thursday, 7:00 PM to 9:00 PM (ART)"
-        },
-        "duration": {
-            "es": "8 semanas",
-            "en": "8 weeks"
-        },
-        "totalHours": 32,
-        "priceARS": 1000,
-        "priceUSD": 85,
-        "prerequisites": [
-            {
-                "es": "Conocimientos básicos de uso de PC e internet.",
-                "en": "Basic PC and internet skills."
-            },
-            {
-                "es": "No requiere experiencia previa en marketing.",
-                "en": "No previous marketing experience required."
-            }
-        ],
-        "targetAudience": [
-            {
-                "es": "Emprendedores que buscan escalar sus ventas.",
-                "en": "Entrepreneurs looking to scale sales."
-            },
-            {
-                "es": "Profesionales que quieren actualizarse en marketing digital.",
-                "en": "Professionals wanting to update their digital marketing skills."
-            },
-            {
-                "es": "Estudiantes de comunicación o publicidad.",
-                "en": "Communication or advertising students."
-            }
-        ],
-        "objectives": [
-            {
-                "es": "Crear un Plan de Marketing Digital completo.",
-                "en": "Create a complete Digital Marketing Plan."
-            },
-            {
-                "es": "Lanzar campañas rentables en Meta Ads y Google Ads.",
-                "en": "Launch profitable campaigns on Meta Ads and Google Ads."
-            },
-            {
-                "es": "Medir y analizar el ROI de tus estrategias.",
-                "en": "Measure and analyze the ROI of your strategies."
-            }
-        ],
-        "syllabus": [
-            {
-                "title": {
-                    "es": "Módulo 1: Fundamentos",
-                    "en": "Module 1: Fundamentals"
-                },
-                "topics": [
-                    {
-                        "es": "El ecosistema digital actual",
-                        "en": "The current digital ecosystem"
-                    },
-                    {
-                        "es": "Buyer Persona y Customer Journey",
-                        "en": "Buyer Persona and Customer Journey"
-                    }
-                ]
-            },
-            {
-                "title": {
-                    "es": "Módulo 2: Publicidad Paid (SEM & Social Ads)",
-                    "en": "Module 2: Paid Advertising"
-                },
-                "topics": [
-                    {
-                        "es": "Introducción a Meta Ads Manager",
-                        "en": "Intro to Meta Ads Manager"
-                    },
-                    {
-                        "es": "Google Ads: Búsqueda y Display",
-                        "en": "Google Ads: Search and Display"
-                    }
-                ]
-            }
-        ],
-        "instructor": {
-            "name": "Lic. Belén Ovejero",
-            "role": {
-                "es": "Especialista en Marketing Digital",
-                "en": "Digital Marketing Specialist"
-            },
-            "bio": {
-                "es": "Licenciada en Comunicación con más de 10 años de experiencia gestionando pautas para marcas internacionales.",
-                "en": "Communication graduate with 10+ years of experience managing campaigns for international brands."
-            },
-            "photo": "https://ui-avatars.com/api/?name=Belen+Ovejero&background=3CB4D8&color=fff&size=200",
-            "email": "informes@bejuca.com.ar"
-        },
-        "certificate": {
-            "es": "Certificado de Aprobación expedido por Bejuca Consulting.",
-            "en": "Certificate of Approval issued by Bejuca Consulting."
-        },
-        "includes": [
-            {
-                "es": "Material de lectura descargable",
-                "en": "Downloadable reading material"
-            },
-            {
-                "es": "Acceso al grupo exclusivo de WhatsApp",
-                "en": "Access to exclusive WhatsApp group"
-            },
-            {
-                "es": "Plantillas de estrategias de marketing",
-                "en": "Marketing strategy templates"
-            }
-        ],
-        "whatsappGroupLink": "https://chat.whatsapp.com/INVITE_LINK_DEMO",
-        "faq": [
-            {
-                "question": {
-                    "es": "¿Las clases quedan grabadas?",
-                    "en": "Are classes recorded?"
-                },
-                "answer": {
-                    "es": "Sí, podrás acceder a las grabaciones durante 6 meses.",
-                    "en": "Yes, you can access recordings for 6 months."
-                }
-            },
-            {
-                "question": {
-                    "es": "¿Necesito conocimientos previos?",
-                    "en": "Do I need previous knowledge?"
-                },
-                "answer": {
-                    "es": "No, empezamos desde los conceptos más básicos.",
-                    "en": "No, we start from the most basic concepts."
+                    "es": "Si completaste solo parte de la cursada, obtendrás un Certificado de Asistencia.",
+                    "en": "If you only completed part of the course, you will obtain a Certificate of Attendance."
                 }
             }
         ]

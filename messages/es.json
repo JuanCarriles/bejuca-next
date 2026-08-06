@@ -152,5 +152,8 @@
     },
     "copyright": "Bejuca Consulting. Todos los derechos reservados.",
     "location": "Tucumán, Argentina • Desde 2010"
+  },
+  "courses": {
+    "emailNotification": "Una vez realizado el pago, recibirás automáticamente un correo con todas las instrucciones y el acceso al curso."
   }
 }
