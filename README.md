@@ -72,8 +72,6 @@ Abrir http://localhost:3000
 | `PAYPAL_CLIENT_ID` / `PAYPAL_CLIENT_SECRET` | Cobros con PayPal |
 | `RESEND_API_KEY` | Envío de correos |
 
-[AJUSTAR con los nombres reales que usás en el código, y crear el archivo `.env.example` en el repo — hoy no está.]
-
 ## Decisiones técnicas
 
 ### Next.js en lugar de una SPA
