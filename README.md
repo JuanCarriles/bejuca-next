@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bejuca
 
-## Getting Started
+Plataforma institucional y de venta de cursos online para Bejuca, una consultora de tecnología y comunicación. Reemplaza un sitio WordPress heredado e incorpora cobro propio con MercadoPago para alumnos locales y PayPal para alumnos del exterior.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**[Ver sitio en producción](https://bejuca.com.ar/es)**
+
+![Captura de la home](./public/BejucaHome.png)
+
+---
+
+## El problema
+
+Bejuca es una consultora de tecnología y comunicación que necesitaba dos cosas de su web: presentar sus servicios de forma profesional y vender sus cursos online por cuenta propia.
+
+El sitio anterior era un WordPress que ya no daba respuesta. Arrastraba los problemas habituales de una instalación con años encima —plugins acumulados, tiempos de carga altos y dependencia de mantenimiento constante—, y sobre todo no resolvía la venta: cobrar un curso implicaba coordinar el pago por fuera del sitio, uno por uno.
+
+El requisito que definió toda la arquitectura fue el alcance de los alumnos. Bejuca vende dentro de Argentina y también al exterior, y esas dos audiencias no pagan con los mismos medios: forzar a un alumno extranjero a usar MercadoPago, o a uno local a abrir una cuenta de PayPal, es perder la venta. La plataforma tenía que ofrecer las dos vías sin que el usuario tuviera que entender por qué.
+
+## Qué hace
+
+- **Sitio institucional** con la presentación de la consultora y su catálogo de servicios.
+- **Venta de cursos online** con checkout propio, sin depender de plataformas de terceros ni ceder comisión a un marketplace.
+- **Doble pasarela de pago**: MercadoPago para cobros nacionales y PayPal para internacionales, resueltas dentro de un mismo flujo de compra.
+- **Sitio multilenguaje** con `next-intl`, con rutas e interfaz traducidas y los textos centralizados en `/messages`: agregar un idioma es sumar un archivo, no tocar componentes.
+- **Formularios de contacto e inscripción** validados en cliente y servidor con React Hook Form y esquemas de Zod compartidos.
+- **Correos transaccionales** con Resend: confirmaciones de compra y consultas de contacto.
+- **Modo claro / oscuro** persistente y diseño responsive.
+- **Optimización de imágenes** con `sharp` y el pipeline de Next.js.
+
+## Stack y por qué
+
+| Tecnología | Rol | Por qué esta |
+|---|---|---|
+| Next.js 16 (App Router) | Framework | Rutas de servidor para manejar credenciales de pago y consultas a la base sin exponerlas al cliente, más renderizado en servidor para el contenido público. |
+| React 19 + TypeScript | UI | Tipado estricto sobre el modelo de cursos y los payloads de pago, que es donde un error sale caro. |
+| Tailwind CSS 4 + shadcn/ui (Radix) | Estilos y componentes | Componentes accesibles por defecto sin arrastrar una librería visual pesada. |
+| MySQL (`mysql2`) | Persistencia | Catálogo de cursos, inscripciones y órdenes de compra. |
+| MercadoPago SDK | Cobros nacionales | Es el medio de pago que el alumno argentino ya tiene y sabe usar. |
+| PayPal Checkout Server SDK | Cobros internacionales | Cubre al alumno del exterior sin obligarlo a crear cuenta en una plataforma local. |
+| `next-intl` | Internacionalización | Traducción con rutas localizadas, mejor para posicionamiento que traducir solo en el cliente. |
+| Zod + React Hook Form | Validación | Un mismo esquema valida el formulario y el endpoint que lo recibe. |
+| Resend | Email transaccional | Confirmaciones de compra y formularios de contacto. |
+| Vercel | Deploy | Despliegue continuo desde `main`. |
+
+## Estructura
+
+```
+src/          Código de la aplicación (App Router, componentes, lógica de negocio)
+messages/     Archivos de traducción por idioma
+public/       Estáticos e imágenes
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Correrlo localmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/JuanCarriles/bejuca-next.git
+cd bejuca-next
+npm install
+cp .env.example .env.local   # completar con credenciales propias
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abrir http://localhost:3000
 
-## Learn More
+### Variables de entorno
 
-To learn more about Next.js, take a look at the following resources:
+| Variable | Para qué |
+|---|---|
+| `DATABASE_URL` | Conexión a MySQL |
+| `MERCADOPAGO_ACCESS_TOKEN` | Cobros con MercadoPago |
+| `PAYPAL_CLIENT_ID` / `PAYPAL_CLIENT_SECRET` | Cobros con PayPal |
+| `RESEND_API_KEY` | Envío de correos |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[AJUSTAR con los nombres reales que usás en el código, y crear el archivo `.env.example` en el repo — hoy no está.]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Decisiones técnicas
 
-## Deploy on Vercel
+### Next.js en lugar de una SPA
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+La decisión se apoyó en un requisito que no era negociable: hay secretos que no pueden salir del servidor. Los tokens de MercadoPago y PayPal, y la conexión a MySQL, necesitan un entorno que el cliente no vea. Con React + Vite hubiera tenido que levantar y mantener una API aparte, con su propio deploy y su propia configuración de CORS; el App Router permite tener las rutas de servidor y la interfaz en un mismo repositorio y un mismo despliegue, que para un proyecto de un solo desarrollador es menos superficie que mantener.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El segundo motivo es de captación (SEO). Bejuca vende servicios y cursos, así que sus páginas tienen que llegar a los buscadores con el contenido ya renderizado. Next resuelve el renderizado en servidor sin trabajo adicional y permite decidir página por página qué se genera en el build y qué se renderiza en cada request.
+
+
+### Traducciones fuera del código
+
+Los textos viven en `/messages` y no incrustados en los componentes. Sumar un idioma es agregar un archivo de traducción, no revisar la interfaz entera: importante para un negocio que vende a más de un país y que puede querer abrir un mercado nuevo sin rehacer el sitio.
+
+
+## Estado
+
+En producción. Mantenimiento y mejoras activas.
+
+---
+
+Desarrollado por [Juan M. Carriles](https://www.linkedin.com/in/juan-maria-carriles-8836512a2/) · juanmcarrile@gmail.com
