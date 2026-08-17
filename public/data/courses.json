@@ -32,8 +32,9 @@
             "en": "4 Weeks"
         },
         "totalHours": 16,
-        "priceARS": 100,
-        "priceUSD": 1,
+        "priceARS": 175000,
+        "priceUSD": 110,
+        "priceTransferARS": 150000,
         "prerequisites": [
             {
                 "es": "Conocimientos en sistemas operativos y redes.",

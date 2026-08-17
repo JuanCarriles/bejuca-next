@@ -2,7 +2,7 @@
 
 import { useTheme } from '@/context/ThemeContext';
 import { Course } from '@/data/courses';
-import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText, MonitorPlay, CalendarDays, ArrowLeft, Mail } from 'lucide-react';
+import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText, MonitorPlay, CalendarDays, ArrowLeft, Mail, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -17,6 +17,7 @@ export default function CourseDetail({ course, locale }: Props) {
     const { theme } = useTheme();
     const currentLocale = locale as 'es' | 'en';
     const t = useTranslations('courses');
+    const tContact = useTranslations('contact');
 
     return (
         <>
@@ -101,6 +102,37 @@ export default function CourseDetail({ course, locale }: Props) {
                                                     ${course.priceARS.toLocaleString('es-AR')} <span className={`text-sm font-medium ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>ARS</span>
                                                 </div>
                                             </div>
+
+                                            {course.priceTransferARS && (
+                                                <div className={`p-4 rounded-xl border-2 transition-all cursor-pointer hover:-translate-y-0.5 hover:shadow-md ${theme === 'dark' ? 'bg-[#10b981]/10 border-[#10b981]/30' : 'bg-[#ecfdf5] border-[#10b981]/30 shadow-sm'}`}>
+                                                    <a href={`https://wa.me/${tContact('info.phone.content').replace(/\D/g, '')}?text=${encodeURIComponent(`Hola, quisiera inscribirme al curso de ${course.title[currentLocale]} pagando por transferencia bancaria.`)}`} target="_blank" rel="noopener noreferrer" className="block">
+                                                        <div className="flex justify-between items-center mb-2">
+                                                            <span className={`text-xs font-bold uppercase tracking-wider ${theme === 'dark' ? 'text-[#34d399]' : 'text-[#059669]'}`}>
+                                                                {t('transferBank')}
+                                                            </span>
+                                                        </div>
+                                                        
+                                                        <div className="flex flex-col mb-1">
+                                                            <div className={`text-3xl font-extrabold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                                                                ${course.priceTransferARS.toLocaleString('es-AR')} <span className={`text-sm font-medium ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>ARS</span>
+                                                            </div>
+                                                            <div className="flex items-center gap-2 mt-1">
+                                                                <span className={`text-sm font-medium line-through ${theme === 'dark' ? 'text-gray-500' : 'text-gray-400'}`}>
+                                                                    ${course.priceARS.toLocaleString('es-AR')}
+                                                                </span>
+                                                                <span className="text-[10px] font-bold bg-[#10b981] text-white px-2 py-0.5 rounded-md uppercase tracking-wider shadow-sm">
+                                                                    {t('transferDiscount', { discount: Math.round((1 - course.priceTransferARS / course.priceARS) * 100) })}
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div className={`mt-3 pt-3 border-t ${theme === 'dark' ? 'border-[#10b981]/20' : 'border-[#10b981]/20'} flex items-center gap-1.5 text-xs font-bold ${theme === 'dark' ? 'text-[#34d399]' : 'text-[#059669]'}`}>
+                                                            <MessageCircle className="w-3.5 h-3.5" />
+                                                            {t('coordinateWhatsapp')}
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            )}
 
                                             <div className={`p-4 rounded-xl border-2 transition-all ${theme === 'dark' ? 'bg-[#0070BA]/10 border-[#0070BA]/30' : 'bg-white border-[#0070BA]/20 shadow-sm'}`}>
                                                 <div className="flex justify-between items-center mb-1">
