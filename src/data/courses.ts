@@ -32,6 +32,7 @@ export interface Course {
     totalHours: number;
     priceARS: number;
     priceUSD: number;
+    priceTransferARS?: number;
     prerequisites: { es: string; en: string }[];
     targetAudience: { es: string; en: string }[];
     objectives: { es: string; en: string }[];
