@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { setRequestLocale } from 'next-intl/server';
 import { getCourseBySlug, courses } from '@/data/courses';
 import EnrollmentPage from '@/components/EnrollmentPage';
 
@@ -30,6 +31,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function InscripcionPage({ params }: Props) {
     const { locale, slug } = await params;
+    setRequestLocale(locale);
     const course = getCourseBySlug(slug);
 
     if (!course) {

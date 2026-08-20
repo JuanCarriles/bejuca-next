@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { courses } from '@/data/courses';
 import Navbar from '@/sections/Navbar';
 import Footer from '@/sections/Footer';
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function CoursesCatalogPage({ params }: Props) {
     const { locale } = await params;
+    setRequestLocale(locale);
     const services = servicesData as Service[];
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const currentLocale = locale as any;
