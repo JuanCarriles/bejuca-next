@@ -157,6 +157,7 @@
     "emailNotification": "Once payment is completed, you will automatically receive an email with instructions and course access.",
     "transferBank": "Direct Bank Transfer (Argentina)",
     "transferDiscount": "{discount}% OFF",
-    "coordinateWhatsapp": "Coordinate via WhatsApp"
+    "coordinateWhatsapp": "Coordinate via WhatsApp",
+    "consultTeacher": "Ask the teacher a question"
   }
 }

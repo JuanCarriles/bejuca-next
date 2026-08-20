@@ -10,6 +10,7 @@ import { Course } from "@/data/courses";
 import { useTheme } from "@/context/ThemeContext";
 import { Loader2, ArrowLeft, ShieldCheck, MessageCircle } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const schema = z.object({
   fullName: z.string().min(3, "El nombre completo es requerido"),
@@ -27,6 +28,7 @@ interface Props {
 
 export default function EnrollmentPage({ course, locale }: Props) {
   const { theme } = useTheme();
+  const tContact = useTranslations('contact');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState<'mercadopago' | 'paypal' | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -271,7 +273,7 @@ export default function EnrollmentPage({ course, locale }: Props) {
                 : "Si tenés alguna duda o problema con tu inscripción, no dudes en contactarnos. ¡Estamos para ayudarte!"}
             </p>
             <a
-              href="https://wa.me/543815326666"
+              href={`https://wa.me/${(course.instructor.phone || tContact('info.phone.content')).replace(/\D/g, '')}?text=${encodeURIComponent(`Hola, tengo una duda sobre la inscripción al curso de ${course.title[locale as 'es' | 'en']}.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-2 px-6 py-3 rounded-xl font-semibold text-white text-sm transition-all hover:-translate-y-0.5 hover:shadow-lg"

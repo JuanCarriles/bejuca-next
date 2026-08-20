@@ -105,7 +105,7 @@ export default function CourseDetail({ course, locale }: Props) {
 
                                             {course.priceTransferARS && (
                                                 <div className={`p-4 rounded-xl border-2 transition-all cursor-pointer hover:-translate-y-0.5 hover:shadow-md ${theme === 'dark' ? 'bg-[#10b981]/10 border-[#10b981]/30' : 'bg-[#ecfdf5] border-[#10b981]/30 shadow-sm'}`}>
-                                                    <a href={`https://wa.me/${tContact('info.phone.content').replace(/\D/g, '')}?text=${encodeURIComponent(`Hola, quisiera inscribirme al curso de ${course.title[currentLocale]} pagando por transferencia bancaria.`)}`} target="_blank" rel="noopener noreferrer" className="block">
+                                                    <a href={`https://wa.me/${(course.instructor.phone || tContact('info.phone.content')).replace(/\D/g, '')}?text=${encodeURIComponent(`Hola, quisiera inscribirme al curso de ${course.title[currentLocale]} pagando por transferencia bancaria.`)}`} target="_blank" rel="noopener noreferrer" className="block">
                                                         <div className="flex justify-between items-center mb-2">
                                                             <span className={`text-xs font-bold uppercase tracking-wider ${theme === 'dark' ? 'text-[#34d399]' : 'text-[#059669]'}`}>
                                                                 {t('transferBank')}
@@ -262,6 +262,15 @@ export default function CourseDetail({ course, locale }: Props) {
                                 <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
                                     {course.instructor.bio[currentLocale]}
                                 </p>
+                                <a 
+                                    href={`https://wa.me/${(course.instructor.phone || tContact('info.phone.content')).replace(/\D/g, '')}?text=${encodeURIComponent(`Hola ${course.instructor.name}, tengo una consulta sobre el curso de ${course.title[currentLocale]}.`)}`} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className={`mt-6 w-full flex items-center justify-center gap-2 text-sm font-bold px-4 py-3 rounded-xl transition-colors ${theme === 'dark' ? 'bg-[#3CB4D8]/10 text-[#3CB4D8] hover:bg-[#3CB4D8]/20 border border-[#3CB4D8]/20' : 'bg-[#e0f2fe] text-[#0369a1] hover:bg-[#bae6fd] border border-[#bae6fd]'}`}
+                                >
+                                    <MessageCircle className="w-4 h-4" />
+                                    {t('consultTeacher')}
+                                </a>
                             </div>
 
                         </div>
