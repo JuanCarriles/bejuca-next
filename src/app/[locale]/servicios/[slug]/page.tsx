@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import servicesData from '../../../../../public/data/services.json';
 import type { Service } from '@/types/services.types';
 import ServicePageContent from '@/components/ServicePageContent';
@@ -87,6 +88,7 @@ export function generateStaticParams() {
 
 export default async function ServicePage({ params }: Props) {
     const { locale, slug } = await params;
+    setRequestLocale(locale);
     const service = getServiceBySlug(slug);
 
     if (!service) {

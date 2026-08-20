@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { setRequestLocale } from 'next-intl/server';
 import { getCourseBySlug, courses } from '@/data/courses';
 import Navbar from '@/sections/Navbar';
 import Footer from '@/sections/Footer';
@@ -33,6 +34,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function CourseDetailPage({ params }: Props) {
     const { locale, slug } = await params;
+    setRequestLocale(locale);
     const services = servicesData as Service[];
     const course = getCourseBySlug(slug);
     const currentLocale = locale as 'es' | 'en';

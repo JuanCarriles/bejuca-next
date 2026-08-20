@@ -5,6 +5,11 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
+  experimental: {
+    // El CSS de la home son ~17 KiB y viajaba como <link> bloqueante, retrasando
+    // el LCP (que es texto). Inlineado en el <head> deja de bloquear el render.
+    inlineCss: true,
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],

@@ -1,4 +1,5 @@
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Geist } from 'next/font/google';
@@ -26,6 +27,10 @@ export default async function LocaleLayout({ children, params }: Props) {
     if (!hasLocale(routing.locales, locale)) {
         notFound();
     }
+
+    // Habilita el renderizado estático: sin esto next-intl fuerza render dinámico
+    // y el HTML se arma en el servidor en cada visita.
+    setRequestLocale(locale);
 
     return (
         <html lang={locale} suppressHydrationWarning>
