@@ -24,7 +24,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import emailjs from '@emailjs/browser';
 import { resolveTranslation } from '@/hooks/useServicesData';
 import type { Service } from '@/types/services.types';
 
@@ -94,6 +93,9 @@ export default function Contact({ services }: { services: Service[] }) {
         service: serviceName,
         message: formData.message,
       };
+
+      // Se carga bajo demanda: el SDK no viaja en el bundle inicial de la home.
+      const { default: emailjs } = await import('@emailjs/browser');
 
       const result = await emailjs.send(
         SERVICE_ID,

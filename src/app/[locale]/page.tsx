@@ -2,13 +2,12 @@ import type { Metadata } from 'next';
 import Navbar from '@/sections/Navbar';
 import Hero from '@/sections/Hero';
 import About from '@/sections/About';
-import dynamic from 'next/dynamic';
-
-const Services = dynamic(() => import('@/sections/Services'));
-const Team = dynamic(() => import('@/sections/Team'));
-const Contact = dynamic(() => import('@/sections/Contact'));
-const Footer = dynamic(() => import('@/sections/Footer'));
-const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'));
+// Estas secciones se renderizan de entrada, así que un dynamic() no difiere nada:
+// solo agregaba un salto extra en la cascada de carga.
+import Services from '@/sections/Services';
+import Contact from '@/sections/Contact';
+import Footer from '@/sections/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 import servicesData from '../../../public/data/services.json';
 import type { Service } from '@/types/services.types';
 import {
