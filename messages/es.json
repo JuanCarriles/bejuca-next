@@ -157,6 +157,7 @@
     "emailNotification": "Una vez realizado el pago, recibirás automáticamente un correo con todas las instrucciones y el acceso al curso.",
     "transferBank": "Transferencia (Argentina)",
     "transferDiscount": "Descuento del {discount}%",
-    "coordinateWhatsapp": "Coordinar por WhatsApp"
+    "coordinateWhatsapp": "Coordinar por WhatsApp",
+    "consultTeacher": "Consultar dudas al docente"
   }
 }

@@ -16,6 +16,7 @@ export interface Instructor {
     bio: { es: string; en: string };
     photo: string;
     email: string;
+    phone?: string;
 }
 
 export interface Course {
