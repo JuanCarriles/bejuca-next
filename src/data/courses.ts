@@ -45,7 +45,7 @@ export interface Course {
     faq: FAQ[];
 }
 
-import coursesData from '../../public/data/courses.json';
+import coursesData from './courses.json';
 
 export const courses: Course[] = coursesData as Course[];
 
