@@ -407,6 +407,22 @@
                 "es": "Escalabilidad técnica para soportar desde 10 hasta miles de alumnos en simultáneo.",
                 "en": "Technical scalability to support from 10 to thousands of simultaneous students."
             }
-        ]
+        ],
+        "cta": {
+            "title": {
+                "es": "¿Quieres saber que cursos tenemos?",
+                "en": "Want to see our available courses?"
+            },
+            "description": {
+                "es": "Descubrí nuestros cursos disponibles.",
+                "en": "Discover our available courses."
+            },
+            "text": {
+                "es": "Ver nuestros Cursos de E-Learning",
+                "en": "View our E-Learning Courses"
+            },
+            "link": "/cursos",
+            "isExternal": true
+        }
     }
 ]
