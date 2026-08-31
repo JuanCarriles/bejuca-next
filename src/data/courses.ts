@@ -17,6 +17,11 @@ export interface Instructor {
     photo: string;
     email: string;
     phone?: string;
+    social?: {
+        instagram?: string;
+        facebook?: string;
+        linkedin?: string;
+    };
 }
 
 export interface Course {

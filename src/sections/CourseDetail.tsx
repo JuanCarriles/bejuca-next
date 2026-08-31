@@ -2,7 +2,7 @@
 
 import { useTheme } from '@/context/ThemeContext';
 import { Course } from '@/data/courses';
-import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText, MonitorPlay, CalendarDays, ArrowLeft, Mail, MessageCircle } from 'lucide-react';
+import { Calendar, Clock, GraduationCap, CheckCircle2, ChevronDown, ChevronRight, FileText, MonitorPlay, CalendarDays, ArrowLeft, Mail, MessageCircle, Instagram, Facebook, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -262,6 +262,26 @@ export default function CourseDetail({ course, locale }: Props) {
                                 <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
                                     {course.instructor.bio[currentLocale]}
                                 </p>
+
+                                {course.instructor.social && (
+                                    <div className="flex items-center gap-3 mt-4">
+                                        {course.instructor.social.linkedin && (
+                                            <a href={course.instructor.social.linkedin} target="_blank" rel="noopener noreferrer" className={`p-2 rounded-full transition-all ${theme === 'dark' ? 'bg-gray-800 text-gray-400 hover:text-white hover:bg-[#0a66c2]' : 'bg-gray-100 text-gray-500 hover:text-white hover:bg-[#0a66c2]'}`}>
+                                                <Linkedin className="w-4 h-4" />
+                                            </a>
+                                        )}
+                                        {course.instructor.social.instagram && (
+                                            <a href={course.instructor.social.instagram} target="_blank" rel="noopener noreferrer" className={`p-2 rounded-full transition-all ${theme === 'dark' ? 'bg-gray-800 text-gray-400 hover:text-white hover:bg-[#E1306C]' : 'bg-gray-100 text-gray-500 hover:text-white hover:bg-[#E1306C]'}`}>
+                                                <Instagram className="w-4 h-4" />
+                                            </a>
+                                        )}
+                                        {course.instructor.social.facebook && (
+                                            <a href={course.instructor.social.facebook} target="_blank" rel="noopener noreferrer" className={`p-2 rounded-full transition-all ${theme === 'dark' ? 'bg-gray-800 text-gray-400 hover:text-white hover:bg-[#1877F2]' : 'bg-gray-100 text-gray-500 hover:text-white hover:bg-[#1877F2]'}`}>
+                                                <Facebook className="w-4 h-4" />
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
                                 <a 
                                     href={`https://wa.me/${(course.instructor.phone || tContact('info.phone.content')).replace(/\D/g, '')}?text=${encodeURIComponent(`Hola ${course.instructor.name}, tengo una consulta sobre el curso de ${course.title[currentLocale]}.`)}`} 
                                     target="_blank" 
