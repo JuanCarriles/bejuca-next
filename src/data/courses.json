@@ -183,7 +183,11 @@
             },
             "photo": "/images/team/luis.jpg",
             "email": "informes@bejuca.com.ar",
-            "phone": "+5493816047152"
+            "phone": "+5493816047152",
+            "social": {
+                "linkedin": "https://www.linkedin.com/in/lmcarriles/",
+                "instagram": "https://www.instagram.com/lmcarriles"
+            }
         },
         "certificate": {
             "es": "Certificado oficial con verificación Blockchain emitido por Bejuca Consulting.",
