@@ -14,16 +14,21 @@ export default function About() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        // Si la sección intersecta, o si ya quedó arriba (el usuario scrolleó rápido o recargó la página más abajo)
+        if (entry.isIntersecting || entry.boundingClientRect.top <= window.innerHeight) {
           setIsVisible(true);
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1, rootMargin: "50px" }
     );
 
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
+      // Fallback inmediato por si acaso el observador falla o la página carga ya scrolleada
+      if (sectionRef.current.getBoundingClientRect().top <= window.innerHeight) {
+        setIsVisible(true);
+      }
     }
 
     return () => observer.disconnect();
