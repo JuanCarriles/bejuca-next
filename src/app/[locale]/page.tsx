@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import Navbar from '@/sections/Navbar';
 import Hero from '@/sections/Hero';
+import News from '@/sections/News';
 import About from '@/sections/About';
 // Estas secciones se renderizan de entrada, así que un dynamic() no difiere nada:
 // solo agregaba un salto extra en la cascada de carga.
@@ -113,6 +114,7 @@ export default async function HomePage({ params }: Props) {
             <Navbar />
             <main>
                 <Hero />
+                <News />
                 <About />
                 <Services services={services} />
                 {/* <Team /> */}
