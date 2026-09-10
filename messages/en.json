@@ -153,6 +153,20 @@
     "copyright": "Bejuca Consulting. All rights reserved.",
     "location": "Tucumán, Argentina • Since 2010"
   },
+  "news": {
+    "label": "News",
+    "title": "Latest",
+    "titleHighlight": "Updates",
+    "description": "Stay up to date with our latest courses, services, and technological advancements.",
+    "items": {
+      "course1": {
+        "tag": "New Course",
+        "title": "We launched our Proxmox Initial course!",
+        "description": "Learn to deploy and manage virtualized infrastructures from scratch with permanent support and certification.",
+        "button": "View Course Details"
+      }
+    }
+  },
   "courses": {
     "emailNotification": "Once payment is completed, you will automatically receive an email with instructions and course access.",
     "transferBank": "Direct Bank Transfer (Argentina)",
