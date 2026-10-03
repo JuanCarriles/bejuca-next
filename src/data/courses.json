@@ -1,5 +1,6 @@
 [
     {
+        "isActive": false,
         "id": "c_proxmox_inicial_01",
         "slug": "proxmox-inicial",
         "title": {
@@ -15,8 +16,8 @@
             "en": "Train students in the implementation, management, and securing of virtualized infrastructures using Proxmox VE."
         },
         "fullDescription": {
-            "es": "El curso desarrolla una serie de contenidos orientados a adquirir competencias referidas al nivel introductorio de la Plataforma Proxmox. Se desarrollan conceptos de modalidades de virtualización y el manejo de las cuatro categorías esenciales de recursos computacionales que conforman un escenario computacional.",
-            "en": "The course develops a series of contents aimed at acquiring skills related to the introductory level of the Proxmox Platform. Concepts of virtualization modalities and the management of the four essential categories of computational resources that make up a computational scenario are developed."
+            "es": "Las capacitaciones de Proxmox in situ (presenciales en las instalaciones de la empresa) permiten a los equipos de TI aprender a configurar y administrar la plataforma directamente sobre su propia infraestructura.\n\nBeneficios de la formación presencial:\n• Práctica real: Se trabaja con el hardware, las redes y los servidores propios de la organización.\n• Resolución directa: Permite evacuar dudas específicas sobre los casos de uso y problemas particulares del entorno de producción.\n• Ahorro de tiempo: Evita traslados y adapta el temario al ritmo y necesidades del equipo técnico.",
+            "en": "On-site Proxmox training (in-person at the company's facilities) allows IT teams to learn how to configure and manage the platform directly on their own infrastructure.\n\nBenefits of in-person training:\n• Real practice: Work with the organization's own hardware, networks, and servers.\n• Direct resolution: Allows resolving specific doubts about use cases and particular problems in the production environment.\n• Time saving: Avoids commuting and adapts the syllabus to the pace and needs of the technical team."
         },
         "modality": "Online-en-vivo",
         "startDate": {

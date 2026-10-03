@@ -48,11 +48,12 @@ export interface Course {
     includes: { es: string; en: string }[];
     whatsappGroupLink: string;
     faq: FAQ[];
+    isActive?: boolean;
 }
 
 import coursesData from './courses.json';
 
-export const courses: Course[] = coursesData as Course[];
+export const courses: Course[] = (coursesData as Course[]).filter(c => c.isActive !== false);
 
 export function getCourseBySlug(slug: string): Course | undefined {
     return courses.find(course => course.slug === slug);

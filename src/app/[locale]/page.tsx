@@ -114,7 +114,7 @@ export default async function HomePage({ params }: Props) {
             <Navbar />
             <main>
                 <Hero />
-                <News />
+                {/* <News /> */}
                 <About />
                 <Services services={services} />
                 {/* <Team /> */}
