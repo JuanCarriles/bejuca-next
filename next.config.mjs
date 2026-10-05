@@ -4,14 +4,9 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: {
-    enabled: true,
-  },
-  turbopack: {
-    disabled: true,
-  },
   reactCompiler: true,
   experimental: {
+    turbopack: false,
     // El CSS de la home son ~17 KiB y viajaba como <link> bloqueante, retrasando
     // el LCP (que es texto). Inlineado en el <head> deja de bloquear el render.
     inlineCss: true,
